@@ -1,0 +1,577 @@
+@-moz-document domain("nexusmods.com") {
+::-webkit-scrollbar-track {
+             -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.3);
+             border-radius: 2px;
+             background-color: #212121;
+        }
+        html[hide-scrollbar="true"] ::-webkit-scrollbar{display:none}
+        ::-webkit-scrollbar {
+             width: 10px;
+             background-color: #212121;
+        }
+        ::-webkit-scrollbar-thumb {
+             border-radius: 2px;
+             -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .6);
+             background: var(--theme-primary);
+        }
+
+span.tooltip.tooltipstered {
+    background: #0000 !important;
+}
+body.scheme-theme-Fallout .mod-tile-left .mod-tile-dl-status {
+    background-color: #92ab20D8 !important;
+    color: #fff !important;
+}
+form.rj-search .rj-search-input, .rj-header-wrap.rj-search-active .search-button, form.rj-search .search-button, .rj-search-category-dropdown, .page-layout .donation-wrapper form input[type=text], .select2-container--default .select2-selection--single, .select2-dropdown, .select2-container--default .select2-search--dropdown .select2-search__field, .head-nav.clearfix.pagenav > .clearfix.pagination > .clearfix > li > .mfp-prevent-close, .select2-container--default.select2-container--disabled .select2-selection--single, .select2-container--default .select2-results__option[aria-selected=true], .bottom-nav.clearfix.pagenav > .clearfix.pagination > .clearfix > li > .mfp-prevent-close, .password-group .password-toggle, input {
+    background: #111;
+    color: #fff;
+}
+.head-nav.clearfix.pagenav > .clearfix.pagination > .clearfix > li > .mfp-prevent-close:hover {
+    background: #151515;
+}
+button.rj-search-category-dropdown-toggle, .page-layout .donation-wrapper form .form-group > span, .select2-container--default .select2-selection--single .select2-selection__rendered, .ui-widget-content {
+    color: #fff;
+}
+.page-layout .donation-wrapper form input[type=text] {
+    border-color: #111;
+}
+.select2-dropdown, .select2-container--default .select2-search--dropdown .select2-search__field {
+    border-color: #222;
+}
+.pagination ul li a.page-selected, .pagination ul li a.page-selected:hover {
+    color: #fff;
+    background: #3e3e3e !important;
+}
+.head-nav.clearfix.pagenav > .clearfix.pagination > .clearfix > .next > .mfp-prevent-close > .icon-arrow-thin > use, .bottom-nav.clearfix.pagenav > .clearfix.pagination > .clearfix > .next > .mfp-prevent-close > .icon-arrow-thin > use, .head-nav.clearfix.pagenav > .clearfix.pagination > .clearfix > .prev > .mfp-prevent-close > .icon-arrow-thin > use, .bottom-nav.clearfix.pagenav > .clearfix.pagination > .clearfix > .prev > .mfp-prevent-close > .icon-arrow-thin > use {
+    fill: #ccc;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border-color: #ccc transparent transparent transparent;
+}
+.ui-widget-shadow {
+    -webkit-box-shadow: -4px -4px 4px #222;
+    box-shadow: -4px -4px 4px #222;
+    background: #111;
+}
+.ui-widget.ui-widget-content {
+    border: 1px solid #57a5cc75;
+}
+input[type=text], input[type=password], input[type=email], select {
+    background-color: #111 !important;
+    color: rgba(255, 255, 255, .6);
+}
+.premium-banner {
+	background: rgba(34, 34, 34, .38);
+}
+.premium-banner > span, .premium-banner > i {
+	color: #fff;
+}
+div.floating-label label {
+    color: rgba(255, 255, 255, .6);
+}
+input[type=password]~.password-toggle {
+	color: #d1d5d9;
+}
+.dataTables_filter input {
+	color: #919191 !important;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    color: #ccc !important;
+    border-color: #676767;
+    background: linear-gradient(to bottom, #111 0%, #3c3c3c 100%);
+}
+
+.static .wrap:first-of-type {
+    background: rgba(56, 56, 56, .38) url(/assets/images/default/bg_game_0.png) 0 0 no-repeat;
+	backdrop-filter: blur(1rem);
+	-webkit-backdrop-filter: blur(1rem);
+}
+.static .wrap {
+	background-color: rgba(56, 56, 56, .38);
+	backdrop-filter: blur(1rem);
+	-webkit-backdrop-filter: blur(1rem);
+}
+.tabcontent {
+    background-color: rgba(68, 68, 68, .38);
+}
+ul.modtabs {
+	background-color: rgba(45, 45, 45, .38);
+}
+ul.modtabs li {
+	background-color: transparent;
+}
+ul.modtabs li a.selected {
+	background-color: rgba(68, 68, 68, .38);
+	border-right-color: rgba(76, 76, 76, .38);
+}
+ul.modtabs li a:last-of-type:hover {
+    border-right-color: rgba(65, 65, 65, .38);
+}
+ul.modtabs li a {
+    border-right-color: rgba(61, 61, 61, .38);
+}
+ul.modtabs li a:hover {
+	background-color: rgba(65, 65, 65, .38);
+}
+.mod-tile .mod-tile-left {
+    background-color: transparent;
+	box-shadow: inset 0 0 20px rgba(56, 56, 56, .8);
+}
+li.mod-tile > .mod-tile-left > .tile-data {
+	background-color: rgba(45, 45, 45, .38);
+	box-shadow: inset 0 0 20px rgba(56, 56, 56, .8);
+}
+.tiles .fadeoff {
+    background: -webkit-linear-gradient(top,rgba(56,56,56,0) 0,rgba(56,56,56,.8) 100%);
+    background: linear-gradient(to bottom,rgba(56,56,56,0) 0,rgba(56,56,56,.8) 100%);
+}
+body .home-intro {
+	background-color: rgba(45, 45, 45, .38);
+	backdrop-filter: blur(1rem);
+	-webkit-backdrop-filter: blur(1rem);
+}
+ul.tiles li.article-tile .mod-tile-left {
+	background-color: transparent;
+	box-shadow: inset 0 0 30px rgba(56, 56, 56, .8);
+}
+li.article-tile > .mod-tile-left > .tile-data {
+	background-color: rgba(45, 45, 45, .5);
+	box-shadow: inset 0 0 20px rgba(56, 56, 56, .8);
+}
+.modimages {
+    background-color: rgba(32, 32, 32, .38);
+}
+.modpage .col-1-1.info-details {
+    background-color: rgba(45, 45, 45, .38);
+}
+.modpage>.wrap {
+	background: rgba(56, 56, 56, .38);
+	backdrop-filter: blur(1rem);
+	-webkit-backdrop-filter: blur(1rem);
+}
+.modpage .sideitems {
+    border-bottom-color: rgba(56, 56, 56, .38);
+}
+.modpage .col-1-1 {
+    background-color: rgba(76, 76, 76, .38);
+}
+.accordion dt:hover {
+    background-color: rgba(65, 65, 65, .38);
+}
+.accordion dt {
+    background-color: rgba(56, 56, 56, .38);
+}
+.accordion dt.accopen {
+    background-color: rgba(45, 45, 45, .38);
+}
+.accordion dd {
+    background-color: rgba(56, 56, 56, .38);
+}
+.table th.table-require-notes:hover, .table th.table-compat-notes:hover, .table th.table-translation-notes:hover {
+    background-color: rgba(45, 45, 45, .38);
+}
+.table th:hover {
+    background: rgba(65, 65, 65, .38);
+}
+.table th, .table td {
+    border-right-color: rgba(73, 73, 73, .38);
+}
+.table th {
+    background-color: rgba(45, 45, 45, .38);
+}
+.tabcontent-mod-page .accordionitems .table td {
+    border-right-color: rgba(91, 91, 91, .38);
+    border-top-color: rgba(91, 91, 91, .38);
+    background-color: rgba(76, 76, 76, .38);
+}
+.comments .comment-head {
+    background-color: rgba(29, 29, 29, .38);
+    border-bottom-color: rgba(0, 0, 0, .38);
+}
+.comments>ol>li {
+    background-color: rgba(35, 35, 35, .38);
+    border-color: rgba(0, 0, 0, .38);
+}
+.comments>ol>li ol>li {
+    background-color: rgba(69, 69, 69, .38);
+    border-color: rgba(0, 0, 0, .38);
+}
+.edit-article-desc {
+	background-color: transparent;
+}
+section#rj-vortex {
+    border-top-color: rgba(93, 93, 93, .38);
+    background-color: rgba(34, 34, 34, .38);
+}
+#rj-footer {
+    background-color: rgba(24, 24, 24, .38);
+	text-shadow: 1px 1px 1px #000000b8;
+}
+#rj-footer svg, #rj-footer img {
+	filter: drop-shadow(1px 1px 1px #000);
+}
+}
+
+@-moz-document domain("forums.nexusmods.com") {
+::-webkit-scrollbar-track {
+             -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.3);
+             border-radius: 2px;
+             background-color: #212121;
+        }
+        html[hide-scrollbar="true"] ::-webkit-scrollbar{display:none}
+        ::-webkit-scrollbar {
+             width: 10px;
+             background-color: #212121;
+        }
+        ::-webkit-scrollbar-thumb {
+             border-radius: 2px;
+             -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .6);
+             background: linear-gradient(180deg, #0f0f0f, #151515);
+			 border: 1px solid #000;
+        }
+input[type=text], input[type=password], input[type=email], select {
+	background: #0000 !important;
+}
+}
+
+@-moz-document url-prefix("https://www.nexusmods.com/newvegas") {
+body::before {
+	background-image: url('https://i.redd.it/8qtlmjh77m511.jpg');
+}
+}
+
+@-moz-document url-prefix("https://www.nexusmods.com/fallout4") {
+body::before {
+	background-image: url('https://wallpaperaccess.com/full/720318.jpg');
+}
+}
+
+@-moz-document url-prefix("https://www.nexusmods.com/skyrim") {
+body::before {
+	background-image: url('https://images.hdqwalls.com/wallpapers/skyrim-wallpaper-4k-bu.jpg');
+}
+}
+
+@-moz-document url-prefix("https://www.nexusmods.com/skyrimspecialedition") {
+body::before {
+	background-image: url('https://wallpaperaccess.com/full/242893.jpg');
+}
+}
+
+@-moz-document url-prefix("https://www.nexusmods.com/witcher") {
+body::before {
+	background-image: url('https://wallpaperaccess.com/full/653677.jpg');
+}
+}
+
+@-moz-document url-prefix("https://www.nexusmods.com/witcher3") {
+body::before {
+	background-image: url('https://i.imgur.com/HyZeLfQ.png');
+}
+}
+
+@-moz-document url-prefix("https://www.nexusmods.com/cyberpunk2077") {
+body::before {
+	background-image: url('https://wallpaperaccess.com/full/676037.jpg');
+}
+}
+
+@-moz-document url-prefix("https://www.nexusmods.com/oblivion") {
+body::before {
+	background-image: url('https://cdn.wccftech.com/wp-content/uploads/2021/01/skyblivion.jpg');
+}
+}
+
+@-moz-document url-prefix("https://www.nexusmods.com/fallout3") {
+body::before {
+	background-image: url('https://wallpaperaccess.com/full/119189.jpg');
+}
+}
+
+@-moz-document url-prefix("https://www.nexusmods.com/stardewvalley") {
+body::before {
+	background-image: url('https://i.pinimg.com/originals/b8/1a/a4/b81aa44ba47c8ebb93c4525a96904101.jpg');
+}
+}
+
+@-moz-document url-prefix("https://www.nexusmods.com/dragonage") {
+body::before {
+	background-image: url('https://images3.alphacoders.com/109/109665.jpg');
+}
+}
+
+@-moz-document url-prefix("https://www.nexusmods.com/monsterhunterworld") {
+body::before {
+	background-image: url('https://wallpaperaccess.com/full/1926141.jpg');
+}
+}
+
+@-moz-document url-prefix("https://www.nexusmods.com/morrowind") {
+body::before {
+	background-image: url('https://tesrskywind.com/wp-content/uploads/2019/07/GalleryAscadianIsles2_Arvuti.png');
+}
+}
+
+@-moz-document url-prefix("https://www.nexusmods.com/mountandblade2bannerlord") {
+body::before {
+	background-image: url('https://wallpaperaccess.com/full/5671474.png');
+}
+}
+
+@-moz-document url-prefix("https://www.nexusmods.com/dragonage2") {
+body::before {
+	background-image: url('https://images3.alphacoders.com/120/thumb-1920-120325.jpg');
+}
+}
+
+@-moz-document url-prefix("https://www.nexusmods.com/dragonageinquisition") {
+body::before {
+	background-image: url('https://wallpaperaccess.com/full/373700.jpg');
+}
+}
+
+@-moz-document url-prefix("https://www.nexusmods.com/bladeandsorcery") {
+body::before {
+	background-image: url('https://i.redd.it/la9po1nkaq751.png');
+}
+}
+
+@-moz-document url-prefix("https://www.nexusmods.com/darksouls") {
+body::before {
+	background-image: url('https://images.alphacoders.com/278/thumb-1920-278051.jpg');
+}
+}
+
+@-moz-document url-prefix("https://www.nexusmods.com/kingdomcomedeliverance") {
+body::before {
+	background-image: url('https://external-preview.redd.it/wJq9109DaVFax4XCnN6EnNDPSq6PBsOwtRlfnb4ldYs.jpg?auto=webp&s=234107489ff7daecfb4d852bf56035fb48849374');
+}
+}
+
+@-moz-document url-prefix("https://www.nexusmods.com/subnautica") {
+body::before {
+	background-image: url('https://images4.alphacoders.com/901/thumb-1920-901071.jpg');
+}
+}
+
+@-moz-document url-prefix("https://www.nexusmods.com/masseffect") {
+body::before {
+	background-image: url('https://wallpaperaccess.com/full/4605441.jpg');
+}
+}
+
+@-moz-document url-prefix("https://www.nexusmods.com/masseffectlegendaryedition") {
+body::before {
+	background-image: url('https://images7.alphacoders.com/111/thumb-1920-1112414.jpg');
+}
+}
+
+@-moz-document url-prefix("https://www.nexusmods.com/masseffect3") {
+body::before {
+	background-image: url('https://images.hdqwalls.com/wallpapers/mass-effect-3-pc-version-rj.jpg');
+}
+}
+
+@-moz-document url-prefix("https://www.nexusmods.com/darkestdungeon") {
+body::before {
+	background-image: url('https://7wallpapers.net/wp-content/uploads/9_Darkest-Dungeon.jpg');
+}
+}
+
+@-moz-document url-prefix("https://www.nexusmods.com/starwarsbattlefront22017") {
+body::before {
+	background-image: url('https://images7.alphacoders.com/824/thumb-1920-824123.jpg');
+}
+}
+
+@-moz-document url-prefix("https://www.nexusmods.com/residentevil22019") {
+body::before {
+	background-image: url('https://wallpaperaccess.com/full/1256071.jpg');
+}
+}
+
+@-moz-document url-prefix("https://www.nexusmods.com/valheim") {
+body::before {
+	background-image: url('https://wallpapercave.com/wp/wp8599076.jpg');
+}
+}
+
+@-moz-document url-prefix("https://www.nexusmods.com/darksouls2") {
+body::before {
+	background-image: url('https://cdn.wallpapersafari.com/75/54/h2igPl.jpg');
+}
+}
+
+@-moz-document url-prefix("https://www.nexusmods.com/witcher2") {
+body::before {
+	background-image: url('https://wallpapercave.com/wp/wp3291282.jpg');
+}
+}
+
+@-moz-document url-prefix("https://www.nexusmods.com/masseffectandromeda") {
+body::before {
+	background-image: url('https://images4.alphacoders.com/772/thumb-1920-772364.png');
+}
+}
+
+@-moz-document url-prefix("https://www.nexusmods.com/metalgearsolidvtpp") {
+body::before {
+	background-image: url('https://wallpaperaccess.com/full/4125603.jpg');
+}
+}
+
+@-moz-document url-prefix("https://www.nexusmods.com/nomanssky") {
+body::before {
+	background-image: url('https://www.teahub.io/photos/full/70-704953_no-mans-sky-next-4k.jpg');
+}
+}
+
+@-moz-document url-prefix("https://www.nexusmods.com/dragonsdogma") {
+body::before {
+	background-image: url('https://wallpaperaccess.com/full/364376.jpg');
+}
+}
+
+@-moz-document url-prefix("https://www.nexusmods.com/xcom2") {
+body::before {
+	background-image: url('https://images2.alphacoders.com/668/thumb-1920-668202.jpg');
+}
+}
+
+@-moz-document url-prefix("https://www.nexusmods.com/kotor") {
+body::before {
+	background-image: url('https://wallpaperaccess.com/full/467182.jpg');
+}
+}
+
+@-moz-document url-prefix("https://www.nexusmods.com/kotor") {
+body::before {
+	background-image: url('https://wallpaperaccess.com/full/467182.jpg');
+}
+}
+
+@-moz-document url-prefix("https://www.nexusmods.com/mbwarband") {
+body::before {
+	background-image: url('https://wallpaperaccess.com/full/3206100.jpg');
+}
+}
+
+@-moz-document url-prefix("https://www.nexusmods.com/7daystodie") {
+body::before {
+	background-image: url('https://images4.alphacoders.com/709/thumb-1920-709973.jpg');
+}
+}
+
+@-moz-document url-prefix("https://www.nexusmods.com/residentevil32020") {
+body::before {
+	background-image: url('https://i.redd.it/xytj0c6i2g441.png');
+}
+}
+
+@-moz-document url-prefix("https://www.nexusmods.com/darksouls3") {
+body::before {
+	background-image: url('https://images5.alphacoders.com/609/609173.jpg');
+}
+}
+
+@-moz-document url-prefix("https://www.nexusmods.com/stateofdecay") {
+body::before {
+	background-image: url('https://wallpaperaccess.com/full/2192288.jpg');
+}
+}
+
+@-moz-document url-prefix("https://www.nexusmods.com/sekiro") {
+body::before {
+	background-image: url('https://wallpaperaccess.com/full/1146370.jpg');
+}
+}
+
+@-moz-document url-prefix("https://www.nexusmods.com/xcom") {
+body::before {
+	background-image: url('https://vistapointe.net/images/xcom-enemy-unknown-11.jpg');
+}
+}
+
+@-moz-document url-prefix("https://www.nexusmods.com/pathfinderkingmaker") {
+body::before {
+	background-image: url('https://wallup.net/wp-content/uploads/2017/05/29/434508-fantasy_art-artwork-Pathfinder.jpg');
+}
+}
+
+@-moz-document url-prefix("https://www.nexusmods.com/borderlands2") {
+body::before {
+	background-image: url('https://images.hdqwalls.com/wallpapers/borderlands-2-4k-g6.jpg');
+}
+}
+
+@-moz-document url-prefix("https://www.nexusmods.com/kenshi") {
+body::before {
+	background-image: url('https://images3.alphacoders.com/113/thumb-1920-1131614.jpg');
+}
+}
+
+@-moz-document url-prefix("https://www.nexusmods.com/masseffect2") {
+body::before {
+	background-image: url('https://wallpaperaccess.com/full/2467187.jpg');
+}
+}
+
+@-moz-document url-prefix("https://www.nexusmods.com/divinityoriginalsin2") {
+body::before {
+	background-image: url('https://wallpapercave.com/wp/wp3622645.jpg');
+}
+}
+
+@-moz-document url-prefix("https://www.nexusmods.com/dyinglight") {
+body::before {
+	background-image: url('https://images2.alphacoders.com/449/thumb-1920-449053.jpg');
+}
+}
+
+@-moz-document url-prefix("https://www.nexusmods.com/reddeadredemption2") {
+body::before {
+	background-image: url('https://wallpaperaccess.com/full/677565.jpg');
+}
+}
+
+@-moz-document url-prefix("https://www.nexusmods.com/residentevilvillage") {
+body::before {
+	background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0276f574-98ea-4e2d-ba44-68f500bf01bc/decy31o-b5746c63-250c-4a71-86e2-fa3134977f1c.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzAyNzZmNTc0LTk4ZWEtNGUyZC1iYTQ0LTY4ZjUwMGJmMDFiY1wvZGVjeTMxby1iNTc0NmM2My0yNTBjLTRhNzEtODZlMi1mYTMxMzQ5NzdmMWMuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.VnKYmU_gLkhsrLv24MGxbNKoosfdStcNqneV8CmD9o4');
+}
+}
+
+@-moz-document url-prefix("https://www.nexusmods.com/rimworld") {
+body::before {
+	background-image: url('https://wallpapercave.com/wp/wp3935722.png');
+}
+}
+
+@-moz-document url-prefix("https://www.nexusmods.com/darksoulsremastered") {
+body::before {
+	background-image: url('https://wallpapercave.com/wp/wp3756449.jpg');
+}
+}
+
+@-moz-document url-prefix("https://www.nexusmods.com/fallout76") {
+body::before {
+	background-image: url('https://images7.alphacoders.com/927/thumb-1920-927080.jpg');
+}
+}
+
+@-moz-document url-prefix("https://www.nexusmods.com/doometernal") {
+body::before {
+	background-image: url('https://i.redd.it/i7oo37p28fb41.jpg');
+}
+}
+
+@-moz-document url-prefix("https://www.nexusmods.com/devilmaycry5") {
+body::before {
+	background-image: url('https://wallpaperaccess.com/full/2517984.jpg');
+}
+}
+
+@-moz-document url-prefix("https://www.nexusmods.com/thesims4") {
+body::before {
+	background-image: url('https://i.imgur.com/W2EPdqD.png');
+}/*My friend built auschwitz in sims 4*/
+}
