@@ -22,67 +22,47 @@ body.scheme-theme-Fallout .mod-tile-left .mod-tile-dl-status {
     background-color: #92ab20D8 !important;
     color: #fff !important;
 }
-form.rj-search .rj-search-input, .rj-header-wrap.rj-search-active .search-button, form.rj-search .search-button, .rj-search-category-dropdown, .page-layout .donation-wrapper form input[type=text], .select2-container--default .select2-selection--single, .select2-dropdown, .select2-container--default .select2-search--dropdown .select2-search__field, .head-nav.clearfix.pagenav > .clearfix.pagination > .clearfix > li > .mfp-prevent-close, .select2-container--default.select2-container--disabled .select2-selection--single, .select2-container--default .select2-results__option[aria-selected=true], .bottom-nav.clearfix.pagenav > .clearfix.pagination > .clearfix > li > .mfp-prevent-close, .password-group .password-toggle, input {
-    background: #111;
-    color: #fff;
+.rj-vortex-button {
+	color: var(--theme-primary);
+	border-color: var(--theme-primary);
 }
-.head-nav.clearfix.pagenav > .clearfix.pagination > .clearfix > li > .mfp-prevent-close:hover {
-    background: #151515;
+.rj-vortex-button:hover {
+    background-color: var(--theme-primary);
 }
-button.rj-search-category-dropdown-toggle, .page-layout .donation-wrapper form .form-group > span, .select2-container--default .select2-selection--single .select2-selection__rendered, .ui-widget-content {
-    color: #fff;
+#rj-back-to-top.rj-hug-footer {
+	background-color: var(--theme-primary);
+	position: absolute;
 }
-.page-layout .donation-wrapper form input[type=text] {
-    border-color: #111;
+i.fa.fa-chevron-up {
+	text-align: center;
+	top: 27%;
+	left: 31%;
+	margin: 0;
+	position: absolute;
 }
-.select2-dropdown, .select2-container--default .select2-search--dropdown .select2-search__field {
-    border-color: #222;
+.bubble {
+	background-color: var(--theme-secondary);
 }
-.pagination ul li a.page-selected, .pagination ul li a.page-selected:hover {
-    color: #fff;
-    background: #3e3e3e !important;
+#rj-back-to-top {
+	background-color: var(--theme-primary-translucent);
 }
-.head-nav.clearfix.pagenav > .clearfix.pagination > .clearfix > .next > .mfp-prevent-close > .icon-arrow-thin > use, .bottom-nav.clearfix.pagenav > .clearfix.pagination > .clearfix > .next > .mfp-prevent-close > .icon-arrow-thin > use, .head-nav.clearfix.pagenav > .clearfix.pagination > .clearfix > .prev > .mfp-prevent-close > .icon-arrow-thin > use, .bottom-nav.clearfix.pagenav > .clearfix.pagination > .clearfix > .prev > .mfp-prevent-close > .icon-arrow-thin > use {
-    fill: #ccc;
+.rj-standard-button {
+	background-color: var(--theme-primary);
 }
-.select2-container--default .select2-selection--single .select2-selection__arrow b {
-    border-color: #ccc transparent transparent transparent;
+.rj-standard-button:hover {
+	background-color: var(--theme-secondary);
 }
-.ui-widget-shadow {
-    -webkit-box-shadow: -4px -4px 4px #222;
-    box-shadow: -4px -4px 4px #222;
-    background: #111;
-}
-.ui-widget.ui-widget-content {
-    border: 1px solid #57a5cc75;
-}
-input[type=text], input[type=password], input[type=email], select {
-    background-color: #111 !important;
-    color: rgba(255, 255, 255, .6);
-}
-.premium-banner {
-	background: rgba(34, 34, 34, .38);
-}
-.premium-banner > span, .premium-banner > i {
-	color: #fff;
-}
-div.floating-label label {
-    color: rgba(255, 255, 255, .6);
-}
-input[type=password]~.password-toggle {
-	color: #d1d5d9;
-}
-.dataTables_filter input {
-	color: #919191 !important;
-}
-.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
-    color: #ccc !important;
-    border-color: #676767;
-    background: linear-gradient(to bottom, #111 0%, #3c3c3c 100%);
+[src="/assets/images/footer/Vortex.svg"] {
+	-webkit-mask: url(/assets/images/footer/Vortex.svg) no-repeat center;
+	mask: url(/assets/images/footer/Vortex.svg) no-repeat center;
+	background-color: var(--theme-primary);
+	content: url('https://i.imgur.com/WFQNmEA.png');
+	image-rendering: auto;
 }
 
+
 .static .wrap:first-of-type {
-    background: rgba(56, 56, 56, .38) url(/assets/images/default/bg_game_0.png) 0 0 no-repeat;
+    background: rgba(56, 56, 56, .38);
 	backdrop-filter: blur(1rem);
 	-webkit-backdrop-filter: blur(1rem);
 }
@@ -196,7 +176,7 @@ li.article-tile > .mod-tile-left > .tile-data {
     background-color: rgba(69, 69, 69, .38);
     border-color: rgba(0, 0, 0, .38);
 }
-.edit-article-desc {
+.edit-article-desc, .articlepage article {
 	background-color: transparent;
 }
 section#rj-vortex {
@@ -209,6 +189,202 @@ section#rj-vortex {
 }
 #rj-footer svg, #rj-footer img {
 	filter: drop-shadow(1px 1px 1px #000);
+}
+figure.quote {
+    background: rgba(56, 56, 56, .38);
+}
+figure.quote .icon-quote {
+    fill: rgba(101, 101, 102, .38);
+}
+.col-1-1>.container, .modpage.mediapage .container.comments {
+    background: rgba(76, 76, 76, 0);
+}
+.mod-tile > div {
+	background-repeat: no-repeat;
+	background-position: -610px -120px, 0 0;
+	background-image: -webkit-linear-gradient(top left,rgba(255, 255, 255, .1) 0%,rgba(255, 255, 255, 0.1) 37%,rgba(255, 255, 255, 0.3) 45%,rgba(255, 255, 255, 0.0) 50%);
+	background-image: -moz-linear-gradient(0 0,rgba(255, 255, 255, 0.1) 0%,rgba(255, 255, 255, .1) 37%,rgba(255, 255, 255, 0.3) 45%,rgba(255, 255, 255, 0.0) 50%);    
+	background-image: -o-linear-gradient(0 0,rgba(255, 255, 255, 0.1) 0%,rgba(255, 255, 255, 0.1) 37%,rgba(255, 255, 255, 0.3) 45%,rgba(255, 255, 255, 0.0) 50%);
+	background-image: linear-gradient(0 0,rgba(255, 255, 255, 0.1) 0%,rgba(255, 255, 255, 0.1) 37%,rgba(255, 255, 255, 0.3) 45%,rgba(255, 255, 255, 0.0) 50%);
+	-moz-background-size: 250% 250%, 100% 100%;
+	background-size: 250% 250%, 100% 100%;
+	-webkit-transition: background-position, transform, text-shadow, box-shadow 0s ease-in;
+	-moz-transition: background-position, transform, text-shadow, box-shadow 0s ease-in;  
+	-o-transition: background-position, transform, text-shadow, box-shadow 0s ease-in;
+	transition: background-position, transform, text-shadow, box-shadow 0s ease-in;
+	transition-duration: 0.1s
+}
+#mod-list .mod-tile > div:hover {
+	background-position: 0 0, 0 0;
+	-webkit-transition-duration: 0.4s;
+	-moz-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	transform: scale(1.035);
+	text-shadow: 1px 1px 1px #000;
+	box-shadow: 0 0 1px #000;
+}
+.article-tile > div {
+	background-repeat: no-repeat;
+	background-position: -810px -120px, 0 0;
+	background-image: -webkit-linear-gradient(top left,rgba(255, 255, 255, .1) 0%,rgba(255, 255, 255, 0.1) 37%,rgba(255, 255, 255, 0.3) 45%,rgba(255, 255, 255, 0.0) 50%);
+	background-image: -moz-linear-gradient(0 0,rgba(255, 255, 255, 0.1) 0%,rgba(255, 255, 255, .1) 37%,rgba(255, 255, 255, 0.3) 45%,rgba(255, 255, 255, 0.0) 50%);    
+	background-image: -o-linear-gradient(0 0,rgba(255, 255, 255, 0.1) 0%,rgba(255, 255, 255, 0.1) 37%,rgba(255, 255, 255, 0.3) 45%,rgba(255, 255, 255, 0.0) 50%);
+	background-image: linear-gradient(0 0,rgba(255, 255, 255, 0.1) 0%,rgba(255, 255, 255, 0.1) 37%,rgba(255, 255, 255, 0.3) 45%,rgba(255, 255, 255, 0.0) 50%);
+	-moz-background-size: 250% 250%, 100% 100%;
+	background-size: 250% 250%, 100% 100%;
+	-webkit-transition: background-position, transform, text-shadow, box-shadow 0s ease-in;
+	-moz-transition: background-position, transform, text-shadow, box-shadow 0s ease-in;  
+	-o-transition: background-position, transform, text-shadow, box-shadow 0s ease-in;
+	transition: background-position, transform, text-shadow, box-shadow 0s ease-in;
+	transition-duration: 0.1s
+}
+.article-tile > div:hover {
+	background-position: 0 0, 0 0;
+	-webkit-transition-duration: 0.4s;
+	-moz-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	transform: scale(1.035);
+	text-shadow: 1px 1px 1px #000;
+	box-shadow: 0 0 1px #000;
+}
+.activity-desc {
+	background-color: rgba(56, 56, 56, .38);
+}
+ul.activity>li {
+	background-color: rgba(45, 45, 45, .38);
+}
+ul.rj-mobile-menu-subsections, #head .rj-header-wrap .rj-header-left, #head .rj-header-wrap .rj-header-right, .game-home-link {
+	background-color: transparent;
+}
+#head.new-head {
+	background-color: rgba(24, 24, 24, .38);
+	backdrop-filter: blur(1rem);
+	-webkit-backdrop-filter: blur(1rem);
+}
+.rj-nav-item:hover, .rj-nav-item.active {
+    background-color: rgba(43, 45, 47, .38);
+}
+form.rj-search .search-button, form.rj-search .rj-search-input {
+	background-color: rgba(0, 0, 0, .38);
+	color: #e8e8e8;
+}
+.rj-search-category-dropdown {
+	background-color: rgba(0, 0, 0, .38);
+	backdrop-filter: blur(1rem);
+	-webkit-backdrop-filter: blur(1rem);
+	color: #e8e8e8;
+}
+.rj-search-category-option:hover {
+    background-color: rgba(255, 255, 255, .08);
+}
+.rj-header-wrap.rj-search-active .search-button {
+	background-color: rgba(51, 51, 51, .38);
+}
+#qs_results {
+    background: rgba(44, 43, 43, .38);
+}
+#gsearch_results {
+    border-color: rgba(37, 37, 37, .38);
+    background: rgba(45, 45, 45, .38);
+	backdrop-filter: blur(1rem);
+	-webkit-backdrop-filter: blur(1rem);
+	box-shadow: inset 0 0 20rem 1rem rgba(0, 0, 0, .38);
+}
+#qsearch_results {
+	border-color: rgba(0, 0, 0, .38);
+}
+.gsearch_results_list li {
+	border-color: rgba(37, 37, 37, .38);
+	backdrop-filter: blur(1rem);
+	-webkit-backdrop-filter: blur(1rem);
+}
+.qs_result section>div {
+    background: rgba(56, 56, 56, .38);
+}
+.qs_result .stats {
+	background-color: transparent;
+}
+.qs_result h2 {
+    background: linear-gradient(to right,rgba(56, 56, 56, .38) 0,rgba(37, 37, 37, .38) 100%);
+}
+.gsearch_results_list li.active h2 {
+    background: linear-gradient(to right,rgba(56, 56, 56, .38) 0,rgba(44, 43, 43, .38) 100%);
+}
+.premium-banner {
+	background-color: rgba(34, 34, 34, .38);
+}
+.premium-banner > span, .premium-banner > i {
+	color: #fff;
+}
+.select2-container--default .select2-selection--single {
+	background-color: rgba(0, 0, 0, .38);
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+	color: #bbb;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border-color: #777 transparent transparent transparent;
+}
+.select2-container--default .select2-results__option[aria-selected=true] {
+	background-color: rgba(68, 68, 68, .38);
+}
+.select2-dropdown {
+	background-color: rgba(0, 0, 0, .38);
+	backdrop-filter: blur(1rem);
+	-webkit-backdrop-filter: blur(1rem);
+}
+.select2-results__option {
+	color: #aaa;
+}
+.select2-dropdown, .select2-dropdown--below {
+	border-color: rgba(76, 76, 76, .38);
+}
+.popup-mod-requirements ul {
+    background: rgba(34, 34, 34, .38);
+    border-color: rgba(136, 136, 136, .38);
+}
+.pagination ul li a.page-selected, .pagination ul li a.page-selected:hover {
+    background: rgba(62, 62, 62, .38);
+}
+.pagination ul li a, .pagination ul li a:hover, .pagination ul li a:focus {
+	color: #c8c8c8;
+}
+.pagination ul li a {
+	background-color: rgba(17, 17, 17, .38);
+}
+.pagination ul li.prev .icon-arrow-thin, .pagination ul li.next .icon-arrow-thin {
+	fill: #c8c8c8;
+}
+.pagination ul li a:hover, .pagination ul li a:focus, .pagination ul li.prev a:hover, .pagination ul li.prev a:focus, .pagination ul li.next a:hover, .pagination ul li.next a:focus {
+	background-color: rgba(0, 0, 0, .38);
+	color: #c8c8c8;
+}
+.select2-container--default .select2-search--dropdown .select2-search__field {
+	border-color: rgba(85, 85, 85, .38);
+	background-color: rgba(0, 0, 0, .38);
+	color: #aaa;
+}
+.article-actions {
+	background-color: rgba(32, 32, 32, .38);
+}
+.article-nav .article-label {
+	color: #a9a9a9;
+}
+.article-nav ul li:hover a {
+	background-color: rgba(24, 24, 24, .38);
+}
+.article-nav ul li a {
+	border-color: rgba(86, 86, 86, .38);
+}
+.article-nav ul li a .icon-arrow-thin {
+	fill: #bcbcbc;
+}
+.article-page {
+	background-color: rgba(76, 76, 76, .38);
+	text-shadow: 1px 1px 1px #000;
+}
+.article-page .comments {
+	border-color: rgba(56, 56, 56, .38);
 }
 }
 
@@ -271,9 +447,16 @@ body::before {
 }
 
 @-moz-document url-prefix("https://www.nexusmods.com/cyberpunk2077") {
+:root {
+    --theme-primary: rgb(255, 0, 60);
+    --theme-primary-translucent: rgba(255, 0, 60, .84);
+    --theme-secondary: rgb(198, 21, 62);
+    --theme-dark: rgb(138, 21, 48);
+}
 body::before {
 	background-image: url('https://wallpaperaccess.com/full/676037.jpg');
 }
+
 }
 
 @-moz-document url-prefix("https://www.nexusmods.com/oblivion") {
