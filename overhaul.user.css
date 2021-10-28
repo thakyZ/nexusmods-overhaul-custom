@@ -1,12 +1,24 @@
+/* ==UserStyle==
+@name           NexusMods Overhaul
+@namespace      github.com/blyad2137/nexusmods-overhaul
+@version        1.0.2
+@description    Overhauls look of nexusmods to be more 'modern', from lack of better word.
+@author         blyad (https://github.com/blyad2137)
+@license        CC BY-SA 4.0
+@homepageURL    https://github.com/blyad2137/nexusmods-overhaul
+@supportURL     https://github.com/blyad2137/nexusmods-overhaul/issues
+@updateURL      https://userstyles.world/api/style/925.user.css
+==/UserStyle== */
+
 @-moz-document domain("nexusmods.com") {
-::-webkit-scrollbar-track {
+		::-webkit-scrollbar-track {
              -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.3);
              border-radius: 2px;
              background-color: #212121;
         }
         html[hide-scrollbar="true"] ::-webkit-scrollbar{display:none}
         ::-webkit-scrollbar {
-             width: 10px;
+             width: 1em;
              background-color: #212121;
         }
         ::-webkit-scrollbar-thumb {
@@ -58,6 +70,9 @@ i.fa.fa-chevron-up {
 	background-color: var(--theme-primary);
 	content: url('https://i.imgur.com/WFQNmEA.png');
 	image-rendering: auto;
+}
+#rj-sitemap ul li a:hover {
+	color: var(--theme-primary);
 }
 
 
@@ -258,6 +273,12 @@ ul.rj-mobile-menu-subsections, #head .rj-header-wrap .rj-header-left, #head .rj-
 }
 #head.new-head {
 	background-color: rgba(24, 24, 24, .38);
+}
+#head.new-head::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
 	backdrop-filter: blur(1rem);
 	-webkit-backdrop-filter: blur(1rem);
 }
@@ -386,6 +407,284 @@ form.rj-search .search-button, form.rj-search .rj-search-input {
 .article-page .comments {
 	border-color: rgba(56, 56, 56, .38);
 }
+#head.new-head .headlogo svg {
+	filter: drop-shadow(1px 1px 1px #000);
+}
+.rj-search-category {
+    border-left-color: rgba(255, 255, 255, .08);
+}
+form.rj-search.open-category-select .rj-search-category-dropdown-toggle {
+    background-color: rgba(255, 255, 255, .08);
+}
+.rj-search-category-wrapper {
+	color: #e8e8e8;
+}
+.select2-container--default.select2-container--disabled .select2-selection--single, .searchtext, .select2-container--default .select2-selection--multiple, .ui-datepicker select.ui-datepicker-month, .ui-datepicker select.ui-datepicker-year {
+	background-color: rgba(0, 0, 0, .38);
+}
+.searchtext {
+	color: #bbb;
+}
+input[type="checkbox"] {
+	filter: invert(.835) hue-rotate(180deg);
+}
+.refine-results ul.choice-list, .range-area {
+	background-color: rgba(76, 76, 76, .38);
+}
+a.mod-image {
+	background-color: rgba(56, 56, 56, .38);
+}
+.mod-tile-left, figure.image_figure .fore_div img, figure.image_figure .fore_div_mods img {
+	background-color: transparent;
+}
+.game-filter form input {
+	color: #919191;
+	background-color: rgba(0, 0, 0, .38);
+}
+[style="position: absolute; top: 72px; z-index: 9999; background-color: rgb(76, 76, 76); border: 1px solid rgb(225, 225, 225); padding: 8px 16px;"] {
+	background-color: rgba(76, 76, 76, .38) !important;
+	border-color: rgba(17, 17, 17, .38) !important;
+}
+.date_selector {
+	background-color: rgba(0, 0, 0, .38);
+	color: #bbb;
+}
+.ui-widget-content {
+	background-color: rgba(34, 34, 34, .38);
+	border-color: rgba(64, 64, 64, .38);
+	color: #919191;
+	backdrop-filter: blur(1rem);
+	-webkit-backdrop-filter: blur(1rem);
+}
+.ui-widget-header {
+	background-color: rgba(64, 64, 64, .38);
+	border-color: rgba(64, 64, 64, .38);
+	color: #bbb;
+}
+.ui-datepicker select.ui-datepicker-month option, .ui-datepicker select.ui-datepicker-year option {
+	background-color: #383838;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+	background-color: rgba(0, 0, 0, 0);
+}
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+	border-color: rgba(51, 51, 51, .38);
+	color: #bbb;
+}
+.btn-inactive, .btn:disabled {
+    background-color: #565656 !important;
+	color: #000 !important;
+}
+.btn-inactive .icon, .btn:disabled .icon {
+	fill: #000;
+}
+#rj-sitemap ul li a.rj-standard-button {
+	color: #fff;
+}
+.rj-user-nav .nav-interact .ni-background {
+    background-color: rgba(43, 45, 47, .38);
+}
+section#rj-sitemap {
+    border-image-source: linear-gradient(to right,rgba(255,255,255,0),rgba(255, 255, 255, .38) 52%,rgba(255,255,255,0));
+}
+.rj-header-tray {
+    background-color: rgba(43, 45, 47, .38);
+	backdrop-filter: blur(1rem);
+	-webkit-backdrop-filter: blur(1rem);
+}
+.rj-header-full-width-banner {
+	background-color: rgba(24, 24, 24, .38);
+}
+.rj-panel.rj-panel-border:hover>.rj-panel-inner {
+    background-color: rgba(77, 79, 80, .38);
+}
+.rj-panel.rj-panel-border>.rj-panel-inner {
+    background-color: rgba(60, 61, 63, .38);
+}
+.rj-panel.rj-panel-border {
+    background: linear-gradient(180deg,rgba(217, 143, 64, .38),rgba(255,255,255,0.16));
+}
+.rj-right-tray {
+    background-color: rgba(43, 45, 47, .38);
+	backdrop-filter: blur(1rem);
+	-webkit-backdrop-filter: blur(1rem);
+}
+.rj-tray-section.section-dark {
+    background-color: rgba(34, 34, 34, .38);
+}
+.rj-right-tray .arrow {
+    border-bottom-color: rgba(43, 45, 47, .38);
+}
+.rj-right-tray .arrow::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	filter: blur(1rem);
+}
+.rj-tray-section.section-dark.link-section:hover {
+    background-color: rgba(43, 45, 47, .38);
+}
+.widget-mod-requirements.popup.mfp-with-anim.col-1-1.popup-mod-requirements {
+	backdrop-filter: blur(1rem);
+	-webkit-backdrop-filter: blur(1rem);
+}
+div.bbc_spoiler_content {
+    background: rgba(38, 38, 38, .38);
+    border-color: rgba(59, 59, 59, .38);
+}
+.notifications-header, .notification-preferences-header {
+    background-color: rgba(43, 45, 47, .38);
+}
+.notifications-list, .notification-load-more, .notification-preferences-menu {
+    background-color: rgba(34, 34, 34, .38);
+}
+#featured #nofeature #pagetitle {
+    background: -webkit-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,.38) 100%);
+    background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.38) 100%);
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    color: #ccc !important;
+    border-color: rgba(103, 103, 103, .38);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, .38)), color-stop(100%, rgba(60, 60, 60, .38)));
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, .38) 0%, rgba(60, 60, 60, .38) 100%);
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, .38) 0%, rgba(60, 60, 60, .38) 100%);
+    background: -ms-linear-gradient(top, rgba(0, 0, 0, .38) 0%, rgba(60, 60, 60, .38) 100%);
+    background: -o-linear-gradient(top, rgba(0, 0, 0, .38) 0%, rgba(60, 60, 60, .38) 100%);
+    background: linear-gradient(to bottom, gba(0, 0, 0, .38) 0%, rgba(60, 60, 60, .38) 100%);
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
+	color: #999 !important;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    border-color: rgba(17, 17, 17, .38);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(88, 88, 88, .38)), color-stop(100%, rgba(17, 17, 17, .38)));
+    background: -webkit-linear-gradient(top, rgba(88, 88, 88, .38) 0%, rgba(17, 17, 17, .38) 100%);
+    background: -moz-linear-gradient(top, rgba(88, 88, 88, .38) 0%, rgba(17, 17, 17, .38) 100%);
+    background: -ms-linear-gradient(top, rgba(88, 88, 88, .38) 0%, rgba(17, 17, 17, .38) 100%);
+    background: -o-linear-gradient(top, rgba(88, 88, 88, .38) 0%, rgba(17, 17, 17, .38) 100%);
+    background: linear-gradient(to bottom, rgba(88, 88, 88, .38) 0%, rgba(17, 17, 17, .38) 100%);
+}
+.dataTables_filter input, input.form-field {
+	color: #919191 !important;
+	background-color: rgba(0, 0, 0, .38);
+}
+table.dataTable tbody tr, .form-section-content .select2-container--default .select2-selection--single {
+	background-color: rgba(0, 0, 0, .38);
+}
+td.tracking-mod .tracking-icon {
+    background: rgba(45, 45, 45, .38);
+}
+.table td {
+    border-top-color: rgba(73, 73, 73, .38);
+    background: rgba(56, 56, 56, .38);
+}
+table.dataTable.no-footer {
+	border-bottom-color: rgba(17, 17, 17, .38);
+}
+table.dataTable thead th, table.dataTable thead td {
+    border-bottom-color: rgba(17, 17, 17, .38);
+}
+.form-section-content, .media-section-content {
+    background: rgba(56, 56, 56, .38);
+}
+.form-section header, textarea.application-key, .application-image-container {
+    background: rgba(45, 45, 45, .38);
+}
+}
+
+@-moz-document domain("help.nexusmods.com") {
+::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    -webkit-box-shadow: inset 0 0 6px rgb(0 0 0 / 60%);
+    background: #34d6ff;
+}
+
+#docsSearch {
+	background-color: rgba(43, 45, 47);
+	border-color: rgba(65, 65, 65);
+}
+body {
+	background-color: #222;
+}
+textarea, input[type=text], input[type=password], input[type=datetime], input[type=datetime-local], input[type=date], input[type=month], input[type=time], input[type=week], input[type=number], input[type=email], input[type=url], input[type=search], input[type=tel], input[type=color], .uneditable-input {
+	background-color: #181818;
+	border-color: rgba(65, 65, 65);
+	color: #fff;
+}
+.category-list .category:hover {
+	background-color: rgba(43, 45, 47);
+}
+.category-list h3 {
+	color: #ccc;
+}
+.category-list .category {
+	border-color: rgba(65, 65, 65);
+}
+#sidebar form .search-query {
+	border-color: rgba(65, 65, 65);
+	color: #999;
+}
+#sidebar h3, #sidebar .nav-list .active a, #sidebar .nav-list .active a:hover, #sidebar .nav-list .active a:focus, #sidebar .nav-list a:hover, #sidebar .nav-list a:focus, footer p a:hover, #fullArticle h1, #fullArticle h2, #fullArticle h3, #fullArticle h4, #fullArticle h5 {
+	color: #ddd;
+}
+#sidebar .nav-list a, .contentWrapper p.descrip {
+	color: #959595;
+}
+.nav-list>li>a, .nav-list .nav-header {
+    text-shadow: 0 1px 0 rgba(24, 24, 24, .5);
+}
+.contentWrapper {
+	background-color: #181818;
+	border-color: rgba(65, 65, 65);
+	color: #ddd;
+}
+.icon-article-doc:before {
+	color: #676767;
+}
+select {
+	background-color: #181818;
+	border-color: rgba(65, 65, 65);
+}
+select, textarea, input[type=text], input[type=password], input[type=datetime], input[type=datetime-local], input[type=date], input[type=month], input[type=time], input[type=week], input[type=number], input[type=email], input[type=url], input[type=search], input[type=tel], input[type=color], .uneditable-input {
+	color: #aaa;
+}
+footer p a, footer p {
+	color: #7b7b7b;
+}
+[class^=icon-], [class*=" icon-"], .featherlight-close-icon {
+	color: #464646;
+}
+#fullArticle .printArticle:hover .icon-print {
+	color: #686868;
+}
+#fullArticle table th, #fullArticle table td, #fullArticle img {
+	border-color: rgba(59, 59, 59);
+}
+#fullArticle, #fullArticle p, #fullArticle ul, #fullArticle ol, #fullArticle li, #fullArticle div, #fullArticle blockquote, #fullArticle dd, #fullArticle table {
+	color: #a8a8a8;
+}
+.articleFoot p, .articleFoot time {
+	color: #606060;
+}
+.related {
+	background-color: #181818;
+	border-color: rgba(65, 65, 65);
+}
+.related h3 {
+	color: #bdbdbd;
+}
+#fullArticle strong {
+	color: #b9b9b9;
+}
+}
+
+@-moz-document domain("wiki.nexusmods.com") {
+::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    -webkit-box-shadow: inset 0 0 6px rgb(0 0 0 / 60%);
+    background: #e6832b;
+}
 }
 
 @-moz-document domain("forums.nexusmods.com") {
@@ -410,15 +709,22 @@ input[type=text], input[type=password], input[type=email], select {
 }
 }
 
-@-moz-document url-prefix("https://www.nexusmods.com/newvegas") {
-body::before {
-	background-image: url('https://i.redd.it/8qtlmjh77m511.jpg');
-}
-}
-
 @-moz-document url-prefix("https://www.nexusmods.com/fallout4") {
 body::before {
 	background-image: url('https://wallpaperaccess.com/full/720318.jpg');
+}
+}
+
+@-moz-document url-prefix("https://www.nexusmods.com/newvegas"), url-prefix("https://www.nexusmods.com/fallout4/mods/55215") {
+body.scheme-theme-Fallout {
+    --theme-primary: #da8e35;
+    --theme-primary-translucent: #da8e35d8;
+    --theme-secondary: #b4762c;
+    --theme-dark: #815316;
+}
+
+body::before {
+	background-image: url('https://i.redd.it/8qtlmjh77m511.jpg');
 }
 }
 
@@ -556,8 +862,24 @@ body::before {
 }
 
 @-moz-document url-prefix("https://www.nexusmods.com/darkestdungeon") {
+:root {
+    --theme-primary: #000;
+    --theme-primary-translucent: #000000d8;
+    --theme-secondary: #000;
+    --theme-dark: #000;
+}
+
 body::before {
 	background-image: url('https://7wallpapers.net/wp-content/uploads/9_Darkest-Dungeon.jpg');
+}
+#head.new-head .headlogo svg, .rj-vortex-icon-wrapper, .rj-vortex-button, #rj-footer svg, #rj-footer img, ul.action-log>li, ul.btnexpand:hover, figure.quote, .comments figure.quote, .wysibb .wysibb-text blockquote, .rvs-container .rvs-nav-item.rvs-active, .rj-btn.rj-button-outline, a.rj-btn.rj-button-outline, blockquote.ipsBlockquote, .motm_position, ul.friend-actions .btn, .widget-download-links .btn, .popup-register-copy .btn, .btn.signin, .btn-more .btn, .home-buttons .btn, .btn-load, .form-section-content .btn, ul.file-actions .btn, .add-clone, .form-section .btn.btnsmall, .add-nav .btn, .modactions .btn, .mobile-close, ul.actions .btn, #foot #backtop .btn, #usernav ul li a, #footbtn .btn, form.search input.btn, ul.search-terms li:after, .accordion dt .acc-status, .fake-accordion .acc-status, .acc-status, .tiles .btnexpand ul li, ul.btnexpand:hover, ul.btnexpand:focus, .popup .mfp-close, .tiles .view-label, .tracking-highlight span.update-bar, .edit, .crop, .set-primary, ul.add-process li.current:before, .select2-container--default .select2-selection--multiple .select2-selection__choice__remove, .info.callout, #mobilebtn, nav#mobilenav #mobile-user ul li a, ul#mobile-primary li a, .rvs-container .rvs-nav-item.rvs-active, .irs-bar, #head .btn, a.btn, .btn, .btn:visited, .toggle-button, .toggle-button:active, .toggle-button:visited, .rj-button-outline:hover, a.rj-button-outline:hover, .arrow-box, a.post-category.site-news, .select2-container--default .select2-results__option--highlighted[aria-selected], #rj-back-to-top.rj-hug-footer, .bubble, .rj-standard-button, ul.friend-actions .btn:hover, ul.friend-actions .btn:focus, .btn.signin:hover, .popup-register-copy .btn:hover, .popup-register-copy .btn:focus, .btn-more .btn:hover, .btn-more .btn:focus, .home-buttons .btn:hover, .home-buttons .btn:focus, .btn-load:hover, .btn-load:focus, .form-section-content .btn:hover, .form-section-content .btn:focus, ul.file-actions .btn:hover, ul.file-actions .btn:focus, .add-clone:hover, .add-clone:focus, .form-section .btn.btnsmall:hover, .form-section .btn.btnsmall:focus, .add-nav .btn:hover, .add-nav .btn:focus, .modactions .btn:hover, .modactions .btn:focus, .mobile-close:hover, .mobile-close:focus, ul.actions .btn:hover, ul.actions .btn:focus, #foot #backtop .btn:hover, #foot #backtop .btn:focus, #footbtn .btn:hover, #footbtn .btn:focus, #head .btn:hover, #head .btn:focus, #usernav ul li:hover a, #usernav ul li:focus a, form.search input.btn:hover, form.search input.btn:focus, ul.btnexpand li ul li:hover, ul.btnexpand li ul li:focus, .popup .mfp-close:hover, .popup .mfp-close:focus, .edit:hover, .edit:focus, .crop:hover, .crop:focus, .set-primary:hover, .set-primary:focus, #mobilebtn:hover, #mobilebtn:focus, .rvs-container .rvs-nav-item.rvs-active:hover, .rvs-container .rvs-nav-item.rvs-active:focus, a.btn:hover, .btn:hover, .actions .drop-down .btn:hover, .actions .drop-down .btn:focus, .drop-down:hover>#button-manage, a.btn:focus, .btn:focus, span.alert, .arrow-box:hover {
+	filter: drop-shadow(1px 1px 3px #bd0707);
+}
+.home-trending ul.tiles ul.inline-list a:hover, .arrowlist a:hover, .widget-download-links .btn:hover, .widget-download-links .btn:focus, .popup-register-copy p a:hover, .popup .info-content a:hover, ol.pick-page a:hover, p#opening a:hover, .add-file p a:hover, .tabcontent a:hover, dd a:hover, article a:hover, article a:focus, article a:active, .sideitem a:hover, ul.post-meta a:hover, .article-copy p a:hover, #mobile-fav .mobile-header a:hover, .quote-meta a:hover, .tiles .author a:hover, .comment-name a:hover, ul.comment-inline a:hover, article p a:hover, #copyright a:hover, a.fav-edit:hover, #name a:hover, ul#breadcrumb li a:hover, a.clear-cat:hover, .tiles .category a:hover, nav#menu .wrap ul li.nav-games ul li a:hover, #rj-sitemap ul li a:hover {
+	text-shadow: 1px 1px 5px #d50707;
+}
+.home-trending ul.tiles ul.inline-list a, .arrowlist a, .popup-register-copy p a, .popup .info-content a, ol.pick-page a, p#opening a, .add-file p a, .tabcontent a, dd a, article a, .sideitem a, ul.post-meta a, .article-copy p a, #mobile-fav .mobile-header a, .quote-meta a, .comment-name a, ul.comment-inline a, article p a, #copyright a, a.fav-edit, .tiles .author a, a.clear-cat, ul#breadcrumb li a, .topnav ul.global li a:hover, nav#menu .wrap ul li ul li a:hover, nav#menu .wrap ul li.nav-games ul li a, div.container a, ul.sublist li a:hover, div.container .actions ul.sublist li a:hover, a.view-all:hover, .featured-article h2 a:hover, .tiles .tile-desc h3 a:hover, .tiles .category a, .tiles .tile-data ul li a:hover, ul.tracking-author-options li a:hover, .file-manage-title h3 a:hover, #sitemap ul.footlinks li a:hover, ul#mobile-primary li#mobile-updates .updatedesc a, #name a, .stat-endorsements a:link, .stat-endorsements a:visited, .stat-endorsements a:active, .user-list-details a, .category-item a .category-name, li .log-modified a, li .log-modified a:visited, .category-item a:visited .category-name, .breadcrumb a, #ajgpermalink, a.theme-link, .gsearch_results_list li.active h3, .top-lists-links a:link, .top-lists-links a:visited, .notification-actions a.set-notification-read, .notification-actions a.set-notification-read:visited {
+	text-shadow: 1px 1px 2px #bd0707;
 }
 }
 
@@ -627,12 +949,6 @@ body::before {
 }
 }
 
-@-moz-document url-prefix("https://www.nexusmods.com/kotor") {
-body::before {
-	background-image: url('https://wallpaperaccess.com/full/467182.jpg');
-}
-}
-
 @-moz-document url-prefix("https://www.nexusmods.com/mbwarband") {
 body::before {
 	background-image: url('https://wallpaperaccess.com/full/3206100.jpg');
@@ -646,6 +962,12 @@ body::before {
 }
 
 @-moz-document url-prefix("https://www.nexusmods.com/residentevil32020") {
+:root {
+    --theme-primary: rgb(233, 33, 17);
+    --theme-primary-translucent: rgba(232, 32, 17, .85);
+    --theme-secondary: rgb(172, 46, 35);
+    --theme-dark: rgb(132, 23, 15);
+}
 body::before {
 	background-image: url('https://i.redd.it/xytj0c6i2g441.png');
 }
