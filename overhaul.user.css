@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           NexusMods Overhaul
 @namespace      github.com/blyad2137/nexusmods-overhaul
-@version        1.0.2
+@version        1.0.3
 @description    Overhauls look of nexusmods to be more 'modern', from lack of better word.
 @author         blyad (https://github.com/blyad2137)
 @license        CC BY-SA 4.0
@@ -58,7 +58,7 @@ i.fa.fa-chevron-up {
 #rj-back-to-top {
 	background-color: var(--theme-primary-translucent);
 }
-.rj-standard-button {
+.rj-standard-button, .page-layout .donation-wrapper form input[type=submit], .notification-indicator, .notification-preferences-body input:checked + .notification-preference-slider:before, .rj-btn.rj-btn-standard, .rj-btn:hover {
 	background-color: var(--theme-primary);
 }
 .rj-standard-button:hover {
@@ -71,8 +71,17 @@ i.fa.fa-chevron-up {
 	content: url('https://i.imgur.com/WFQNmEA.png');
 	image-rendering: auto;
 }
-#rj-sitemap ul li a:hover {
+#rj-sitemap ul li a:hover, .page-layout .table table tfoot a.replaced-login-link, .page-layout .donation-wrapper > p > p > a, .page-layout .author > span, .notifications-header a, .notifications-list ul li .notification-bold {
 	color: var(--theme-primary);
+}
+.rj-orange, a:link.rj-orange, a:active.rj-orange {
+	color: var(--theme-primary) !important;
+}
+.rj-btn, a.rj-btn, button.rj-btn {
+	border-color: var(--theme-primary);
+}
+.rj-btn.rj-btn-outline:hover, .notification-preferences-body input:checked + .notification-preference-slider, .rj-btn.rj-btn-standard:hover {
+	background-color: var(--theme-secondary);
 }
 
 
@@ -147,7 +156,7 @@ li.article-tile > .mod-tile-left > .tile-data {
 .modpage .sideitems {
     border-bottom-color: rgba(56, 56, 56, .38);
 }
-.modpage .col-1-1 {
+.modpage .col-1-1:not(.popup-bugreport > .col-1-1) {
     background-color: rgba(76, 76, 76, .38);
 }
 .accordion dt:hover {
@@ -591,6 +600,188 @@ table.dataTable thead th, table.dataTable thead td {
 .form-section header, textarea.application-key, .application-image-container {
     background: rgba(45, 45, 45, .38);
 }
+.line {
+    border-bottom-color: rgba(225, 225, 225, .38);
+}
+.page-layout .donation-panel {
+    border-color: rgba(136, 136, 136, .38);
+    background-color: rgba(34, 34, 34, .38);
+}
+.page-layout .donation-wrapper form input[type=text] {
+	color: #e0e0e0;
+	background-color: rgba(0, 0, 0, .38);
+}
+.page-layout .donation-wrapper form .form-group > span {
+	color: #e0e0e0;
+}
+.rj-btn.rj-btn-outline, .rj-btn.rj-btn-standard {
+	text-shadow: 1px 1px 1px #000;
+}
+div#mainContent > .tabcontent.tabcontent-mod-page[aria-live="assertive"] {
+	backdrop-filter: blur(1rem);
+	-webkit-backdrop-filter: blur(1rem);
+}
+.forum-bugs td.bug-comment {
+	background-color: rgba(32, 32, 32, .38);
+}
+.forum-bugs .comments>ol>li:first-of-type:before {
+	background-color: rgba(45, 45, 45, .38);
+}
+.info.warning {
+    background-color: transparent;
+	position: relative;
+}
+.info .info-content::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	margin: 0;
+	background-color: var(--theme-primary);
+	opacity: .38;
+	z-index: 2;
+}
+.info .info-content::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	margin: 0;
+	backdrop-filter: blur(1rem);
+	z-index: 0;
+}
+.info .info-content > h3, .info .info-content > p, .info > svg {
+	z-index: 3;
+	position: relative;
+	text-shadow: 1px 1px 1px #000000ba;
+}
+input#user_login, input#password, input#otp_attempt, input#real_name, select {
+	background-color: rgba(0, 0, 0, .38);
+	color: rgba(255, 255, 255, .6);
+}
+div.floating-label label, .password-group input[type=password]~.password-toggle>i, .password-group input[type=text]~.password-toggle>i {
+	color: rgba(255, 255, 255, .6);
+}
+.password-group .password-toggle {
+	background-color: rgba(0, 0, 0, .38);
+}
+.password-group .password-toggle:focus {
+	background-color: rgba(51, 51, 51, .38);
+}
+.jumbotron {
+	background-color: rgb(41, 44, 47);
+}
+#game-blurb {
+	border-top-color: rgba(255, 255, 255, .38);
+}
+.btn-active, #graph-widget-container .active {
+	background-color: rgba(40, 40, 40, .38) !important;
+}
+.popup-bugreport.popup.mfp-with-anim.col-1-1 > .col-1-1, .wysibb, textarea#add-bugreport-post {
+	background-color: transparent;
+}
+.wysibb .wysibb-text {
+    background: rgba(56, 56, 56, .38);
+}
+.wysibb {
+	border-color: #444;
+	color: #fff;
+}
+.wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn:hover .fonticon {
+	color: #fff;
+}
+.wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn:hover {
+	background-color: rgba(17, 17, 17, .38);
+}
+.wysibb .wysibb-toolbar .wysibb-toolbar-container {
+	border-color: #444;
+}
+#wbbmodal .wbbm {
+    background: rgba(0, 0, 0, .38);
+    border-color: rgba(68, 68, 68, .38);
+    box-shadow: 0 0 5px rgba(51, 51, 51, .38);
+	backdrop-filter: blur(1rem);
+	-webkit-backdrop-filter: blur(1rem);
+}
+#wbbmodal .wbbm-title {
+	color: #ccc;
+	border-color: rgba(51, 51, 51, .38);
+}
+#wbbmodal .div-modal-text {
+	border-color: rgba(85, 85, 85, .38);
+	color: #919191;
+}
+#wbbmodal .wbbm-inp-row label {
+	color: #919191;
+}
+#wbbmodal .wbbm-inp-row input {
+	border-color: rgba(85, 85, 85, .38);
+	color: #919191;
+	background-color: transparent;
+}
+#wbbmodal .wbbm-bottom {
+	background-color: rgba(1, 1, 1, .38);
+	border-color: rgba(51, 51, 51, .38);
+}
+#wbbmodal .wbb-cancel-button:hover {
+    background: rgba(0, 0, 0, .38);
+    border-color: rgba(51, 51, 51, .38);
+}
+#wbbmodal .wbb-cancel-button {
+    background: rgba(5, 5, 5, .38);
+    border-color: rgba(68, 68, 68, .38);
+	color: #ccc;
+}
+.wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn.on, .wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn.on:hover, .wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn:active {
+    background: rgba(51, 51, 51, .38);
+    box-shadow: inset 0 0 3px rgba(85, 85, 85, .38);
+    border-color: rgba(85, 85, 85, .38);
+}
+.wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn.on .fonticon {
+	color: #fff;
+}
+.wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn .fonticon {
+    color: #ccc;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, .38);
+}
+.wysibb .wysibb-toolbar {
+	border-color: rgba(68, 68, 68, .38);
+}
+.wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn.wbb-select:hover, .wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn.wbb-dropdown:hover, .wbb-select .option:hover, .wbb-list .nc:hover {
+	background-color: rgba(17, 17, 17, .38);
+}
+.wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn.wbb-select.on, .wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn.wbb-select.on:active {
+    border-color: rgba(85, 85, 85, .38);
+    background: rgba(51, 51, 51, .38);
+    box-shadow: inset 0 0 3px rgba(85, 85, 85, .38);
+}
+.wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn .wbb-list {
+    border-color: rgba(68, 68, 68, .38);
+    box-shadow: 0 0 3px rgba(85, 85, 85, .38);
+    background: rgba(0, 0, 0, .38);
+	backdrop-filter: blur(1rem);
+	-webkit-backdrop-filter: blur(1rem);
+}
+.wbb-list .nc, .comment-reply textarea {
+	color: #999;
+}
+.wbb-list .sc {
+	border-color: rgba(0, 0, 0, .38);
+}
+.wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn.wbb-dropdown.on, .wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn.wbb-dropdown.on:active {
+    border-color: rgba(85, 85, 85, .38);
+    background: rgba(51, 51, 51, .38);
+    box-shadow: inset 0 0 3px rgba(85, 85, 85, .38);
+}
+.popup {
+	background-color: rgba(76, 76, 76, .38);
+	backdrop-filter: blur(1rem);
+	-webkit-backdrop-filter: blur(1rem);
+}
 }
 
 @-moz-document domain("help.nexusmods.com") {
@@ -715,7 +906,7 @@ body::before {
 }
 }
 
-@-moz-document url-prefix("https://www.nexusmods.com/newvegas"), url-prefix("https://www.nexusmods.com/fallout4/mods/55215") {
+@-moz-document url-prefix("https://www.nexusmods.com/newvegas"), url-prefix("https://www.nexusmods.com/fallout4/mods/55215"), url-prefix("https://www.nexusmods.com/fallout4/mods/55332"), url-prefix("https://www.nexusmods.com/fallout4/mods/55382") {
 body.scheme-theme-Fallout {
     --theme-primary: #da8e35;
     --theme-primary-translucent: #da8e35d8;
