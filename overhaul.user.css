@@ -1,1273 +1,1514 @@
 /* ==UserStyle==
 @name           NexusMods Overhaul
 @namespace      github.com/blyad2137/nexusmods-overhaul
-@version        1.0.3
-@description    Overhauls look of nexusmods to be more 'modern', from lack of better word.
+@version        1.0.4
+@description    `Overhauls look of nexusmods to be more 'modern', from lack of better word.`
 @author         blyad (https://github.com/blyad2137)
-@license        CC BY-SA 4.0
+@license        CC BY-NC-SA 4.0
 @homepageURL    https://github.com/blyad2137/nexusmods-overhaul
 @supportURL     https://github.com/blyad2137/nexusmods-overhaul/issues
 @updateURL      https://userstyles.world/api/style/925.user.css
 ==/UserStyle== */
 
 @-moz-document domain("nexusmods.com") {
-		::-webkit-scrollbar-track {
-             -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.3);
-             border-radius: 2px;
-             background-color: #212121;
-        }
-        html[hide-scrollbar="true"] ::-webkit-scrollbar{display:none}
-        ::-webkit-scrollbar {
-             width: 1em;
-             background-color: #212121;
-        }
-        ::-webkit-scrollbar-thumb {
-             border-radius: 2px;
-             -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .6);
-             background: var(--theme-primary);
-        }
+			::-webkit-scrollbar-track {
+				 -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.3);
+				 border-radius: 2px;
+				 background-color: #212121;
+			}
+			html[hide-scrollbar="true"] ::-webkit-scrollbar{display:none}
+			::-webkit-scrollbar {
+				 width: 1em;
+				 background-color: #212121;
+			}
+			::-webkit-scrollbar-thumb {
+				 border-radius: 2px;
+				 -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .6);
+				 background: var(--theme-primary);
+			}
 
-span.tooltip.tooltipstered {
-    background: #0000 !important;
-}
-body.scheme-theme-Fallout .mod-tile-left .mod-tile-dl-status {
-    background-color: #92ab20D8 !important;
-    color: #fff !important;
-}
-.rj-vortex-button {
-	color: var(--theme-primary);
-	border-color: var(--theme-primary);
-}
-.rj-vortex-button:hover {
-    background-color: var(--theme-primary);
-}
-#rj-back-to-top.rj-hug-footer {
-	background-color: var(--theme-primary);
-	position: absolute;
-}
-i.fa.fa-chevron-up {
-	text-align: center;
-	top: 27%;
-	left: 31%;
-	margin: 0;
-	position: absolute;
-}
-.bubble {
-	background-color: var(--theme-secondary);
-}
-#rj-back-to-top {
-	background-color: var(--theme-primary-translucent);
-}
-.rj-standard-button, .page-layout .donation-wrapper form input[type=submit], .notification-indicator, .notification-preferences-body input:checked + .notification-preference-slider:before, .rj-btn.rj-btn-standard, .rj-btn:hover {
-	background-color: var(--theme-primary);
-}
-.rj-standard-button:hover {
-	background-color: var(--theme-secondary);
-}
-[src="/assets/images/footer/Vortex.svg"] {
-	-webkit-mask: url(/assets/images/footer/Vortex.svg) no-repeat center;
-	mask: url(/assets/images/footer/Vortex.svg) no-repeat center;
-	background-color: var(--theme-primary);
-	content: url('https://i.imgur.com/WFQNmEA.png');
-	image-rendering: auto;
-}
-#rj-sitemap ul li a:hover, .page-layout .table table tfoot a.replaced-login-link, .page-layout .donation-wrapper > p > p > a, .page-layout .author > span, .notifications-header a, .notifications-list ul li .notification-bold {
-	color: var(--theme-primary);
-}
-.rj-orange, a:link.rj-orange, a:active.rj-orange {
-	color: var(--theme-primary) !important;
-}
-.rj-btn, a.rj-btn, button.rj-btn {
-	border-color: var(--theme-primary);
-}
-.rj-btn.rj-btn-outline:hover, .notification-preferences-body input:checked + .notification-preference-slider, .rj-btn.rj-btn-standard:hover {
-	background-color: var(--theme-secondary);
-}
+	span.tooltip.tooltipstered {
+		background-color: #0000 !important;
+	}
+	body.scheme-theme-Fallout .mod-tile-left .mod-tile-dl-status {
+		background-color: #92ab20D8 !important;
+		color: #fff !important;
+	}
+	.rj-vortex-button {
+		color: var(--theme-primary);
+		border-color: var(--theme-primary);
+	}
+	.rj-vortex-button:hover {
+		background-color: var(--theme-primary);
+	}
+	#rj-back-to-top.rj-hug-footer {
+		background-color: var(--theme-primary);
+		position: absolute;
+	}
+	i.fa.fa-chevron-up {
+		text-align: center;
+		top: 27%;
+		left: 31%;
+		margin: 0;
+		position: absolute;
+	}
+	.bubble {
+		background-color: var(--theme-secondary);
+	}
+	#rj-back-to-top {
+		background-color: var(--theme-primary-translucent);
+	}
+	.rj-standard-button, .page-layout .donation-wrapper form input[type=submit], .notification-indicator, .notification-preferences-body input:checked + .notification-preference-slider:before, .rj-btn.rj-btn-standard, .rj-btn:hover, .add-game-button {
+		background-color: var(--theme-primary);
+	}
+	.rj-standard-button:hover, .title-with-pip .pip {
+		background-color: var(--theme-secondary);
+	}
+	[src="/assets/images/footer/Vortex.svg"] {
+		-webkit-mask: url(/assets/images/footer/Vortex.svg) no-repeat center;
+		mask: url(/assets/images/footer/Vortex.svg) no-repeat center;
+		background-color: var(--theme-primary);
+		content: url('https://i.imgur.com/WFQNmEA.png');
+		image-rendering: auto;
+	}
+	#rj-sitemap ul li a:hover, .page-layout .table table tfoot a.replaced-login-link, .page-layout .donation-wrapper > p > p > a, .page-layout .author > span, .notifications-header a, .notifications-list ul li .notification-bold, .page-layout .back-wrapper a span, .page-layout .back-wrapper a i, .page-layout tbody td:last-child, .table .orange {
+		color: var(--theme-primary);
+	}
+	.rj-orange, a:link.rj-orange, a:active.rj-orange {
+		color: var(--theme-primary) !important;
+	}
+	.rj-btn, a.rj-btn, button.rj-btn {
+		border-color: var(--theme-primary);
+	}
+	.rj-btn.rj-btn-outline:hover, .notification-preferences-body input:checked + .notification-preference-slider, .rj-btn.rj-btn-standard:hover {
+		background-color: var(--theme-secondary);
+	}
+	#qs_close:hover {
+		color: var(--theme-primary);
+		border-color: rgba(44, 43, 43, .38);
+	}
+	#qs_pagination a {
+		border-color: rgba(44, 43, 43, .38);
+	}
 
 
-.static .wrap:first-of-type {
-    background: rgba(56, 56, 56, .38);
-	backdrop-filter: blur(1rem);
-	-webkit-backdrop-filter: blur(1rem);
-}
-.static .wrap {
-	background-color: rgba(56, 56, 56, .38);
-	backdrop-filter: blur(1rem);
-	-webkit-backdrop-filter: blur(1rem);
-}
-.tabcontent {
-    background-color: rgba(68, 68, 68, .38);
-}
-ul.modtabs {
-	background-color: rgba(45, 45, 45, .38);
-}
-ul.modtabs li {
-	background-color: transparent;
-}
-ul.modtabs li a.selected {
-	background-color: rgba(68, 68, 68, .38);
-	border-right-color: rgba(76, 76, 76, .38);
-}
-ul.modtabs li a:last-of-type:hover {
-    border-right-color: rgba(65, 65, 65, .38);
-}
-ul.modtabs li a {
-    border-right-color: rgba(61, 61, 61, .38);
-}
-ul.modtabs li a:hover {
-	background-color: rgba(65, 65, 65, .38);
-}
-.mod-tile .mod-tile-left {
-    background-color: transparent;
-	box-shadow: inset 0 0 20px rgba(56, 56, 56, .8);
-}
-li.mod-tile > .mod-tile-left > .tile-data {
-	background-color: rgba(45, 45, 45, .38);
-	box-shadow: inset 0 0 20px rgba(56, 56, 56, .8);
-}
-.tiles .fadeoff {
-    background: -webkit-linear-gradient(top,rgba(56,56,56,0) 0,rgba(56,56,56,.8) 100%);
-    background: linear-gradient(to bottom,rgba(56,56,56,0) 0,rgba(56,56,56,.8) 100%);
-}
-body .home-intro {
-	background-color: rgba(45, 45, 45, .38);
-	backdrop-filter: blur(1rem);
-	-webkit-backdrop-filter: blur(1rem);
-}
-ul.tiles li.article-tile .mod-tile-left {
-	background-color: transparent;
-	box-shadow: inset 0 0 30px rgba(56, 56, 56, .8);
-}
-li.article-tile > .mod-tile-left > .tile-data {
-	background-color: rgba(45, 45, 45, .5);
-	box-shadow: inset 0 0 20px rgba(56, 56, 56, .8);
-}
-.modimages {
-    background-color: rgba(32, 32, 32, .38);
-}
-.modpage .col-1-1.info-details {
-    background-color: rgba(45, 45, 45, .38);
-}
-.modpage>.wrap {
-	background: rgba(56, 56, 56, .38);
-	backdrop-filter: blur(1rem);
-	-webkit-backdrop-filter: blur(1rem);
-}
-.modpage .sideitems {
-    border-bottom-color: rgba(56, 56, 56, .38);
-}
-.modpage .col-1-1:not(.popup-bugreport > .col-1-1) {
-    background-color: rgba(76, 76, 76, .38);
-}
-.accordion dt:hover {
-    background-color: rgba(65, 65, 65, .38);
-}
-.accordion dt {
-    background-color: rgba(56, 56, 56, .38);
-}
-.accordion dt.accopen {
-    background-color: rgba(45, 45, 45, .38);
-}
-.accordion dd {
-    background-color: rgba(56, 56, 56, .38);
-}
-.table th.table-require-notes:hover, .table th.table-compat-notes:hover, .table th.table-translation-notes:hover {
-    background-color: rgba(45, 45, 45, .38);
-}
-.table th:hover {
-    background: rgba(65, 65, 65, .38);
-}
-.table th, .table td {
-    border-right-color: rgba(73, 73, 73, .38);
-}
-.table th {
-    background-color: rgba(45, 45, 45, .38);
-}
-.tabcontent-mod-page .accordionitems .table td {
-    border-right-color: rgba(91, 91, 91, .38);
-    border-top-color: rgba(91, 91, 91, .38);
-    background-color: rgba(76, 76, 76, .38);
-}
-.comments .comment-head {
-    background-color: rgba(29, 29, 29, .38);
-    border-bottom-color: rgba(0, 0, 0, .38);
-}
-.comments>ol>li {
-    background-color: rgba(35, 35, 35, .38);
-    border-color: rgba(0, 0, 0, .38);
-}
-.comments>ol>li ol>li {
-    background-color: rgba(69, 69, 69, .38);
-    border-color: rgba(0, 0, 0, .38);
-}
-.edit-article-desc, .articlepage article {
-	background-color: transparent;
-}
-section#rj-vortex {
-    border-top-color: rgba(93, 93, 93, .38);
-    background-color: rgba(34, 34, 34, .38);
-}
-#rj-footer {
-    background-color: rgba(24, 24, 24, .38);
-	text-shadow: 1px 1px 1px #000000b8;
-}
-#rj-footer svg, #rj-footer img {
-	filter: drop-shadow(1px 1px 1px #000);
-}
-figure.quote {
-    background: rgba(56, 56, 56, .38);
-}
-figure.quote .icon-quote {
-    fill: rgba(101, 101, 102, .38);
-}
-.col-1-1>.container, .modpage.mediapage .container.comments {
-    background: rgba(76, 76, 76, 0);
-}
-.mod-tile > div {
-	background-repeat: no-repeat;
-	background-position: -610px -120px, 0 0;
-	background-image: -webkit-linear-gradient(top left,rgba(255, 255, 255, .1) 0%,rgba(255, 255, 255, 0.1) 37%,rgba(255, 255, 255, 0.3) 45%,rgba(255, 255, 255, 0.0) 50%);
-	background-image: -moz-linear-gradient(0 0,rgba(255, 255, 255, 0.1) 0%,rgba(255, 255, 255, .1) 37%,rgba(255, 255, 255, 0.3) 45%,rgba(255, 255, 255, 0.0) 50%);    
-	background-image: -o-linear-gradient(0 0,rgba(255, 255, 255, 0.1) 0%,rgba(255, 255, 255, 0.1) 37%,rgba(255, 255, 255, 0.3) 45%,rgba(255, 255, 255, 0.0) 50%);
-	background-image: linear-gradient(0 0,rgba(255, 255, 255, 0.1) 0%,rgba(255, 255, 255, 0.1) 37%,rgba(255, 255, 255, 0.3) 45%,rgba(255, 255, 255, 0.0) 50%);
-	-moz-background-size: 250% 250%, 100% 100%;
-	background-size: 250% 250%, 100% 100%;
-	-webkit-transition: background-position, transform, text-shadow, box-shadow 0s ease-in;
-	-moz-transition: background-position, transform, text-shadow, box-shadow 0s ease-in;  
-	-o-transition: background-position, transform, text-shadow, box-shadow 0s ease-in;
-	transition: background-position, transform, text-shadow, box-shadow 0s ease-in;
-	transition-duration: 0.1s
-}
-#mod-list .mod-tile > div:hover {
-	background-position: 0 0, 0 0;
-	-webkit-transition-duration: 0.4s;
-	-moz-transition-duration: 0.4s;
-	transition-duration: 0.4s;
-	transform: scale(1.035);
-	text-shadow: 1px 1px 1px #000;
-	box-shadow: 0 0 1px #000;
-}
-.article-tile > div {
-	background-repeat: no-repeat;
-	background-position: -810px -120px, 0 0;
-	background-image: -webkit-linear-gradient(top left,rgba(255, 255, 255, .1) 0%,rgba(255, 255, 255, 0.1) 37%,rgba(255, 255, 255, 0.3) 45%,rgba(255, 255, 255, 0.0) 50%);
-	background-image: -moz-linear-gradient(0 0,rgba(255, 255, 255, 0.1) 0%,rgba(255, 255, 255, .1) 37%,rgba(255, 255, 255, 0.3) 45%,rgba(255, 255, 255, 0.0) 50%);    
-	background-image: -o-linear-gradient(0 0,rgba(255, 255, 255, 0.1) 0%,rgba(255, 255, 255, 0.1) 37%,rgba(255, 255, 255, 0.3) 45%,rgba(255, 255, 255, 0.0) 50%);
-	background-image: linear-gradient(0 0,rgba(255, 255, 255, 0.1) 0%,rgba(255, 255, 255, 0.1) 37%,rgba(255, 255, 255, 0.3) 45%,rgba(255, 255, 255, 0.0) 50%);
-	-moz-background-size: 250% 250%, 100% 100%;
-	background-size: 250% 250%, 100% 100%;
-	-webkit-transition: background-position, transform, text-shadow, box-shadow 0s ease-in;
-	-moz-transition: background-position, transform, text-shadow, box-shadow 0s ease-in;  
-	-o-transition: background-position, transform, text-shadow, box-shadow 0s ease-in;
-	transition: background-position, transform, text-shadow, box-shadow 0s ease-in;
-	transition-duration: 0.1s
-}
-.article-tile > div:hover {
-	background-position: 0 0, 0 0;
-	-webkit-transition-duration: 0.4s;
-	-moz-transition-duration: 0.4s;
-	transition-duration: 0.4s;
-	transform: scale(1.035);
-	text-shadow: 1px 1px 1px #000;
-	box-shadow: 0 0 1px #000;
-}
-.activity-desc {
-	background-color: rgba(56, 56, 56, .38);
-}
-ul.activity>li {
-	background-color: rgba(45, 45, 45, .38);
-}
-ul.rj-mobile-menu-subsections, #head .rj-header-wrap .rj-header-left, #head .rj-header-wrap .rj-header-right, .game-home-link {
-	background-color: transparent;
-}
-#head.new-head {
-	background-color: rgba(24, 24, 24, .38);
-}
-#head.new-head::before {
-	content: '';
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	backdrop-filter: blur(1rem);
-	-webkit-backdrop-filter: blur(1rem);
-}
-.rj-nav-item:hover, .rj-nav-item.active {
-    background-color: rgba(43, 45, 47, .38);
-}
-form.rj-search .search-button, form.rj-search .rj-search-input {
-	background-color: rgba(0, 0, 0, .38);
-	color: #e8e8e8;
-}
-.rj-search-category-dropdown {
-	background-color: rgba(0, 0, 0, .38);
-	backdrop-filter: blur(1rem);
-	-webkit-backdrop-filter: blur(1rem);
-	color: #e8e8e8;
-}
-.rj-search-category-option:hover {
-    background-color: rgba(255, 255, 255, .08);
-}
-.rj-header-wrap.rj-search-active .search-button {
-	background-color: rgba(51, 51, 51, .38);
-}
-#qs_results {
-    background: rgba(44, 43, 43, .38);
-}
-#gsearch_results {
-    border-color: rgba(37, 37, 37, .38);
-    background: rgba(45, 45, 45, .38);
-	backdrop-filter: blur(1rem);
-	-webkit-backdrop-filter: blur(1rem);
-	box-shadow: inset 0 0 20rem 1rem rgba(0, 0, 0, .38);
-}
-#qsearch_results {
-	border-color: rgba(0, 0, 0, .38);
-}
-.gsearch_results_list li {
-	border-color: rgba(37, 37, 37, .38);
-	backdrop-filter: blur(1rem);
-	-webkit-backdrop-filter: blur(1rem);
-}
-.qs_result section>div {
-    background: rgba(56, 56, 56, .38);
-}
-.qs_result .stats {
-	background-color: transparent;
-}
-.qs_result h2 {
-    background: linear-gradient(to right,rgba(56, 56, 56, .38) 0,rgba(37, 37, 37, .38) 100%);
-}
-.gsearch_results_list li.active h2 {
-    background: linear-gradient(to right,rgba(56, 56, 56, .38) 0,rgba(44, 43, 43, .38) 100%);
-}
-.premium-banner {
-	background-color: rgba(34, 34, 34, .38);
-}
-.premium-banner > span, .premium-banner > i {
-	color: #fff;
-}
-.select2-container--default .select2-selection--single {
-	background-color: rgba(0, 0, 0, .38);
-}
-.select2-container--default .select2-selection--single .select2-selection__rendered {
-	color: #bbb;
-}
-.select2-container--default .select2-selection--single .select2-selection__arrow b {
-    border-color: #777 transparent transparent transparent;
-}
-.select2-container--default .select2-results__option[aria-selected=true] {
-	background-color: rgba(68, 68, 68, .38);
-}
-.select2-dropdown {
-	background-color: rgba(0, 0, 0, .38);
-	backdrop-filter: blur(1rem);
-	-webkit-backdrop-filter: blur(1rem);
-}
-.select2-results__option {
-	color: #aaa;
-}
-.select2-dropdown, .select2-dropdown--below {
-	border-color: rgba(76, 76, 76, .38);
-}
-.popup-mod-requirements ul {
-    background: rgba(34, 34, 34, .38);
-    border-color: rgba(136, 136, 136, .38);
-}
-.pagination ul li a.page-selected, .pagination ul li a.page-selected:hover {
-    background: rgba(62, 62, 62, .38);
-}
-.pagination ul li a, .pagination ul li a:hover, .pagination ul li a:focus {
-	color: #c8c8c8;
-}
-.pagination ul li a {
-	background-color: rgba(17, 17, 17, .38);
-}
-.pagination ul li.prev .icon-arrow-thin, .pagination ul li.next .icon-arrow-thin {
-	fill: #c8c8c8;
-}
-.pagination ul li a:hover, .pagination ul li a:focus, .pagination ul li.prev a:hover, .pagination ul li.prev a:focus, .pagination ul li.next a:hover, .pagination ul li.next a:focus {
-	background-color: rgba(0, 0, 0, .38);
-	color: #c8c8c8;
-}
-.select2-container--default .select2-search--dropdown .select2-search__field {
-	border-color: rgba(85, 85, 85, .38);
-	background-color: rgba(0, 0, 0, .38);
-	color: #aaa;
-}
-.article-actions {
-	background-color: rgba(32, 32, 32, .38);
-}
-.article-nav .article-label {
-	color: #a9a9a9;
-}
-.article-nav ul li:hover a {
-	background-color: rgba(24, 24, 24, .38);
-}
-.article-nav ul li a {
-	border-color: rgba(86, 86, 86, .38);
-}
-.article-nav ul li a .icon-arrow-thin {
-	fill: #bcbcbc;
-}
-.article-page {
-	background-color: rgba(76, 76, 76, .38);
-	text-shadow: 1px 1px 1px #000;
-}
-.article-page .comments {
-	border-color: rgba(56, 56, 56, .38);
-}
-#head.new-head .headlogo svg {
-	filter: drop-shadow(1px 1px 1px #000);
-}
-.rj-search-category {
-    border-left-color: rgba(255, 255, 255, .08);
-}
-form.rj-search.open-category-select .rj-search-category-dropdown-toggle {
-    background-color: rgba(255, 255, 255, .08);
-}
-.rj-search-category-wrapper {
-	color: #e8e8e8;
-}
-.select2-container--default.select2-container--disabled .select2-selection--single, .searchtext, .select2-container--default .select2-selection--multiple, .ui-datepicker select.ui-datepicker-month, .ui-datepicker select.ui-datepicker-year {
-	background-color: rgba(0, 0, 0, .38);
-}
-.searchtext {
-	color: #bbb;
-}
-input[type="checkbox"] {
-	filter: invert(.835) hue-rotate(180deg);
-}
-.refine-results ul.choice-list, .range-area {
-	background-color: rgba(76, 76, 76, .38);
-}
-a.mod-image {
-	background-color: rgba(56, 56, 56, .38);
-}
-.mod-tile-left, figure.image_figure .fore_div img, figure.image_figure .fore_div_mods img {
-	background-color: transparent;
-}
-.game-filter form input {
-	color: #919191;
-	background-color: rgba(0, 0, 0, .38);
-}
-[style="position: absolute; top: 72px; z-index: 9999; background-color: rgb(76, 76, 76); border: 1px solid rgb(225, 225, 225); padding: 8px 16px;"] {
-	background-color: rgba(76, 76, 76, .38) !important;
-	border-color: rgba(17, 17, 17, .38) !important;
-}
-.date_selector {
-	background-color: rgba(0, 0, 0, .38);
-	color: #bbb;
-}
-.ui-widget-content {
-	background-color: rgba(34, 34, 34, .38);
-	border-color: rgba(64, 64, 64, .38);
-	color: #919191;
-	backdrop-filter: blur(1rem);
-	-webkit-backdrop-filter: blur(1rem);
-}
-.ui-widget-header {
-	background-color: rgba(64, 64, 64, .38);
-	border-color: rgba(64, 64, 64, .38);
-	color: #bbb;
-}
-.ui-datepicker select.ui-datepicker-month option, .ui-datepicker select.ui-datepicker-year option {
-	background-color: #383838;
-}
-.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
-	background-color: rgba(0, 0, 0, 0);
-}
-.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
-	border-color: rgba(51, 51, 51, .38);
-	color: #bbb;
-}
-.btn-inactive, .btn:disabled {
-    background-color: #565656 !important;
-	color: #000 !important;
-}
-.btn-inactive .icon, .btn:disabled .icon {
-	fill: #000;
-}
-#rj-sitemap ul li a.rj-standard-button {
-	color: #fff;
-}
-.rj-user-nav .nav-interact .ni-background {
-    background-color: rgba(43, 45, 47, .38);
-}
-section#rj-sitemap {
-    border-image-source: linear-gradient(to right,rgba(255,255,255,0),rgba(255, 255, 255, .38) 52%,rgba(255,255,255,0));
-}
-.rj-header-tray {
-    background-color: rgba(43, 45, 47, .38);
-	backdrop-filter: blur(1rem);
-	-webkit-backdrop-filter: blur(1rem);
-}
-.rj-header-full-width-banner {
-	background-color: rgba(24, 24, 24, .38);
-}
-.rj-panel.rj-panel-border:hover>.rj-panel-inner {
-    background-color: rgba(77, 79, 80, .38);
-}
-.rj-panel.rj-panel-border>.rj-panel-inner {
-    background-color: rgba(60, 61, 63, .38);
-}
-.rj-panel.rj-panel-border {
-    background: linear-gradient(180deg,rgba(217, 143, 64, .38),rgba(255,255,255,0.16));
-}
-.rj-right-tray {
-    background-color: rgba(43, 45, 47, .38);
-	backdrop-filter: blur(1rem);
-	-webkit-backdrop-filter: blur(1rem);
-}
-.rj-tray-section.section-dark {
-    background-color: rgba(34, 34, 34, .38);
-}
-.rj-right-tray .arrow {
-    border-bottom-color: rgba(43, 45, 47, .38);
-}
-.rj-right-tray .arrow::before {
-	content: '';
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	filter: blur(1rem);
-}
-.rj-tray-section.section-dark.link-section:hover {
-    background-color: rgba(43, 45, 47, .38);
-}
-.widget-mod-requirements.popup.mfp-with-anim.col-1-1.popup-mod-requirements {
-	backdrop-filter: blur(1rem);
-	-webkit-backdrop-filter: blur(1rem);
-}
-div.bbc_spoiler_content {
-    background: rgba(38, 38, 38, .38);
-    border-color: rgba(59, 59, 59, .38);
-}
-.notifications-header, .notification-preferences-header {
-    background-color: rgba(43, 45, 47, .38);
-}
-.notifications-list, .notification-load-more, .notification-preferences-menu {
-    background-color: rgba(34, 34, 34, .38);
-}
-#featured #nofeature #pagetitle {
-    background: -webkit-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,.38) 100%);
-    background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.38) 100%);
-}
-.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
-    color: #ccc !important;
-    border-color: rgba(103, 103, 103, .38);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, .38)), color-stop(100%, rgba(60, 60, 60, .38)));
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, .38) 0%, rgba(60, 60, 60, .38) 100%);
-    background: -moz-linear-gradient(top, rgba(0, 0, 0, .38) 0%, rgba(60, 60, 60, .38) 100%);
-    background: -ms-linear-gradient(top, rgba(0, 0, 0, .38) 0%, rgba(60, 60, 60, .38) 100%);
-    background: -o-linear-gradient(top, rgba(0, 0, 0, .38) 0%, rgba(60, 60, 60, .38) 100%);
-    background: linear-gradient(to bottom, gba(0, 0, 0, .38) 0%, rgba(60, 60, 60, .38) 100%);
-}
-.dataTables_wrapper .dataTables_paginate .paginate_button.disabled, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
-	color: #999 !important;
-}
-.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
-    border-color: rgba(17, 17, 17, .38);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(88, 88, 88, .38)), color-stop(100%, rgba(17, 17, 17, .38)));
-    background: -webkit-linear-gradient(top, rgba(88, 88, 88, .38) 0%, rgba(17, 17, 17, .38) 100%);
-    background: -moz-linear-gradient(top, rgba(88, 88, 88, .38) 0%, rgba(17, 17, 17, .38) 100%);
-    background: -ms-linear-gradient(top, rgba(88, 88, 88, .38) 0%, rgba(17, 17, 17, .38) 100%);
-    background: -o-linear-gradient(top, rgba(88, 88, 88, .38) 0%, rgba(17, 17, 17, .38) 100%);
-    background: linear-gradient(to bottom, rgba(88, 88, 88, .38) 0%, rgba(17, 17, 17, .38) 100%);
-}
-.dataTables_filter input, input.form-field {
-	color: #919191 !important;
-	background-color: rgba(0, 0, 0, .38);
-}
-table.dataTable tbody tr, .form-section-content .select2-container--default .select2-selection--single {
-	background-color: rgba(0, 0, 0, .38);
-}
-td.tracking-mod .tracking-icon {
-    background: rgba(45, 45, 45, .38);
-}
-.table td {
-    border-top-color: rgba(73, 73, 73, .38);
-    background: rgba(56, 56, 56, .38);
-}
-table.dataTable.no-footer {
-	border-bottom-color: rgba(17, 17, 17, .38);
-}
-table.dataTable thead th, table.dataTable thead td {
-    border-bottom-color: rgba(17, 17, 17, .38);
-}
-.form-section-content, .media-section-content {
-    background: rgba(56, 56, 56, .38);
-}
-.form-section header, textarea.application-key, .application-image-container {
-    background: rgba(45, 45, 45, .38);
-}
-.line {
-    border-bottom-color: rgba(225, 225, 225, .38);
-}
-.page-layout .donation-panel {
-    border-color: rgba(136, 136, 136, .38);
-    background-color: rgba(34, 34, 34, .38);
-}
-.page-layout .donation-wrapper form input[type=text] {
-	color: #e0e0e0;
-	background-color: rgba(0, 0, 0, .38);
-}
-.page-layout .donation-wrapper form .form-group > span {
-	color: #e0e0e0;
-}
-.rj-btn.rj-btn-outline, .rj-btn.rj-btn-standard {
-	text-shadow: 1px 1px 1px #000;
-}
-div#mainContent > .tabcontent.tabcontent-mod-page[aria-live="assertive"] {
-	backdrop-filter: blur(1rem);
-	-webkit-backdrop-filter: blur(1rem);
-}
-.forum-bugs td.bug-comment {
-	background-color: rgba(32, 32, 32, .38);
-}
-.forum-bugs .comments>ol>li:first-of-type:before {
-	background-color: rgba(45, 45, 45, .38);
-}
-.info.warning {
-    background-color: transparent;
-	position: relative;
-}
-.info .info-content::before {
-	content: '';
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	left: 0;
-	top: 0;
-	margin: 0;
-	background-color: var(--theme-primary);
-	opacity: .38;
-	z-index: 2;
-}
-.info .info-content::after {
-	content: '';
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	left: 0;
-	top: 0;
-	margin: 0;
-	backdrop-filter: blur(1rem);
-	z-index: 0;
-}
-.info .info-content > h3, .info .info-content > p, .info > svg {
-	z-index: 3;
-	position: relative;
-	text-shadow: 1px 1px 1px #000000ba;
-}
-input#user_login, input#password, input#otp_attempt, input#real_name, select {
-	background-color: rgba(0, 0, 0, .38);
-	color: rgba(255, 255, 255, .6);
-}
-div.floating-label label, .password-group input[type=password]~.password-toggle>i, .password-group input[type=text]~.password-toggle>i {
-	color: rgba(255, 255, 255, .6);
-}
-.password-group .password-toggle {
-	background-color: rgba(0, 0, 0, .38);
-}
-.password-group .password-toggle:focus {
-	background-color: rgba(51, 51, 51, .38);
-}
-.jumbotron {
-	background-color: rgb(41, 44, 47);
-}
-#game-blurb {
-	border-top-color: rgba(255, 255, 255, .38);
-}
-.btn-active, #graph-widget-container .active {
-	background-color: rgba(40, 40, 40, .38) !important;
-}
-.popup-bugreport.popup.mfp-with-anim.col-1-1 > .col-1-1, .wysibb, textarea#add-bugreport-post {
-	background-color: transparent;
-}
-.wysibb .wysibb-text {
-    background: rgba(56, 56, 56, .38);
-}
-.wysibb {
-	border-color: #444;
-	color: #fff;
-}
-.wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn:hover .fonticon {
-	color: #fff;
-}
-.wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn:hover {
-	background-color: rgba(17, 17, 17, .38);
-}
-.wysibb .wysibb-toolbar .wysibb-toolbar-container {
-	border-color: #444;
-}
-#wbbmodal .wbbm {
-    background: rgba(0, 0, 0, .38);
-    border-color: rgba(68, 68, 68, .38);
-    box-shadow: 0 0 5px rgba(51, 51, 51, .38);
-	backdrop-filter: blur(1rem);
-	-webkit-backdrop-filter: blur(1rem);
-}
-#wbbmodal .wbbm-title {
-	color: #ccc;
-	border-color: rgba(51, 51, 51, .38);
-}
-#wbbmodal .div-modal-text {
-	border-color: rgba(85, 85, 85, .38);
-	color: #919191;
-}
-#wbbmodal .wbbm-inp-row label {
-	color: #919191;
-}
-#wbbmodal .wbbm-inp-row input {
-	border-color: rgba(85, 85, 85, .38);
-	color: #919191;
-	background-color: transparent;
-}
-#wbbmodal .wbbm-bottom {
-	background-color: rgba(1, 1, 1, .38);
-	border-color: rgba(51, 51, 51, .38);
-}
-#wbbmodal .wbb-cancel-button:hover {
-    background: rgba(0, 0, 0, .38);
-    border-color: rgba(51, 51, 51, .38);
-}
-#wbbmodal .wbb-cancel-button {
-    background: rgba(5, 5, 5, .38);
-    border-color: rgba(68, 68, 68, .38);
-	color: #ccc;
-}
-.wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn.on, .wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn.on:hover, .wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn:active {
-    background: rgba(51, 51, 51, .38);
-    box-shadow: inset 0 0 3px rgba(85, 85, 85, .38);
-    border-color: rgba(85, 85, 85, .38);
-}
-.wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn.on .fonticon {
-	color: #fff;
-}
-.wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn .fonticon {
-    color: #ccc;
-    text-shadow: 0 1px 0 rgba(0, 0, 0, .38);
-}
-.wysibb .wysibb-toolbar {
-	border-color: rgba(68, 68, 68, .38);
-}
-.wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn.wbb-select:hover, .wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn.wbb-dropdown:hover, .wbb-select .option:hover, .wbb-list .nc:hover {
-	background-color: rgba(17, 17, 17, .38);
-}
-.wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn.wbb-select.on, .wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn.wbb-select.on:active {
-    border-color: rgba(85, 85, 85, .38);
-    background: rgba(51, 51, 51, .38);
-    box-shadow: inset 0 0 3px rgba(85, 85, 85, .38);
-}
-.wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn .wbb-list {
-    border-color: rgba(68, 68, 68, .38);
-    box-shadow: 0 0 3px rgba(85, 85, 85, .38);
-    background: rgba(0, 0, 0, .38);
-	backdrop-filter: blur(1rem);
-	-webkit-backdrop-filter: blur(1rem);
-}
-.wbb-list .nc, .comment-reply textarea {
-	color: #999;
-}
-.wbb-list .sc {
-	border-color: rgba(0, 0, 0, .38);
-}
-.wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn.wbb-dropdown.on, .wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn.wbb-dropdown.on:active {
-    border-color: rgba(85, 85, 85, .38);
-    background: rgba(51, 51, 51, .38);
-    box-shadow: inset 0 0 3px rgba(85, 85, 85, .38);
-}
-.popup {
-	background-color: rgba(76, 76, 76, .38);
-	backdrop-filter: blur(1rem);
-	-webkit-backdrop-filter: blur(1rem);
-}
+	.static .wrap:first-of-type {
+		background: rgba(56, 56, 56, .38);
+		backdrop-filter: blur(1rem);
+		-webkit-backdrop-filter: blur(1rem);
+	}
+	.static .wrap {
+		background-color: rgba(56, 56, 56, .38);
+		backdrop-filter: blur(1rem);
+		-webkit-backdrop-filter: blur(1rem);
+	}
+	.tabcontent {
+		background-color: rgba(68, 68, 68, .38);
+	}
+	ul.modtabs {
+		background-color: rgba(45, 45, 45, .38);
+	}
+	ul.modtabs li {
+		background-color: transparent;
+	}
+	ul.modtabs li a.selected {
+		background-color: rgba(68, 68, 68, .38);
+		border-right-color: rgba(76, 76, 76, .38);
+	}
+	ul.modtabs li a:last-of-type:hover {
+		border-right-color: rgba(65, 65, 65, .38);
+	}
+	ul.modtabs li a {
+		border-right-color: rgba(61, 61, 61, .38);
+	}
+	ul.modtabs li a:hover {
+		background-color: rgba(65, 65, 65, .38);
+	}
+	.mod-tile .mod-tile-left {
+		background-color: transparent;
+		box-shadow: inset 0 0 20px rgba(56, 56, 56, .8);
+	}
+	li.mod-tile > .mod-tile-left > .tile-data {
+		background-color: rgba(45, 45, 45, .38);
+		box-shadow: inset 0 0 20px rgba(56, 56, 56, .8);
+	}
+	.tiles .fadeoff {
+		background: -webkit-linear-gradient(top,rgba(56,56,56,0) 0,rgba(56,56,56,.8) 100%);
+		background: linear-gradient(to bottom,rgba(56,56,56,0) 0,rgba(56,56,56,.8) 100%);
+	}
+	body .home-intro {
+		background-color: rgba(45, 45, 45, .38);
+		backdrop-filter: blur(1rem);
+		-webkit-backdrop-filter: blur(1rem);
+	}
+	ul.tiles li.article-tile .mod-tile-left {
+		background-color: transparent;
+		box-shadow: inset 0 0 30px rgba(56, 56, 56, .8);
+	}
+	li.article-tile > .mod-tile-left > .tile-data {
+		background-color: rgba(45, 45, 45, .5);
+		box-shadow: inset 0 0 20px rgba(56, 56, 56, .8);
+	}
+	.modimages {
+		background-color: rgba(32, 32, 32, .38);
+	}
+	.modpage .col-1-1.info-details {
+		background-color: rgba(45, 45, 45, .38);
+	}
+	.modpage>.wrap {
+		background: rgba(56, 56, 56, .38);
+		backdrop-filter: blur(1rem);
+		-webkit-backdrop-filter: blur(1rem);
+	}
+	.modpage .sideitems {
+		border-bottom-color: rgba(56, 56, 56, .38);
+	}
+	.modpage .col-1-1:not(.popup-bugreport > .col-1-1):not(.popup-mod-tagging .col-1-1):not(.popup-js .col-1-1) {
+		background-color: rgba(76, 76, 76, .38);
+	}
+    .popup-js .col-1-1 {
+        background-color: transparent;
+    }
+	.accordion dt:hover {
+		background-color: rgba(65, 65, 65, .38);
+	}
+	.accordion dt {
+		background-color: rgba(56, 56, 56, .38);
+	}
+	.accordion dt.accopen {
+		background-color: rgba(45, 45, 45, .38);
+	}
+	.accordion dd {
+		background-color: rgba(56, 56, 56, .38);
+	}
+	.table th.table-require-notes:hover, .table th.table-compat-notes:hover, .table th.table-translation-notes:hover {
+		background-color: rgba(45, 45, 45, .38);
+	}
+	.table th:hover {
+		background: rgba(65, 65, 65, .38);
+	}
+	.table th, .table td {
+		border-right-color: rgba(73, 73, 73, .38);
+	}
+	.table th {
+		background-color: rgba(45, 45, 45, .38);
+	}
+	.tabcontent-mod-page .accordionitems .table td {
+		border-right-color: rgba(91, 91, 91, .38);
+		border-top-color: rgba(91, 91, 91, .38);
+		background-color: rgba(76, 76, 76, .38);
+	}
+	.comments .comment-head {
+		background-color: rgba(29, 29, 29, .38);
+		border-bottom-color: rgba(0, 0, 0, .38);
+	}
+	.comments>ol>li {
+		background-color: rgba(35, 35, 35, .38);
+		border-color: rgba(0, 0, 0, .38);
+	}
+	.comments>ol>li ol>li {
+		background-color: rgba(69, 69, 69, .38);
+		border-color: rgba(0, 0, 0, .38);
+	}
+	.edit-article-desc, .articlepage article {
+		background-color: transparent;
+	}
+	section#rj-vortex {
+		border-top-color: rgba(93, 93, 93, .38);
+		background-color: rgba(34, 34, 34, .38);
+	}
+	#rj-footer {
+		background-color: rgba(24, 24, 24, .38);
+		text-shadow: 1px 1px 1px #000000b8;
+	}
+	#rj-footer svg, #rj-footer img {
+		filter: drop-shadow(1px 1px 1px #000);
+	}
+	figure.quote {
+		background: rgba(56, 56, 56, .38);
+	}
+	figure.quote .icon-quote {
+		fill: rgba(101, 101, 102, .38);
+	}
+	.col-1-1>.container, .modpage.mediapage .container.comments {
+		background: rgba(76, 76, 76, 0);
+	}
+	.mod-tile > div {
+		background-repeat: no-repeat;
+		background-position: -610px -120px, 0 0;
+		background-image: -webkit-linear-gradient(top left,rgba(255, 255, 255, .1) 0%,rgba(255, 255, 255, 0.1) 37%,rgba(255, 255, 255, 0.3) 45%,rgba(255, 255, 255, 0.0) 50%);
+		background-image: -moz-linear-gradient(0 0,rgba(255, 255, 255, 0.1) 0%,rgba(255, 255, 255, .1) 37%,rgba(255, 255, 255, 0.3) 45%,rgba(255, 255, 255, 0.0) 50%);    
+		background-image: -o-linear-gradient(0 0,rgba(255, 255, 255, 0.1) 0%,rgba(255, 255, 255, 0.1) 37%,rgba(255, 255, 255, 0.3) 45%,rgba(255, 255, 255, 0.0) 50%);
+		background-image: linear-gradient(0 0,rgba(255, 255, 255, 0.1) 0%,rgba(255, 255, 255, 0.1) 37%,rgba(255, 255, 255, 0.3) 45%,rgba(255, 255, 255, 0.0) 50%);
+		-moz-background-size: 250% 250%, 100% 100%;
+		background-size: 250% 250%, 100% 100%;
+		-webkit-transition: background-position, transform, text-shadow, box-shadow 0s ease-in;
+		-moz-transition: background-position, transform, text-shadow, box-shadow 0s ease-in;  
+		-o-transition: background-position, transform, text-shadow, box-shadow 0s ease-in;
+		transition: background-position, transform, text-shadow, box-shadow 0s ease-in;
+		transition-duration: 0.1s
+	}
+	#mod-list .mod-tile > div:hover {
+		background-position: 0 0, 0 0;
+		-webkit-transition-duration: 0.4s;
+		-moz-transition-duration: 0.4s;
+		transition-duration: 0.4s;
+		transform: scale(1.035);
+		text-shadow: 1px 1px 1px #000;
+		box-shadow: 0 0 1px #000;
+	}
+	.article-tile > div {
+		background-repeat: no-repeat;
+		background-position: -810px -120px, 0 0;
+		background-image: -webkit-linear-gradient(top left,rgba(255, 255, 255, .1) 0%,rgba(255, 255, 255, 0.1) 37%,rgba(255, 255, 255, 0.3) 45%,rgba(255, 255, 255, 0.0) 50%);
+		background-image: -moz-linear-gradient(0 0,rgba(255, 255, 255, 0.1) 0%,rgba(255, 255, 255, .1) 37%,rgba(255, 255, 255, 0.3) 45%,rgba(255, 255, 255, 0.0) 50%);    
+		background-image: -o-linear-gradient(0 0,rgba(255, 255, 255, 0.1) 0%,rgba(255, 255, 255, 0.1) 37%,rgba(255, 255, 255, 0.3) 45%,rgba(255, 255, 255, 0.0) 50%);
+		background-image: linear-gradient(0 0,rgba(255, 255, 255, 0.1) 0%,rgba(255, 255, 255, 0.1) 37%,rgba(255, 255, 255, 0.3) 45%,rgba(255, 255, 255, 0.0) 50%);
+		-moz-background-size: 250% 250%, 100% 100%;
+		background-size: 250% 250%, 100% 100%;
+		-webkit-transition: background-position, transform, text-shadow, box-shadow 0s ease-in;
+		-moz-transition: background-position, transform, text-shadow, box-shadow 0s ease-in;  
+		-o-transition: background-position, transform, text-shadow, box-shadow 0s ease-in;
+		transition: background-position, transform, text-shadow, box-shadow 0s ease-in;
+		transition-duration: 0.1s
+	}
+	.article-tile > div:hover {
+		background-position: 0 0, 0 0;
+		-webkit-transition-duration: 0.4s;
+		-moz-transition-duration: 0.4s;
+		transition-duration: 0.4s;
+		transform: scale(1.035);
+		text-shadow: 1px 1px 1px #000;
+		box-shadow: 0 0 1px #000;
+	}
+	.activity-desc {
+		background-color: rgba(56, 56, 56, .38);
+	}
+	ul.activity>li {
+		background-color: rgba(45, 45, 45, .38);
+	}
+	ul.rj-mobile-menu-subsections, #head .rj-header-wrap .rj-header-left, #head .rj-header-wrap .rj-header-right, .game-home-link {
+		background-color: transparent;
+	}
+	#head.new-head {
+		background-color: rgba(24, 24, 24, .38);
+	}
+	#head.new-head::before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		backdrop-filter: blur(1rem);
+		-webkit-backdrop-filter: blur(1rem);
+	}
+	.rj-nav-item:hover, .rj-nav-item.active {
+		background-color: rgba(43, 45, 47, .38);
+	}
+	form.rj-search .search-button, form.rj-search .rj-search-input {
+		background-color: rgba(0, 0, 0, .38);
+		color: #e8e8e8;
+	}
+	.rj-search-category-dropdown {
+		background-color: rgba(0, 0, 0, .38);
+		backdrop-filter: blur(1rem);
+		-webkit-backdrop-filter: blur(1rem);
+		color: #e8e8e8;
+	}
+	.rj-search-category-option:hover {
+		background-color: rgba(255, 255, 255, .08);
+	}
+	.rj-header-wrap.rj-search-active .search-button {
+		background-color: rgba(51, 51, 51, .38);
+	}
+	#qs_results {
+		background: rgba(44, 43, 43, .38);
+	}
+	#gsearch_results {
+		border-color: rgba(37, 37, 37, .38);
+		background: rgba(45, 45, 45, .38);
+		backdrop-filter: blur(1rem);
+		-webkit-backdrop-filter: blur(1rem);
+		box-shadow: inset 0 0 20rem 1rem rgba(0, 0, 0, .38);
+	}
+	#qsearch_results {
+		border-color: rgba(0, 0, 0, .38);
+	}
+	.gsearch_results_list li {
+		border-color: rgba(37, 37, 37, .38);
+		backdrop-filter: blur(1rem);
+		-webkit-backdrop-filter: blur(1rem);
+	}
+	.qs_result section>div {
+		background: rgba(56, 56, 56, .38);
+	}
+	.qs_result .stats {
+		background-color: transparent;
+	}
+	.qs_result h2 {
+		background: linear-gradient(to right,rgba(56, 56, 56, .38) 0,rgba(37, 37, 37, .38) 100%);
+	}
+	.gsearch_results_list li.active h2 {
+		background: linear-gradient(to right,rgba(56, 56, 56, .38) 0,rgba(44, 43, 43, .38) 100%);
+	}
+	.premium-banner {
+		background-color: rgba(34, 34, 34, .38);
+	}
+	.premium-banner > span, .premium-banner > i {
+		color: #fff;
+	}
+	.select2-container--default .select2-selection--single {
+		background-color: rgba(0, 0, 0, .38);
+	}
+	.select2-container--default .select2-selection--single .select2-selection__rendered {
+		color: #bbb;
+	}
+	.select2-container--default .select2-selection--single .select2-selection__arrow b {
+		border-color: #777 transparent transparent transparent;
+	}
+	.select2-container--default .select2-results__option[aria-selected=true] {
+		background-color: rgba(68, 68, 68, .38);
+	}
+	.select2-dropdown {
+		background-color: rgba(0, 0, 0, .38);
+		backdrop-filter: blur(1rem);
+		-webkit-backdrop-filter: blur(1rem);
+	}
+	.select2-results__option {
+		color: #aaa;
+	}
+	.select2-dropdown, .select2-dropdown--below {
+		border-color: rgba(76, 76, 76, .38);
+	}
+	.popup-mod-requirements ul {
+		background: rgba(34, 34, 34, .38);
+		border-color: rgba(136, 136, 136, .38);
+	}
+	.pagination ul li a.page-selected, .pagination ul li a.page-selected:hover {
+		background: rgba(62, 62, 62, .38);
+	}
+	.pagination ul li a, .pagination ul li a:hover, .pagination ul li a:focus {
+		color: #c8c8c8;
+	}
+	.pagination ul li a {
+		background-color: rgba(17, 17, 17, .38);
+	}
+	.pagination ul li.prev .icon-arrow-thin, .pagination ul li.next .icon-arrow-thin {
+		fill: #c8c8c8;
+	}
+	.pagination ul li a:hover, .pagination ul li a:focus, .pagination ul li.prev a:hover, .pagination ul li.prev a:focus, .pagination ul li.next a:hover, .pagination ul li.next a:focus {
+		background-color: rgba(0, 0, 0, .38);
+		color: #c8c8c8;
+	}
+	.select2-container--default .select2-search--dropdown .select2-search__field {
+		border-color: rgba(85, 85, 85, .38);
+		background-color: rgba(0, 0, 0, .38);
+		color: #aaa;
+	}
+	.article-actions {
+		background-color: rgba(32, 32, 32, .38);
+	}
+	.article-nav .article-label {
+		color: #a9a9a9;
+	}
+	.article-nav ul li:hover a {
+		background-color: rgba(24, 24, 24, .38);
+	}
+	.article-nav ul li a {
+		border-color: rgba(86, 86, 86, .38);
+	}
+	.article-nav ul li a .icon-arrow-thin {
+		fill: #bcbcbc;
+	}
+	.article-page {
+		background-color: rgba(76, 76, 76, .38);
+		text-shadow: 1px 1px 1px #000;
+	}
+	.article-page .comments {
+		border-color: rgba(56, 56, 56, .38);
+	}
+	#head.new-head .headlogo svg {
+		filter: drop-shadow(1px 1px 1px #000);
+	}
+	.rj-search-category {
+		border-left-color: rgba(255, 255, 255, .08);
+	}
+	form.rj-search.open-category-select .rj-search-category-dropdown-toggle {
+		background-color: rgba(255, 255, 255, .08);
+	}
+	.rj-search-category-wrapper {
+		color: #e8e8e8;
+	}
+	.select2-container--default.select2-container--disabled .select2-selection--single, .searchtext, .select2-container--default .select2-selection--multiple, .ui-datepicker select.ui-datepicker-month, .ui-datepicker select.ui-datepicker-year {
+		background-color: rgba(0, 0, 0, .38);
+	}
+	.searchtext {
+		color: #bbb;
+	}
+	input[type="checkbox"] {
+		filter: invert(.835) hue-rotate(180deg);
+	}
+	.refine-results ul.choice-list, .range-area {
+		background-color: rgba(76, 76, 76, .38);
+	}
+	a.mod-image {
+		background-color: rgba(56, 56, 56, .38);
+	}
+	.mod-tile-left, figure.image_figure .fore_div img, figure.image_figure .fore_div_mods img {
+		background-color: transparent;
+	}
+	.game-filter form input {
+		color: #919191;
+		background-color: rgba(0, 0, 0, .38);
+	}
+	[style="position: absolute; top: 72px; z-index: 9999; background-color: rgb(76, 76, 76); border: 1px solid rgb(225, 225, 225); padding: 8px 16px;"] {
+		background-color: rgba(76, 76, 76, .38) !important;
+		border-color: rgba(17, 17, 17, .38) !important;
+	}
+	.date_selector {
+		background-color: rgba(0, 0, 0, .38);
+		color: #bbb;
+	}
+	.ui-widget-content {
+		background-color: rgba(34, 34, 34, .38);
+		border-color: rgba(64, 64, 64, .38);
+		color: #919191;
+		backdrop-filter: blur(1rem);
+		-webkit-backdrop-filter: blur(1rem);
+	}
+	.ui-widget-header {
+		background-color: rgba(64, 64, 64, .38);
+		border-color: rgba(64, 64, 64, .38);
+		color: #bbb;
+	}
+	.ui-datepicker select.ui-datepicker-month option, .ui-datepicker select.ui-datepicker-year option {
+		background-color: #383838;
+	}
+	.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+		background-color: rgba(0, 0, 0, 0);
+	}
+	.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+		border-color: rgba(51, 51, 51, .38);
+		color: #bbb;
+	}
+	.btn-inactive, .btn:disabled {
+		background-color: #565656 !important;
+		color: #000 !important;
+	}
+	.btn-inactive .icon, .btn:disabled .icon {
+		fill: #000;
+	}
+	#rj-sitemap ul li a.rj-standard-button {
+		color: #fff;
+	}
+	.rj-user-nav .nav-interact .ni-background {
+		background-color: rgba(43, 45, 47, .38);
+	}
+	section#rj-sitemap {
+		border-image-source: linear-gradient(to right,rgba(255,255,255,0),rgba(255, 255, 255, .38) 52%,rgba(255,255,255,0));
+	}
+	.rj-header-tray {
+		background-color: rgba(43, 45, 47, .38);
+		backdrop-filter: blur(1rem);
+		-webkit-backdrop-filter: blur(1rem);
+	}
+	.rj-header-full-width-banner {
+		background-color: rgba(24, 24, 24, .38);
+	}
+	.rj-panel.rj-panel-border:hover>.rj-panel-inner {
+		background-color: rgba(77, 79, 80, .38);
+	}
+	.rj-panel.rj-panel-border>.rj-panel-inner {
+		background-color: rgba(60, 61, 63, .38);
+	}
+	.rj-panel.rj-panel-border {
+		background: linear-gradient(180deg,rgba(217, 143, 64, .38),rgba(255,255,255,0.16));
+	}
+	.rj-right-tray {
+		background-color: rgba(43, 45, 47, .38);
+		backdrop-filter: blur(1rem);
+		-webkit-backdrop-filter: blur(1rem);
+	}
+	.rj-tray-section.section-dark {
+		background-color: rgba(34, 34, 34, .38);
+	}
+	.rj-right-tray .arrow {
+		border-bottom-color: rgba(43, 45, 47, .38);
+	}
+	.rj-right-tray .arrow::before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		filter: blur(1rem);
+	}
+	.rj-tray-section.section-dark.link-section:hover {
+		background-color: rgba(43, 45, 47, .38);
+	}
+	.widget-mod-requirements.popup.mfp-with-anim.col-1-1.popup-mod-requirements {
+		backdrop-filter: blur(1rem);
+		-webkit-backdrop-filter: blur(1rem);
+	}
+	div.bbc_spoiler_content {
+		background: rgba(38, 38, 38, .38);
+		border-color: rgba(59, 59, 59, .38);
+	}
+	.notifications-header, .notification-preferences-header {
+		background-color: rgba(43, 45, 47, .38);
+	}
+	.notifications-list, .notification-load-more, .notification-preferences-menu {
+		background-color: rgba(34, 34, 34, .38);
+	}
+	#featured #nofeature #pagetitle {
+		background: -webkit-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,.38) 100%);
+		background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.38) 100%);
+	}
+	.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+		color: #ccc !important;
+		border-color: rgba(103, 103, 103, .38);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, .38)), color-stop(100%, rgba(60, 60, 60, .38)));
+		background: -webkit-linear-gradient(top, rgba(0, 0, 0, .38) 0%, rgba(60, 60, 60, .38) 100%);
+		background: -moz-linear-gradient(top, rgba(0, 0, 0, .38) 0%, rgba(60, 60, 60, .38) 100%);
+		background: -ms-linear-gradient(top, rgba(0, 0, 0, .38) 0%, rgba(60, 60, 60, .38) 100%);
+		background: -o-linear-gradient(top, rgba(0, 0, 0, .38) 0%, rgba(60, 60, 60, .38) 100%);
+		background: linear-gradient(to bottom, gba(0, 0, 0, .38) 0%, rgba(60, 60, 60, .38) 100%);
+	}
+	.dataTables_wrapper .dataTables_paginate .paginate_button.disabled, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
+		color: #999 !important;
+	}
+	.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+		border-color: rgba(17, 17, 17, .38);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(88, 88, 88, .38)), color-stop(100%, rgba(17, 17, 17, .38)));
+		background: -webkit-linear-gradient(top, rgba(88, 88, 88, .38) 0%, rgba(17, 17, 17, .38) 100%);
+		background: -moz-linear-gradient(top, rgba(88, 88, 88, .38) 0%, rgba(17, 17, 17, .38) 100%);
+		background: -ms-linear-gradient(top, rgba(88, 88, 88, .38) 0%, rgba(17, 17, 17, .38) 100%);
+		background: -o-linear-gradient(top, rgba(88, 88, 88, .38) 0%, rgba(17, 17, 17, .38) 100%);
+		background: linear-gradient(to bottom, rgba(88, 88, 88, .38) 0%, rgba(17, 17, 17, .38) 100%);
+	}
+	.dataTables_filter input, input.form-field {
+		color: #919191 !important;
+		background-color: rgba(0, 0, 0, .38);
+	}
+	table.dataTable tbody tr, .form-section-content .select2-container--default .select2-selection--single {
+		background-color: rgba(0, 0, 0, .38);
+	}
+	td.tracking-mod .tracking-icon {
+		background: rgba(45, 45, 45, .38);
+	}
+	.table td {
+		border-top-color: rgba(73, 73, 73, .38);
+		background: rgba(56, 56, 56, .38);
+	}
+	table.dataTable.no-footer {
+		border-bottom-color: rgba(17, 17, 17, .38);
+	}
+	table.dataTable thead th, table.dataTable thead td {
+		border-bottom-color: rgba(17, 17, 17, .38);
+	}
+	.form-section-content, .media-section-content {
+		background: rgba(56, 56, 56, .38);
+	}
+	.form-section header, textarea.application-key, .application-image-container {
+		background: rgba(45, 45, 45, .38);
+	}
+	.line {
+		border-bottom-color: rgba(225, 225, 225, .38);
+	}
+	.page-layout .donation-panel {
+		border-color: rgba(136, 136, 136, .38);
+		background-color: rgba(34, 34, 34, .38);
+	}
+	.page-layout .donation-wrapper form input[type=text] {
+		color: #e0e0e0;
+		background-color: rgba(0, 0, 0, .38);
+	}
+	.page-layout .donation-wrapper form .form-group > span {
+		color: #e0e0e0;
+	}
+	.rj-btn.rj-btn-outline, .rj-btn.rj-btn-standard {
+		text-shadow: 1px 1px 1px #000;
+	}
+	div#mainContent > .tabcontent.tabcontent-mod-page[aria-live="assertive"] {
+		backdrop-filter: blur(1rem);
+		-webkit-backdrop-filter: blur(1rem);
+	}
+	.forum-bugs td.bug-comment {
+		background-color: rgba(32, 32, 32, .38);
+	}
+	.forum-bugs .comments>ol>li:first-of-type:before {
+		background-color: rgba(45, 45, 45, .38);
+	}
+	.info.warning {
+		background-color: transparent;
+		position: relative;
+	}
+	.info .info-content::before:not(.form-user-upload) {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		margin: 0;
+		background-color: var(--theme-primary);
+		opacity: .38;
+		z-index: 2;
+	}
+	.info .info-content::after:not(.form-user-upload) {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		margin: 0;
+		backdrop-filter: blur(1rem);
+		z-index: 0;
+	}
+	.info .info-content > h3, .info .info-content > p, .info > svg, .info {
+		z-index: 3;
+		position: relative;
+		text-shadow: 1px 1px 1px #000000ba;
+	}
+	input#user_login, input#password, input#otp_attempt, input#real_name, select {
+		background-color: rgba(0, 0, 0, .38);
+		color: rgba(255, 255, 255, .6);
+	}
+	div.floating-label label, .password-group input[type=password]~.password-toggle>i, .password-group input[type=text]~.password-toggle>i {
+		color: rgba(255, 255, 255, .6);
+	}
+	.password-group .password-toggle {
+		background-color: rgba(0, 0, 0, .38);
+	}
+	.password-group .password-toggle:focus {
+		background-color: rgba(51, 51, 51, .38);
+	}
+	.jumbotron {
+		background-color: rgb(41, 44, 47);
+	}
+	#game-blurb {
+		border-top-color: rgba(255, 255, 255, .38);
+	}
+	.btn-active, #graph-widget-container .active {
+		background-color: rgba(40, 40, 40, .38) !important;
+	}
+	.popup-bugreport.popup.mfp-with-anim.col-1-1 > .col-1-1, .wysibb, textarea#add-bugreport-post {
+		background-color: transparent;
+	}
+	.wysibb .wysibb-text {
+		background: rgba(56, 56, 56, .38);
+	}
+	.wysibb {
+		border-color: #444;
+		color: #fff;
+	}
+	.wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn:hover .fonticon {
+		color: #fff;
+	}
+	.wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn:hover {
+		background-color: rgba(17, 17, 17, .38);
+	}
+	.wysibb .wysibb-toolbar .wysibb-toolbar-container {
+		border-color: #444;
+	}
+	#wbbmodal .wbbm {
+		background: rgba(0, 0, 0, .38);
+		border-color: rgba(68, 68, 68, .38);
+		box-shadow: 0 0 5px rgba(51, 51, 51, .38);
+		backdrop-filter: blur(1rem);
+		-webkit-backdrop-filter: blur(1rem);
+	}
+	#wbbmodal .wbbm-title {
+		color: #ccc;
+		border-color: rgba(51, 51, 51, .38);
+	}
+	#wbbmodal .div-modal-text {
+		border-color: rgba(85, 85, 85, .38);
+		color: #919191;
+	}
+	#wbbmodal .wbbm-inp-row label {
+		color: #919191;
+	}
+	#wbbmodal .wbbm-inp-row input {
+		border-color: rgba(85, 85, 85, .38);
+		color: #919191;
+		background-color: transparent;
+	}
+	#wbbmodal .wbbm-bottom {
+		background-color: rgba(1, 1, 1, .38);
+		border-color: rgba(51, 51, 51, .38);
+	}
+	#wbbmodal .wbb-cancel-button:hover {
+		background: rgba(0, 0, 0, .38);
+		border-color: rgba(51, 51, 51, .38);
+	}
+	#wbbmodal .wbb-cancel-button {
+		background: rgba(5, 5, 5, .38);
+		border-color: rgba(68, 68, 68, .38);
+		color: #ccc;
+	}
+	.wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn.on, .wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn.on:hover, .wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn:active {
+		background: rgba(51, 51, 51, .38);
+		box-shadow: inset 0 0 3px rgba(85, 85, 85, .38);
+		border-color: rgba(85, 85, 85, .38);
+	}
+	.wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn.on .fonticon {
+		color: #fff;
+	}
+	.wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn .fonticon {
+		color: #ccc;
+		text-shadow: 0 1px 0 rgba(0, 0, 0, .38);
+	}
+	.wysibb .wysibb-toolbar {
+		border-color: rgba(68, 68, 68, .38);
+	}
+	.wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn.wbb-select:hover, .wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn.wbb-dropdown:hover, .wbb-select .option:hover, .wbb-list .nc:hover {
+		background-color: rgba(17, 17, 17, .38);
+	}
+	.wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn.wbb-select.on, .wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn.wbb-select.on:active {
+		border-color: rgba(85, 85, 85, .38);
+		background: rgba(51, 51, 51, .38);
+		box-shadow: inset 0 0 3px rgba(85, 85, 85, .38);
+	}
+	.wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn .wbb-list {
+		border-color: rgba(68, 68, 68, .38);
+		box-shadow: 0 0 3px rgba(85, 85, 85, .38);
+		background: rgba(0, 0, 0, .38);
+		backdrop-filter: blur(1rem);
+		-webkit-backdrop-filter: blur(1rem);
+	}
+	.wbb-list .nc, .comment-reply textarea {
+		color: #999;
+	}
+	.wbb-list .sc {
+		border-color: rgba(0, 0, 0, .38);
+	}
+	.wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn.wbb-dropdown.on, .wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn.wbb-dropdown.on:active {
+		border-color: rgba(85, 85, 85, .38);
+		background: rgba(51, 51, 51, .38);
+		box-shadow: inset 0 0 3px rgba(85, 85, 85, .38);
+	}
+	.popup {
+		background-color: rgba(76, 76, 76, .38);
+		backdrop-filter: blur(1rem);
+		-webkit-backdrop-filter: blur(1rem);
+	}
+	body.rails-default-error-page {
+		background-color: #2b2d2f;
+	}
+	.rails-default-error-page div.dialog > div {
+		border-color: #444;
+		border-top-color: #B00100;
+		border-right-color: #666;
+		border-left-color: #666;
+		border-bottom-color: #555;
+		background-color: #383838;
+	}
+	.rails-default-error-page div.dialog > p {
+		background-color: #414141;
+		border-color: #555;
+		border-right-color: #666;
+		border-left-color: #666;
+		border-bottom-color: #666;
+		border-top-color: #383838;
+		color: #999;
+	}
+	.rails-default-error-page h1 {
+		color: #910;
+	}
+	.grey, .comments figure.quote  {
+		background-color: rgba(76, 76, 76, .38);
+	}
+	.comments>ol>li ol>li .comment-head {
+		background-color: rgba(69, 69, 69, .38);
+	}
+	div#nofeature {
+		background-image: none !important;
+		position: relative;
+	}
+	div#nofeature::before {
+		content: '';
+		position: absolute;
+		background-image: url('https://www.nexusmods.com/assets/images/default/bg_default.jpg');
+		background-size: cover;
+		width: 100%;
+		height: 100%;
+		opacity: .38;
+		z-index: -1;
+	}
+	body .home-intro {
+		position: relative;
+		background-image: none;
+	}
+	body .home-intro::after {
+		content: '';
+		background-image: url('/assets/images/default/bg_game_header.jpg');
+		background-repeat: no-repeat;
+		background-position: top center;
+		position: absolute;
+		width: 100%;
+		height: 75%;
+		top: 0;
+		left: 0;
+		margin: 0;
+		padding: 0;
+		z-index: -1;
+		opacity: .38;
+	}
+	body .home-intro::before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 25% !important;
+		max-height: 25% !important;
+		left: 0;
+		top: 38.05em;
+		background-image: -webkit-linear-gradient(top, #2d2d2d 2%, #0000 100%);
+		z-index: -1;
+		opacity: .38;
+	}
+	.rj-btn.rj-btn-secondary[id="slowDownloadButton"]:hover {
+		background-color: rgba(77, 77, 77, .38);
+	}
+	.rj-btn.rj-btn-secondary[id="slowDownloadButton"] {
+		color: #ddd;
+		background-color: rgba(0, 0, 0, .38);
+		border-color: rgba(68, 68, 68, .38);
+	}
+	.subnav, .drop-down:hover>.btn {
+		background-color: rgba(24, 24, 24, .38);
+		backdrop-filter: blur(1rem);
+		-webkit-backdrop-filter: blur(1rem);
+	}
+	ul.sublist li a, div.container .actions ul.sublist li a {
+		color: #a6a6a6;
+	}
+	input#user_name, input#password_confirmation {
+		background-color: rgba(0, 0, 0, .38);
+		color: rgba(255, 255, 255, .6);
+	}
+	.password-help {
+		background-color: rgba(34, 34, 34, .38);
+		color: #dadcdb;
+		backdrop-filter: blur(1rem);
+		-webkit-backdrop-filter: blur(1rem);
+	}
+	.password-help>.arrow {
+		border-bottom-color: rgba(34, 34, 34, .38);	
+	}
+	.password-help .password-condition.password-condition-success>div {
+		color: rgba(255, 255, 255, .4);
+	}
+	.main.vortex-and-nmm {
+		background-color: rgba(76, 76, 76, .38);
+		backdrop-filter: blur(1rem);
+		-webkit-backdrop-filter: blur(1rem);
+	}
+	.bg-vortex-pattern {
+		background: none;
+		position: relative;
+	}
+	.bg-vortex-pattern::before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: url('https://www.nexusmods.com/bootstrap/images/vortex/bg/vortex-bg.jpg');
+		opacity: .38;
+		top: 0;
+	}
+	.bg-dark, .article-image {
+		background-color: rgba(45, 45, 45, .38);
+	}
+	.popup-mod-tagging .col-1-1 {
+		background-color: transparent;
+	}
+	textarea.problem-description {
+		background-color: rgba(0, 0, 0, .38);
+	}
+	select.form-field {
+		color: #919191;
+	}
+	option {
+		background-color: #2c2d2d;
+		color: #919191;
+	}
 }
 
 @-moz-document domain("help.nexusmods.com") {
-::-webkit-scrollbar-thumb {
-    border-radius: 2px;
-    -webkit-box-shadow: inset 0 0 6px rgb(0 0 0 / 60%);
-    background: #34d6ff;
-}
+	::-webkit-scrollbar-thumb {
+		border-radius: 2px;
+		-webkit-box-shadow: inset 0 0 6px rgb(0 0 0 / 60%);
+		background: #34d6ff;
+	}
 
-#docsSearch {
-	background-color: rgba(43, 45, 47);
-	border-color: rgba(65, 65, 65);
-}
-body {
-	background-color: #222;
-}
-textarea, input[type=text], input[type=password], input[type=datetime], input[type=datetime-local], input[type=date], input[type=month], input[type=time], input[type=week], input[type=number], input[type=email], input[type=url], input[type=search], input[type=tel], input[type=color], .uneditable-input {
-	background-color: #181818;
-	border-color: rgba(65, 65, 65);
-	color: #fff;
-}
-.category-list .category:hover {
-	background-color: rgba(43, 45, 47);
-}
-.category-list h3 {
-	color: #ccc;
-}
-.category-list .category {
-	border-color: rgba(65, 65, 65);
-}
-#sidebar form .search-query {
-	border-color: rgba(65, 65, 65);
-	color: #999;
-}
-#sidebar h3, #sidebar .nav-list .active a, #sidebar .nav-list .active a:hover, #sidebar .nav-list .active a:focus, #sidebar .nav-list a:hover, #sidebar .nav-list a:focus, footer p a:hover, #fullArticle h1, #fullArticle h2, #fullArticle h3, #fullArticle h4, #fullArticle h5 {
-	color: #ddd;
-}
-#sidebar .nav-list a, .contentWrapper p.descrip {
-	color: #959595;
-}
-.nav-list>li>a, .nav-list .nav-header {
-    text-shadow: 0 1px 0 rgba(24, 24, 24, .5);
-}
-.contentWrapper {
-	background-color: #181818;
-	border-color: rgba(65, 65, 65);
-	color: #ddd;
-}
-.icon-article-doc:before {
-	color: #676767;
-}
-select {
-	background-color: #181818;
-	border-color: rgba(65, 65, 65);
-}
-select, textarea, input[type=text], input[type=password], input[type=datetime], input[type=datetime-local], input[type=date], input[type=month], input[type=time], input[type=week], input[type=number], input[type=email], input[type=url], input[type=search], input[type=tel], input[type=color], .uneditable-input {
-	color: #aaa;
-}
-footer p a, footer p {
-	color: #7b7b7b;
-}
-[class^=icon-], [class*=" icon-"], .featherlight-close-icon {
-	color: #464646;
-}
-#fullArticle .printArticle:hover .icon-print {
-	color: #686868;
-}
-#fullArticle table th, #fullArticle table td, #fullArticle img {
-	border-color: rgba(59, 59, 59);
-}
-#fullArticle, #fullArticle p, #fullArticle ul, #fullArticle ol, #fullArticle li, #fullArticle div, #fullArticle blockquote, #fullArticle dd, #fullArticle table {
-	color: #a8a8a8;
-}
-.articleFoot p, .articleFoot time {
-	color: #606060;
-}
-.related {
-	background-color: #181818;
-	border-color: rgba(65, 65, 65);
-}
-.related h3 {
-	color: #bdbdbd;
-}
-#fullArticle strong {
-	color: #b9b9b9;
-}
+	#docsSearch {
+		background-color: rgba(43, 45, 47);
+		border-color: rgba(65, 65, 65);
+	}
+	body {
+		background-color: #222;
+	}
+	textarea, input[type=text], input[type=password], input[type=datetime], input[type=datetime-local], input[type=date], input[type=month], input[type=time], input[type=week], input[type=number], input[type=email], input[type=url], input[type=search], input[type=tel], input[type=color], .uneditable-input {
+		background-color: #181818;
+		border-color: rgba(65, 65, 65);
+		color: #fff;
+	}
+	.category-list .category:hover {
+		background-color: rgba(43, 45, 47);
+	}
+	.category-list h3 {
+		color: #ccc;
+	}
+	.category-list .category {
+		border-color: rgba(65, 65, 65);
+	}
+	#sidebar form .search-query {
+		border-color: rgba(65, 65, 65);
+		color: #999;
+	}
+	#sidebar h3, #sidebar .nav-list .active a, #sidebar .nav-list .active a:hover, #sidebar .nav-list .active a:focus, #sidebar .nav-list a:hover, #sidebar .nav-list a:focus, footer p a:hover, #fullArticle h1, #fullArticle h2, #fullArticle h3, #fullArticle h4, #fullArticle h5 {
+		color: #ddd;
+	}
+	#sidebar .nav-list a, .contentWrapper p.descrip {
+		color: #959595;
+	}
+	.nav-list>li>a, .nav-list .nav-header {
+		text-shadow: 0 1px 0 rgba(24, 24, 24, .5);
+	}
+	.contentWrapper {
+		background-color: #181818;
+		border-color: rgba(65, 65, 65);
+		color: #ddd;
+	}
+	.icon-article-doc:before {
+		color: #676767;
+	}
+	select {
+		background-color: #181818;
+		border-color: rgba(65, 65, 65);
+	}
+	select, textarea, input[type=text], input[type=password], input[type=datetime], input[type=datetime-local], input[type=date], input[type=month], input[type=time], input[type=week], input[type=number], input[type=email], input[type=url], input[type=search], input[type=tel], input[type=color], .uneditable-input {
+		color: #aaa;
+	}
+	footer p a, footer p {
+		color: #7b7b7b;
+	}
+	[class^=icon-], [class*=" icon-"], .featherlight-close-icon {
+		color: #464646;
+	}
+	#fullArticle .printArticle:hover .icon-print {
+		color: #686868;
+	}
+	#fullArticle table th, #fullArticle table td, #fullArticle img {
+		border-color: rgba(59, 59, 59);
+	}
+	#fullArticle, #fullArticle p, #fullArticle ul, #fullArticle ol, #fullArticle li, #fullArticle div, #fullArticle blockquote, #fullArticle dd, #fullArticle table {
+		color: #a8a8a8;
+	}
+	.articleFoot p, .articleFoot time {
+		color: #606060;
+	}
+	.related {
+		background-color: #181818;
+		border-color: rgba(65, 65, 65);
+	}
+	.related h3 {
+		color: #bdbdbd;
+	}
+	#fullArticle strong {
+		color: #b9b9b9;
+	}
 }
 
 @-moz-document domain("wiki.nexusmods.com") {
-::-webkit-scrollbar-thumb {
-    border-radius: 2px;
-    -webkit-box-shadow: inset 0 0 6px rgb(0 0 0 / 60%);
-    background: #e6832b;
-}
+	::-webkit-scrollbar-thumb {
+		border-radius: 2px;
+		-webkit-box-shadow: inset 0 0 6px rgb(0 0 0 / 60%);
+		background: #e6832b;
+	}
 }
 
 @-moz-document domain("forums.nexusmods.com") {
-::-webkit-scrollbar-track {
-             -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.3);
-             border-radius: 2px;
-             background-color: #212121;
-        }
-        html[hide-scrollbar="true"] ::-webkit-scrollbar{display:none}
-        ::-webkit-scrollbar {
-             width: 10px;
-             background-color: #212121;
-        }
-        ::-webkit-scrollbar-thumb {
-             border-radius: 2px;
-             -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .6);
-             background: linear-gradient(180deg, #0f0f0f, #151515);
-			 border: 1px solid #000;
-        }
-input[type=text], input[type=password], input[type=email], select {
-	background: #0000 !important;
-}
+	::-webkit-scrollbar-track {
+				 -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.3);
+				 border-radius: 2px;
+				 background-color: #212121;
+			}
+			html[hide-scrollbar="true"] ::-webkit-scrollbar{display:none}
+			::-webkit-scrollbar {
+				 width: 10px;
+				 background-color: #212121;
+			}
+			::-webkit-scrollbar-thumb {
+				 border-radius: 2px;
+				 -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .6);
+				 background: linear-gradient(180deg, #0f0f0f, #151515);
+				 border: 1px solid #000;
+			}
+	input[type=text], input[type=password], input[type=email], select {
+		background: #0000 !important;
+	}
 }
 
 @-moz-document url-prefix("https://www.nexusmods.com/fallout4") {
-body::before {
-	background-image: url('https://wallpaperaccess.com/full/720318.jpg');
-}
+	body::before {
+		background-image: url('https://wallpaperaccess.com/full/720318.jpg');
+	}
 }
 
 @-moz-document url-prefix("https://www.nexusmods.com/newvegas"), url-prefix("https://www.nexusmods.com/fallout4/mods/55215"), url-prefix("https://www.nexusmods.com/fallout4/mods/55332"), url-prefix("https://www.nexusmods.com/fallout4/mods/55382") {
-body.scheme-theme-Fallout {
-    --theme-primary: #da8e35;
-    --theme-primary-translucent: #da8e35d8;
-    --theme-secondary: #b4762c;
-    --theme-dark: #815316;
-}
+	body.scheme-theme-Fallout {
+		--theme-primary: #da8e35;
+		--theme-primary-translucent: #da8e35d8;
+		--theme-secondary: #b4762c;
+		--theme-dark: #815316;
+	}
 
-body::before {
-	background-image: url('https://i.redd.it/8qtlmjh77m511.jpg');
-}
+	body::before {
+		background-image: url('https://i.redd.it/8qtlmjh77m511.jpg');
+	}
 }
 
 @-moz-document url-prefix("https://www.nexusmods.com/skyrim") {
-body::before {
-	background-image: url('https://images.hdqwalls.com/wallpapers/skyrim-wallpaper-4k-bu.jpg');
-}
+	body::before {
+		background-image: url('https://images.hdqwalls.com/wallpapers/skyrim-wallpaper-4k-bu.jpg');
+	}
 }
 
 @-moz-document url-prefix("https://www.nexusmods.com/skyrimspecialedition") {
-body::before {
-	background-image: url('https://wallpaperaccess.com/full/242893.jpg');
-}
+	body::before {
+		background-image: url('https://wallpaperaccess.com/full/242893.jpg');
+	}
 }
 
 @-moz-document url-prefix("https://www.nexusmods.com/witcher") {
-body::before {
-	background-image: url('https://wallpaperaccess.com/full/653677.jpg');
-}
+	body::before {
+		background-image: url('https://wallpaperaccess.com/full/653677.jpg');
+	}
 }
 
 @-moz-document url-prefix("https://www.nexusmods.com/witcher3") {
-body::before {
-	background-image: url('https://i.imgur.com/HyZeLfQ.png');
-}
+	body::before {
+		background-image: url('https://i.imgur.com/HyZeLfQ.png');
+	}
 }
 
 @-moz-document url-prefix("https://www.nexusmods.com/cyberpunk2077") {
-:root {
-    --theme-primary: rgb(255, 0, 60);
-    --theme-primary-translucent: rgba(255, 0, 60, .84);
-    --theme-secondary: rgb(198, 21, 62);
-    --theme-dark: rgb(138, 21, 48);
-}
-body::before {
-	background-image: url('https://wallpaperaccess.com/full/676037.jpg');
-}
+	:root {
+		--theme-primary: rgb(255, 0, 60);
+		--theme-primary-translucent: rgba(255, 0, 60, .84);
+		--theme-secondary: rgb(198, 21, 62);
+		--theme-dark: rgb(138, 21, 48);
+	}
+	body::before {
+		background-image: url('https://wallpaperaccess.com/full/676037.jpg');
+	}
 
 }
 
 @-moz-document url-prefix("https://www.nexusmods.com/oblivion") {
-body::before {
-	background-image: url('https://cdn.wccftech.com/wp-content/uploads/2021/01/skyblivion.jpg');
-}
+	body::before {
+		background-image: url('https://cdn.wccftech.com/wp-content/uploads/2021/01/skyblivion.jpg');
+	}
 }
 
 @-moz-document url-prefix("https://www.nexusmods.com/fallout3") {
-body::before {
-	background-image: url('https://wallpaperaccess.com/full/119189.jpg');
-}
+	body::before {
+		background-image: url('https://wallpaperaccess.com/full/119189.jpg');
+	}
 }
 
 @-moz-document url-prefix("https://www.nexusmods.com/stardewvalley") {
-body::before {
-	background-image: url('https://i.pinimg.com/originals/b8/1a/a4/b81aa44ba47c8ebb93c4525a96904101.jpg');
-}
+	body::before {
+		background-image: url('https://i.pinimg.com/originals/b8/1a/a4/b81aa44ba47c8ebb93c4525a96904101.jpg');
+	}
 }
 
 @-moz-document url-prefix("https://www.nexusmods.com/dragonage") {
-body::before {
-	background-image: url('https://images3.alphacoders.com/109/109665.jpg');
-}
+	body::before {
+		background-image: url('https://images3.alphacoders.com/109/109665.jpg');
+	}
 }
 
 @-moz-document url-prefix("https://www.nexusmods.com/monsterhunterworld") {
-body::before {
-	background-image: url('https://wallpaperaccess.com/full/1926141.jpg');
-}
+	body::before {
+		background-image: url('https://wallpaperaccess.com/full/1926141.jpg');
+	}
 }
 
 @-moz-document url-prefix("https://www.nexusmods.com/morrowind") {
-body::before {
-	background-image: url('https://tesrskywind.com/wp-content/uploads/2019/07/GalleryAscadianIsles2_Arvuti.png');
-}
+	body::before {
+		background-image: url('https://tesrskywind.com/wp-content/uploads/2019/07/GalleryAscadianIsles2_Arvuti.png');
+	}
 }
 
 @-moz-document url-prefix("https://www.nexusmods.com/mountandblade2bannerlord") {
-body::before {
-	background-image: url('https://wallpaperaccess.com/full/5671474.png');
-}
+	body::before {
+		background-image: url('https://wallpaperaccess.com/full/5671474.png');
+	}
 }
 
 @-moz-document url-prefix("https://www.nexusmods.com/dragonage2") {
-body::before {
-	background-image: url('https://images3.alphacoders.com/120/thumb-1920-120325.jpg');
-}
+	body::before {
+		background-image: url('https://images3.alphacoders.com/120/thumb-1920-120325.jpg');
+	}
 }
 
 @-moz-document url-prefix("https://www.nexusmods.com/dragonageinquisition") {
-body::before {
-	background-image: url('https://wallpaperaccess.com/full/373700.jpg');
-}
+	body::before {
+		background-image: url('https://wallpaperaccess.com/full/373700.jpg');
+	}
 }
 
 @-moz-document url-prefix("https://www.nexusmods.com/bladeandsorcery") {
-body::before {
-	background-image: url('https://i.redd.it/la9po1nkaq751.png');
-}
+	body::before {
+		background-image: url('https://i.redd.it/la9po1nkaq751.png');
+	}
 }
 
 @-moz-document url-prefix("https://www.nexusmods.com/darksouls") {
-body::before {
-	background-image: url('https://images.alphacoders.com/278/thumb-1920-278051.jpg');
-}
+	body::before {
+		background-image: url('https://images.alphacoders.com/278/thumb-1920-278051.jpg');
+	}
 }
 
 @-moz-document url-prefix("https://www.nexusmods.com/kingdomcomedeliverance") {
-body::before {
-	background-image: url('https://external-preview.redd.it/wJq9109DaVFax4XCnN6EnNDPSq6PBsOwtRlfnb4ldYs.jpg?auto=webp&s=234107489ff7daecfb4d852bf56035fb48849374');
-}
+	body::before {
+		background-image: url('https://external-preview.redd.it/wJq9109DaVFax4XCnN6EnNDPSq6PBsOwtRlfnb4ldYs.jpg?auto=webp&s=234107489ff7daecfb4d852bf56035fb48849374');
+	}
 }
 
 @-moz-document url-prefix("https://www.nexusmods.com/subnautica") {
-body::before {
-	background-image: url('https://images4.alphacoders.com/901/thumb-1920-901071.jpg');
-}
+	body::before {
+		background-image: url('https://images4.alphacoders.com/901/thumb-1920-901071.jpg');
+	}
 }
 
 @-moz-document url-prefix("https://www.nexusmods.com/masseffect") {
-body::before {
-	background-image: url('https://wallpaperaccess.com/full/4605441.jpg');
-}
+	body::before {
+		background-image: url('https://wallpaperaccess.com/full/4605441.jpg');
+	}
 }
 
 @-moz-document url-prefix("https://www.nexusmods.com/masseffectlegendaryedition") {
-body::before {
-	background-image: url('https://images7.alphacoders.com/111/thumb-1920-1112414.jpg');
-}
+	body::before {
+		background-image: url('https://images7.alphacoders.com/111/thumb-1920-1112414.jpg');
+	}
 }
 
 @-moz-document url-prefix("https://www.nexusmods.com/masseffect3") {
-body::before {
-	background-image: url('https://images.hdqwalls.com/wallpapers/mass-effect-3-pc-version-rj.jpg');
-}
+	body::before {
+		background-image: url('https://images.hdqwalls.com/wallpapers/mass-effect-3-pc-version-rj.jpg');
+	}
 }
 
 @-moz-document url-prefix("https://www.nexusmods.com/darkestdungeon") {
-:root {
-    --theme-primary: #000;
-    --theme-primary-translucent: #000000d8;
-    --theme-secondary: #000;
-    --theme-dark: #000;
-}
+	:root {
+		--theme-primary: #000;
+		--theme-primary-translucent: #000000d8;
+		--theme-secondary: #000;
+		--theme-dark: #000;
+	}
 
-body::before {
-	background-image: url('https://7wallpapers.net/wp-content/uploads/9_Darkest-Dungeon.jpg');
-}
-#head.new-head .headlogo svg, .rj-vortex-icon-wrapper, .rj-vortex-button, #rj-footer svg, #rj-footer img, ul.action-log>li, ul.btnexpand:hover, figure.quote, .comments figure.quote, .wysibb .wysibb-text blockquote, .rvs-container .rvs-nav-item.rvs-active, .rj-btn.rj-button-outline, a.rj-btn.rj-button-outline, blockquote.ipsBlockquote, .motm_position, ul.friend-actions .btn, .widget-download-links .btn, .popup-register-copy .btn, .btn.signin, .btn-more .btn, .home-buttons .btn, .btn-load, .form-section-content .btn, ul.file-actions .btn, .add-clone, .form-section .btn.btnsmall, .add-nav .btn, .modactions .btn, .mobile-close, ul.actions .btn, #foot #backtop .btn, #usernav ul li a, #footbtn .btn, form.search input.btn, ul.search-terms li:after, .accordion dt .acc-status, .fake-accordion .acc-status, .acc-status, .tiles .btnexpand ul li, ul.btnexpand:hover, ul.btnexpand:focus, .popup .mfp-close, .tiles .view-label, .tracking-highlight span.update-bar, .edit, .crop, .set-primary, ul.add-process li.current:before, .select2-container--default .select2-selection--multiple .select2-selection__choice__remove, .info.callout, #mobilebtn, nav#mobilenav #mobile-user ul li a, ul#mobile-primary li a, .rvs-container .rvs-nav-item.rvs-active, .irs-bar, #head .btn, a.btn, .btn, .btn:visited, .toggle-button, .toggle-button:active, .toggle-button:visited, .rj-button-outline:hover, a.rj-button-outline:hover, .arrow-box, a.post-category.site-news, .select2-container--default .select2-results__option--highlighted[aria-selected], #rj-back-to-top.rj-hug-footer, .bubble, .rj-standard-button, ul.friend-actions .btn:hover, ul.friend-actions .btn:focus, .btn.signin:hover, .popup-register-copy .btn:hover, .popup-register-copy .btn:focus, .btn-more .btn:hover, .btn-more .btn:focus, .home-buttons .btn:hover, .home-buttons .btn:focus, .btn-load:hover, .btn-load:focus, .form-section-content .btn:hover, .form-section-content .btn:focus, ul.file-actions .btn:hover, ul.file-actions .btn:focus, .add-clone:hover, .add-clone:focus, .form-section .btn.btnsmall:hover, .form-section .btn.btnsmall:focus, .add-nav .btn:hover, .add-nav .btn:focus, .modactions .btn:hover, .modactions .btn:focus, .mobile-close:hover, .mobile-close:focus, ul.actions .btn:hover, ul.actions .btn:focus, #foot #backtop .btn:hover, #foot #backtop .btn:focus, #footbtn .btn:hover, #footbtn .btn:focus, #head .btn:hover, #head .btn:focus, #usernav ul li:hover a, #usernav ul li:focus a, form.search input.btn:hover, form.search input.btn:focus, ul.btnexpand li ul li:hover, ul.btnexpand li ul li:focus, .popup .mfp-close:hover, .popup .mfp-close:focus, .edit:hover, .edit:focus, .crop:hover, .crop:focus, .set-primary:hover, .set-primary:focus, #mobilebtn:hover, #mobilebtn:focus, .rvs-container .rvs-nav-item.rvs-active:hover, .rvs-container .rvs-nav-item.rvs-active:focus, a.btn:hover, .btn:hover, .actions .drop-down .btn:hover, .actions .drop-down .btn:focus, .drop-down:hover>#button-manage, a.btn:focus, .btn:focus, span.alert, .arrow-box:hover {
-	filter: drop-shadow(1px 1px 3px #bd0707);
-}
-.home-trending ul.tiles ul.inline-list a:hover, .arrowlist a:hover, .widget-download-links .btn:hover, .widget-download-links .btn:focus, .popup-register-copy p a:hover, .popup .info-content a:hover, ol.pick-page a:hover, p#opening a:hover, .add-file p a:hover, .tabcontent a:hover, dd a:hover, article a:hover, article a:focus, article a:active, .sideitem a:hover, ul.post-meta a:hover, .article-copy p a:hover, #mobile-fav .mobile-header a:hover, .quote-meta a:hover, .tiles .author a:hover, .comment-name a:hover, ul.comment-inline a:hover, article p a:hover, #copyright a:hover, a.fav-edit:hover, #name a:hover, ul#breadcrumb li a:hover, a.clear-cat:hover, .tiles .category a:hover, nav#menu .wrap ul li.nav-games ul li a:hover, #rj-sitemap ul li a:hover {
-	text-shadow: 1px 1px 5px #d50707;
-}
-.home-trending ul.tiles ul.inline-list a, .arrowlist a, .popup-register-copy p a, .popup .info-content a, ol.pick-page a, p#opening a, .add-file p a, .tabcontent a, dd a, article a, .sideitem a, ul.post-meta a, .article-copy p a, #mobile-fav .mobile-header a, .quote-meta a, .comment-name a, ul.comment-inline a, article p a, #copyright a, a.fav-edit, .tiles .author a, a.clear-cat, ul#breadcrumb li a, .topnav ul.global li a:hover, nav#menu .wrap ul li ul li a:hover, nav#menu .wrap ul li.nav-games ul li a, div.container a, ul.sublist li a:hover, div.container .actions ul.sublist li a:hover, a.view-all:hover, .featured-article h2 a:hover, .tiles .tile-desc h3 a:hover, .tiles .category a, .tiles .tile-data ul li a:hover, ul.tracking-author-options li a:hover, .file-manage-title h3 a:hover, #sitemap ul.footlinks li a:hover, ul#mobile-primary li#mobile-updates .updatedesc a, #name a, .stat-endorsements a:link, .stat-endorsements a:visited, .stat-endorsements a:active, .user-list-details a, .category-item a .category-name, li .log-modified a, li .log-modified a:visited, .category-item a:visited .category-name, .breadcrumb a, #ajgpermalink, a.theme-link, .gsearch_results_list li.active h3, .top-lists-links a:link, .top-lists-links a:visited, .notification-actions a.set-notification-read, .notification-actions a.set-notification-read:visited {
-	text-shadow: 1px 1px 2px #bd0707;
-}
+	body::before {
+		background-image: url('https://7wallpapers.net/wp-content/uploads/9_Darkest-Dungeon.jpg');
+	}
+	#head.new-head .headlogo svg, .rj-vortex-icon-wrapper, .rj-vortex-button, #rj-footer svg, #rj-footer img, ul.action-log>li, ul.btnexpand:hover, figure.quote, .comments figure.quote, .wysibb .wysibb-text blockquote, .rvs-container .rvs-nav-item.rvs-active, .rj-btn.rj-button-outline, a.rj-btn.rj-button-outline, blockquote.ipsBlockquote, .motm_position, ul.friend-actions .btn, .widget-download-links .btn, .popup-register-copy .btn, .btn.signin, .btn-more .btn, .home-buttons .btn, .btn-load, .form-section-content .btn, ul.file-actions .btn, .add-clone, .form-section .btn.btnsmall, .add-nav .btn, .modactions .btn, .mobile-close, ul.actions .btn, #foot #backtop .btn, #usernav ul li a, #footbtn .btn, form.search input.btn, ul.search-terms li:after, .accordion dt .acc-status, .fake-accordion .acc-status, .acc-status, .tiles .btnexpand ul li, ul.btnexpand:hover, ul.btnexpand:focus, .popup .mfp-close, .tiles .view-label, .tracking-highlight span.update-bar, .edit, .crop, .set-primary, ul.add-process li.current:before, .select2-container--default .select2-selection--multiple .select2-selection__choice__remove, .info.callout, #mobilebtn, nav#mobilenav #mobile-user ul li a, ul#mobile-primary li a, .rvs-container .rvs-nav-item.rvs-active, .irs-bar, #head .btn, a.btn, .btn, .btn:visited, .toggle-button, .toggle-button:active, .toggle-button:visited, .rj-button-outline:hover, a.rj-button-outline:hover, .arrow-box, a.post-category.site-news, .select2-container--default .select2-results__option--highlighted[aria-selected], #rj-back-to-top.rj-hug-footer, .bubble, .rj-standard-button, ul.friend-actions .btn:hover, ul.friend-actions .btn:focus, .btn.signin:hover, .popup-register-copy .btn:hover, .popup-register-copy .btn:focus, .btn-more .btn:hover, .btn-more .btn:focus, .home-buttons .btn:hover, .home-buttons .btn:focus, .btn-load:hover, .btn-load:focus, .form-section-content .btn:hover, .form-section-content .btn:focus, ul.file-actions .btn:hover, ul.file-actions .btn:focus, .add-clone:hover, .add-clone:focus, .form-section .btn.btnsmall:hover, .form-section .btn.btnsmall:focus, .add-nav .btn:hover, .add-nav .btn:focus, .modactions .btn:hover, .modactions .btn:focus, .mobile-close:hover, .mobile-close:focus, ul.actions .btn:hover, ul.actions .btn:focus, #foot #backtop .btn:hover, #foot #backtop .btn:focus, #footbtn .btn:hover, #footbtn .btn:focus, #head .btn:hover, #head .btn:focus, #usernav ul li:hover a, #usernav ul li:focus a, form.search input.btn:hover, form.search input.btn:focus, ul.btnexpand li ul li:hover, ul.btnexpand li ul li:focus, .popup .mfp-close:hover, .popup .mfp-close:focus, .edit:hover, .edit:focus, .crop:hover, .crop:focus, .set-primary:hover, .set-primary:focus, #mobilebtn:hover, #mobilebtn:focus, .rvs-container .rvs-nav-item.rvs-active:hover, .rvs-container .rvs-nav-item.rvs-active:focus, a.btn:hover, .btn:hover, .actions .drop-down .btn:hover, .actions .drop-down .btn:focus, .drop-down:hover>#button-manage, a.btn:focus, .btn:focus, span.alert, .arrow-box:hover {
+		filter: drop-shadow(1px 1px 3px #bd0707);
+	}
+	.home-trending ul.tiles ul.inline-list a:hover, .arrowlist a:hover, .widget-download-links .btn:hover, .widget-download-links .btn:focus, .popup-register-copy p a:hover, .popup .info-content a:hover, ol.pick-page a:hover, p#opening a:hover, .add-file p a:hover, .tabcontent a:hover, dd a:hover, article a:hover, article a:focus, article a:active, .sideitem a:hover, ul.post-meta a:hover, .article-copy p a:hover, #mobile-fav .mobile-header a:hover, .quote-meta a:hover, .tiles .author a:hover, .comment-name a:hover, ul.comment-inline a:hover, article p a:hover, #copyright a:hover, a.fav-edit:hover, #name a:hover, ul#breadcrumb li a:hover, a.clear-cat:hover, .tiles .category a:hover, nav#menu .wrap ul li.nav-games ul li a:hover, #rj-sitemap ul li a:hover {
+		text-shadow: 1px 1px 5px #d50707;
+	}
+	.home-trending ul.tiles ul.inline-list a, .arrowlist a, .popup-register-copy p a, .popup .info-content a, ol.pick-page a, p#opening a, .add-file p a, .tabcontent a, dd a, article a, .sideitem a, ul.post-meta a, .article-copy p a, #mobile-fav .mobile-header a, .quote-meta a, .comment-name a, ul.comment-inline a, article p a, #copyright a, a.fav-edit, .tiles .author a, a.clear-cat, ul#breadcrumb li a, .topnav ul.global li a:hover, nav#menu .wrap ul li ul li a:hover, nav#menu .wrap ul li.nav-games ul li a, div.container a, ul.sublist li a:hover, div.container .actions ul.sublist li a:hover, a.view-all:hover, .featured-article h2 a:hover, .tiles .tile-desc h3 a:hover, .tiles .category a, .tiles .tile-data ul li a:hover, ul.tracking-author-options li a:hover, .file-manage-title h3 a:hover, #sitemap ul.footlinks li a:hover, ul#mobile-primary li#mobile-updates .updatedesc a, #name a, .stat-endorsements a:link, .stat-endorsements a:visited, .stat-endorsements a:active, .user-list-details a, .category-item a .category-name, li .log-modified a, li .log-modified a:visited, .category-item a:visited .category-name, .breadcrumb a, #ajgpermalink, a.theme-link, .gsearch_results_list li.active h3, .top-lists-links a:link, .top-lists-links a:visited, .notification-actions a.set-notification-read, .notification-actions a.set-notification-read:visited {
+		text-shadow: 1px 1px 2px #bd0707;
+	}
 }
 
 @-moz-document url-prefix("https://www.nexusmods.com/starwarsbattlefront22017") {
-body::before {
-	background-image: url('https://images7.alphacoders.com/824/thumb-1920-824123.jpg');
-}
+	body::before {
+		background-image: url('https://images7.alphacoders.com/824/thumb-1920-824123.jpg');
+	}
 }
 
 @-moz-document url-prefix("https://www.nexusmods.com/residentevil22019") {
-body::before {
-	background-image: url('https://wallpaperaccess.com/full/1256071.jpg');
-}
+	:root {
+		--theme-primary: #bf0000;
+		--theme-primary-translucent: #bf0000d8;
+		--theme-secondary: #900;
+		--theme-dark: #7b0707;
+	}
+
+	body::before {
+		background-image: url('https://wallpaperaccess.com/full/1256071.jpg');
+	}
 }
 
 @-moz-document url-prefix("https://www.nexusmods.com/valheim") {
-body::before {
-	background-image: url('https://wallpapercave.com/wp/wp8599076.jpg');
-}
+	body::before {
+		background-image: url('https://wallpapercave.com/wp/wp8599076.jpg');
+	}
 }
 
 @-moz-document url-prefix("https://www.nexusmods.com/darksouls2") {
-body::before {
-	background-image: url('https://cdn.wallpapersafari.com/75/54/h2igPl.jpg');
-}
+	body::before {
+		background-image: url('https://cdn.wallpapersafari.com/75/54/h2igPl.jpg');
+	}
 }
 
 @-moz-document url-prefix("https://www.nexusmods.com/witcher2") {
-body::before {
-	background-image: url('https://wallpapercave.com/wp/wp3291282.jpg');
-}
+	body::before {
+		background-image: url('https://wallpapercave.com/wp/wp3291282.jpg');
+	}
 }
 
 @-moz-document url-prefix("https://www.nexusmods.com/masseffectandromeda") {
-body::before {
-	background-image: url('https://images4.alphacoders.com/772/thumb-1920-772364.png');
-}
+	body::before {
+		background-image: url('https://images4.alphacoders.com/772/thumb-1920-772364.png');
+	}
 }
 
 @-moz-document url-prefix("https://www.nexusmods.com/metalgearsolidvtpp") {
-body::before {
-	background-image: url('https://wallpaperaccess.com/full/4125603.jpg');
-}
+	body::before {
+		background-image: url('https://wallpaperaccess.com/full/4125603.jpg');
+	}
 }
 
 @-moz-document url-prefix("https://www.nexusmods.com/nomanssky") {
-body::before {
-	background-image: url('https://www.teahub.io/photos/full/70-704953_no-mans-sky-next-4k.jpg');
-}
+	body::before {
+		background-image: url('https://www.teahub.io/photos/full/70-704953_no-mans-sky-next-4k.jpg');
+	}
 }
 
 @-moz-document url-prefix("https://www.nexusmods.com/dragonsdogma") {
-body::before {
-	background-image: url('https://wallpaperaccess.com/full/364376.jpg');
-}
+	body::before {
+		background-image: url('https://wallpaperaccess.com/full/364376.jpg');
+	}
 }
 
 @-moz-document url-prefix("https://www.nexusmods.com/xcom2") {
-body::before {
-	background-image: url('https://images2.alphacoders.com/668/thumb-1920-668202.jpg');
-}
+	body::before {
+		background-image: url('https://images2.alphacoders.com/668/thumb-1920-668202.jpg');
+	}
 }
 
 @-moz-document url-prefix("https://www.nexusmods.com/kotor") {
-body::before {
-	background-image: url('https://wallpaperaccess.com/full/467182.jpg');
-}
+	body::before {
+		background-image: url('https://wallpaperaccess.com/full/467182.jpg');
+	}
 }
 
 @-moz-document url-prefix("https://www.nexusmods.com/mbwarband") {
-body::before {
-	background-image: url('https://wallpaperaccess.com/full/3206100.jpg');
-}
+	body::before {
+		background-image: url('https://wallpaperaccess.com/full/3206100.jpg');
+	}
 }
 
 @-moz-document url-prefix("https://www.nexusmods.com/7daystodie") {
-body::before {
-	background-image: url('https://images4.alphacoders.com/709/thumb-1920-709973.jpg');
-}
+	body::before {
+		background-image: url('https://images4.alphacoders.com/709/thumb-1920-709973.jpg');
+	}
 }
 
 @-moz-document url-prefix("https://www.nexusmods.com/residentevil32020") {
-:root {
-    --theme-primary: rgb(233, 33, 17);
-    --theme-primary-translucent: rgba(232, 32, 17, .85);
-    --theme-secondary: rgb(172, 46, 35);
-    --theme-dark: rgb(132, 23, 15);
-}
-body::before {
-	background-image: url('https://i.redd.it/xytj0c6i2g441.png');
-}
+	:root {
+		--theme-primary: rgb(233, 33, 17);
+		--theme-primary-translucent: rgba(232, 32, 17, .85);
+		--theme-secondary: rgb(172, 46, 35);
+		--theme-dark: rgb(132, 23, 15);
+	}
+	body::before {
+		background-image: url('https://i.redd.it/xytj0c6i2g441.png');
+	}
 }
 
 @-moz-document url-prefix("https://www.nexusmods.com/darksouls3") {
-body::before {
-	background-image: url('https://images5.alphacoders.com/609/609173.jpg');
-}
+	body::before {
+		background-image: url('https://images5.alphacoders.com/609/609173.jpg');
+	}
 }
 
 @-moz-document url-prefix("https://www.nexusmods.com/stateofdecay") {
-body::before {
-	background-image: url('https://wallpaperaccess.com/full/2192288.jpg');
-}
+	body::before {
+		background-image: url('https://wallpaperaccess.com/full/2192288.jpg');
+	}
 }
 
 @-moz-document url-prefix("https://www.nexusmods.com/sekiro") {
-body::before {
-	background-image: url('https://wallpaperaccess.com/full/1146370.jpg');
-}
+	body::before {
+		background-image: url('https://wallpaperaccess.com/full/1146370.jpg');
+	}
 }
 
 @-moz-document url-prefix("https://www.nexusmods.com/xcom") {
-body::before {
-	background-image: url('https://vistapointe.net/images/xcom-enemy-unknown-11.jpg');
-}
+	body::before {
+		background-image: url('https://vistapointe.net/images/xcom-enemy-unknown-11.jpg');
+	}
 }
 
 @-moz-document url-prefix("https://www.nexusmods.com/pathfinderkingmaker") {
-body::before {
-	background-image: url('https://wallup.net/wp-content/uploads/2017/05/29/434508-fantasy_art-artwork-Pathfinder.jpg');
-}
+	body::before {
+		background-image: url('https://wallup.net/wp-content/uploads/2017/05/29/434508-fantasy_art-artwork-Pathfinder.jpg');
+	}
 }
 
 @-moz-document url-prefix("https://www.nexusmods.com/borderlands2") {
-body::before {
-	background-image: url('https://images.hdqwalls.com/wallpapers/borderlands-2-4k-g6.jpg');
-}
+	body::before {
+		background-image: url('https://images.hdqwalls.com/wallpapers/borderlands-2-4k-g6.jpg');
+	}
 }
 
 @-moz-document url-prefix("https://www.nexusmods.com/kenshi") {
-body::before {
-	background-image: url('https://images3.alphacoders.com/113/thumb-1920-1131614.jpg');
-}
+	body::before {
+		background-image: url('https://images3.alphacoders.com/113/thumb-1920-1131614.jpg');
+	}
 }
 
 @-moz-document url-prefix("https://www.nexusmods.com/masseffect2") {
-body::before {
-	background-image: url('https://wallpaperaccess.com/full/2467187.jpg');
-}
+	body::before {
+		background-image: url('https://wallpaperaccess.com/full/2467187.jpg');
+	}
 }
 
 @-moz-document url-prefix("https://www.nexusmods.com/divinityoriginalsin2") {
-body::before {
-	background-image: url('https://wallpapercave.com/wp/wp3622645.jpg');
+	body::before {
+		background-image: url('https://wallpapercave.com/wp/wp3622645.jpg');
+	}
 }
-}
-
 @-moz-document url-prefix("https://www.nexusmods.com/dyinglight") {
-body::before {
-	background-image: url('https://images2.alphacoders.com/449/thumb-1920-449053.jpg');
+	body::before {
+		background-image: url('https://images2.alphacoders.com/449/thumb-1920-449053.jpg');
+	}
 }
-}
-
 @-moz-document url-prefix("https://www.nexusmods.com/reddeadredemption2") {
-body::before {
-	background-image: url('https://wallpaperaccess.com/full/677565.jpg');
+	body::before {
+		background-image: url('https://wallpaperaccess.com/full/677565.jpg');
+	}
 }
-}
-
 @-moz-document url-prefix("https://www.nexusmods.com/residentevilvillage") {
-body::before {
-	background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0276f574-98ea-4e2d-ba44-68f500bf01bc/decy31o-b5746c63-250c-4a71-86e2-fa3134977f1c.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzAyNzZmNTc0LTk4ZWEtNGUyZC1iYTQ0LTY4ZjUwMGJmMDFiY1wvZGVjeTMxby1iNTc0NmM2My0yNTBjLTRhNzEtODZlMi1mYTMxMzQ5NzdmMWMuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.VnKYmU_gLkhsrLv24MGxbNKoosfdStcNqneV8CmD9o4');
+	body::before {
+		background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0276f574-98ea-4e2d-ba44-68f500bf01bc/decy31o-b5746c63-250c-4a71-86e2-fa3134977f1c.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzAyNzZmNTc0LTk4ZWEtNGUyZC1iYTQ0LTY4ZjUwMGJmMDFiY1wvZGVjeTMxby1iNTc0NmM2My0yNTBjLTRhNzEtODZlMi1mYTMxMzQ5NzdmMWMuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.VnKYmU_gLkhsrLv24MGxbNKoosfdStcNqneV8CmD9o4');
+	}
 }
-}
-
 @-moz-document url-prefix("https://www.nexusmods.com/rimworld") {
-body::before {
-	background-image: url('https://wallpapercave.com/wp/wp3935722.png');
+	body::before {
+		background-image: url('https://wallpapercave.com/wp/wp3935722.png');
+	}
 }
-}
-
 @-moz-document url-prefix("https://www.nexusmods.com/darksoulsremastered") {
-body::before {
-	background-image: url('https://wallpapercave.com/wp/wp3756449.jpg');
+	body::before {
+		background-image: url('https://wallpapercave.com/wp/wp3756449.jpg');
+	}
 }
-}
-
 @-moz-document url-prefix("https://www.nexusmods.com/fallout76") {
-body::before {
-	background-image: url('https://images7.alphacoders.com/927/thumb-1920-927080.jpg');
+	body::before {
+		background-image: url('https://images7.alphacoders.com/927/thumb-1920-927080.jpg');
+	}
 }
-}
-
 @-moz-document url-prefix("https://www.nexusmods.com/doometernal") {
-body::before {
-	background-image: url('https://i.redd.it/i7oo37p28fb41.jpg');
+	body::before {
+		background-image: url('https://i.redd.it/i7oo37p28fb41.jpg');
+	}
 }
-}
-
 @-moz-document url-prefix("https://www.nexusmods.com/devilmaycry5") {
-body::before {
-	background-image: url('https://wallpaperaccess.com/full/2517984.jpg');
+	body::before {
+		background-image: url('https://wallpaperaccess.com/full/2517984.jpg');
+	}
 }
+@-moz-document url-prefix("https://www.nexusmods.com/thesims4") {
+	body::before {
+		background-image: url('https://i.imgur.com/W2EPdqD.png');
+	}/*My friend built auschwitz in sims 4*/
+}
+@-moz-document url-prefix("https://www.nexusmods.com/assassinscreed") {
+	body::before {
+		background-image: url('https://wallpaperaccess.com/full/6364321.jpg');
+	}
+}
+@-moz-document url-prefix("https://www.nexusmods.com/gtasanandreas") {
+	body::before {
+		background-image: url('https://images2.alphacoders.com/112/thumb-1920-1125180.png');
+	}
+}
+@-moz-document url-prefix("https://www.nexusmods.com/grandtheftautothetrilogy") {
+	body::before {
+		background-image: url('https://i.redd.it/w0n7em07das71.png');
+	}
+}
+@-moz-document url-prefix("https://www.nexusmods.com/assassinscreedodyssey") {
+	body::before {
+		background-image: url('https://images.hdqwalls.com/download/assassins-creed-odyssey-8k-nt-7680x4320.jpg');
+	}
+}
+@-moz-document url-prefix("https://www.nexusmods.com/subnauticabelowzero") {
+	body::before {
+		background-image: url('https://wallpapercave.com/wp/wp3753691.jpg');
+	}
+}
+@-moz-document url-prefix("https://www.nexusmods.com/starwarsjedifallenorder") {
+	body::before {
+		background-image: url('https://www.teahub.io/photos/full/55-557442_star-wars-jedi-fallen-order-4k-star-wars.jpg');
+	}
+}
+@-moz-document url-prefix("https://www.nexusmods.com/stateofdecay2") {
+	body::before {
+		background-image: url('https://wallpapercave.com/wp/wp3024592.jpg');
+	}
+}
+@-moz-document url-prefix("https://www.nexusmods.com/farcry3") {
+	body::before {
+		background-image: url('https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7mt4mi2lLVpiZe0dDJLvhj/35e6267a0fbca6dbe33996bee5b6d028/far-cry-3-heroBanner.jpg');
+	}
+}
+@-moz-document url-prefix("https://www.nexusmods.com/daysgone") {
+	body::before {
+		background-image: url('https://images.hdqwalls.com/wallpapers/days-gone-2019-4k-gs.jpg');
+	}
+}
+@-moz-document url-prefix("https://www.nexusmods.com/baldursgate3") {
+	body::before {
+		background-image: url('https://images.alphacoders.com/107/thumb-1920-1070523.jpg');
+	}
+}
+@-moz-document url-prefix("https://www.nexusmods.com/halothemasterchiefcollection") {
+	body::before {
+		background-image: url('https://wallpaperaccess.com/full/510278.jpg');
+	}
 }
 
-@-moz-document url-prefix("https://www.nexusmods.com/thesims4") {
-body::before {
-	background-image: url('https://i.imgur.com/W2EPdqD.png');
-}/*My friend built auschwitz in sims 4*/
+@-moz-document url-prefix("https://www.nexusmods.com/readyornot") {
+		:root {
+		--theme-primary: rgb(255, 255, 255);
+		--theme-primary-translucent: rgba(255, 255, 255, .85);
+		--theme-secondary: rgb(200, 200, 200);
+		--theme-dark: rgb(139, 139, 139);
+	}
+	
+	body::before {
+		background-image: url('https://get.wallhere.com/photo/Ready-or-Not-police-SWAT-FN-SCAR-1599523.jpg');
+	}
+	
+	.headlogo svg g:nth-of-type(1) g path[style*="fill:#fff"] {
+		fill: #000 !important;
+	}
+	.headlogo svg g:nth-of-type(2) path[class="theme-primary"] {
+		filter: drop-shadow(0 0 2em #f00);
+	}
+	[d="M44.4,162.5c-0.6,0-1.3,0-1.9-0.1c-1.5-0.2-2.9-0.5-4.5-1c-2.8-0.9-5.2-2.2-6.9-3.2c-3.8-2.2-7.7-4.9-11.8-8.3 c-1.8-1.5-3.6-3.1-5.3-4.7l-1.4-1.4c-1-0.9-1.9-1.9-2.6-3c-1.3-2-2.4-4.6-2.5-8c-0.1-1.1-0.2-2.2-0.2-3.4c0-2.4,0.1-5,0.5-7.5 c0.7-5.2,2.4-9.8,3.7-13.3c0.1-0.3,0.2-0.6,0.3-0.9c-0.4-0.9-0.7-1.9-1.1-2.9C8.9,99.6,7.7,93.8,7.1,88 c-0.6-6.1-0.4-12.3,0.5-18.4c0.2-1.3,0.4-2.6,0.7-3.8C5.9,62.3,2.9,57.3,1,51.5l0-0.1c-0.4-1.2-1.4-4.2-0.8-8 c0.2-1.4,0.5-2.8,1-4.3c0.9-2.8,2.2-5.1,3.2-6.8c2.2-3.8,4.9-7.6,8.2-11.7c1.5-1.8,3-3.6,4.6-5.2l1.4-1.4 c0.7-0.8,1.5-1.5,2.4-2.1c2-1.5,4.8-2.8,8.6-2.9c1.2-0.1,2.5-0.2,3.8-0.2h0.1c2.5,0,5.2,0.2,7.8,0.6c4,0.6,7.6,1.7,10.8,2.9 c2.1-0.9,4.3-1.7,6.6-2.5C64.1,8,69.9,6.8,75.7,6.4C81.8,5.9,88,6.2,93.9,7.2c1.4,0.2,2.8,0.5,4.2,0.8c4.7-3.2,9-5.5,13.5-6.9 l0.1,0c1-0.4,3.2-1.1,6.1-1.1c0.6,0,1.3,0,1.9,0.1c1.5,0.2,2.9,0.5,4.5,1c2.8,0.9,5.2,2.2,6.9,3.2c3.8,2.2,7.7,4.9,11.8,8.3 c1.8,1.5,3.6,3.1,5.3,4.7l1.4,1.4c0.7,0.6,1.4,1.3,1.9,2.1c1.8,2.3,3.2,5.6,3.3,10.2c0.1,1.6,0.1,3.3,0,5 c-0.2,3.7-0.7,7.2-1.6,10.4c-0.7,2.4-1.5,4.8-2.4,7.2c1.8,4.5,3.1,9.1,4,13.8c1.8,9.9,1.6,20.1-0.6,29.9c1.3,1.9,2.5,3.7,3.5,5.5 c1.7,3,3.1,6.1,4.1,9.3c0.4,1.2,1.3,4.2,0.7,8.2c-0.2,1.4-0.6,2.7-1.1,4.2c-1.8,5.1-4.6,9.3-7.1,12.8c-2.7,3.8-5.8,7.5-9,10.9 l-1.2,1.2c-0.7,0.8-1.5,1.5-2.4,2.2c-2,1.5-4.8,2.7-8.6,2.9c-1.2,0.1-2.5,0.2-3.8,0.2h-0.1c-2.7,0-5.4-0.2-8.2-0.7 c-4.5-0.7-8.5-2.1-12.1-3.5c-1.9,0.8-3.9,1.5-5.8,2.1c-5.6,1.7-11.5,2.8-17.4,3.1c-6.1,0.4-12.3-0.1-18.3-1.2 c-0.7-0.1-1.5-0.3-2.2-0.4c-5.2,3.7-9.8,6.1-14.6,7.7l-0.1,0C49.5,161.7,47.3,162.5,44.4,162.5L44.4,162.5z M24.6,134.1l10.6,3.7 c0.9-2.6,1-5.4,0.4-8c0,0.2,0,0.5,0.1,0.7c0,0.3,0.1,0.7,0.1,1.1c-0.1-2-0.8-4.6-2.6-7c-0.7-0.9-1.5-1.7-2.4-2.4l0.5,0.4l0.9,0.9 c-0.8-0.8-1.7-1.6-2.7-2.3L24.6,134.1L24.6,134.1z M123.7,129.4c-0.8,0.8-1.6,1.6-2.3,2.7l11.9,4.6l0-11.1c0,0,0,0,0,0 c-1.1,0-2.2,0.1-3.2,0.4c0.2,0,0.4,0,0.6,0c0.3,0,0.7-0.1,1.1-0.1c-1.8,0.1-4.2,0.7-6.4,2.1c-1.2,0.8-2.2,1.7-3.1,2.9l0.4-0.5 L123.7,129.4L123.7,129.4z M35.8,126.8c0.5,0.4,1,0.8,1.5,1.3c2.6,2.2,5,3.9,7.2,5.2c1.4-0.7,3-1.7,4.7-3 c0.5-0.3,0.9-0.7,1.4-1.1c0.3-0.2,0.5-0.5,0.8-0.7c0.1-0.1,0.3-0.3,0.4-0.4l6.2-6.3l8.4,2.9c0.3,0.1,0.6,0.2,0.8,0.3 c1.8,0.6,3.6,1,5.4,1.4c3.7,0.7,7.6,1,11.4,0.7c3.6-0.2,7.3-0.9,10.7-1.9c1.7-0.5,3.4-1.1,5-1.9c0.8-0.3,1.6-0.7,2.3-1.1 c2-1,4.3-1.6,6.6-1.6c3.6,0,6.3,1.3,7.6,2c0.4,0.2,0.8,0.4,1.3,0.5c2.5,1,5.4,2.2,8,2.6c0.4,0.1,0.9,0.1,1.3,0.2 c1.5-1.7,2.9-3.5,4.2-5.3c0.8-1.1,1.6-2.2,2.3-3.3c-0.1-0.2-0.2-0.4-0.4-0.7c-0.7-1.2-1.5-2.4-2.5-3.9c-0.3-0.5-0.7-0.9-1.1-1.4 c-0.2-0.2-0.3-0.4-0.5-0.6c-4.1-4-5.5-9.7-3.6-15.1c0.1-0.3,0.2-0.6,0.3-0.8c2.3-7.2,2.7-14.9,1.4-22.3c-0.7-3.5-1.7-7-3.2-10.3 c-0.1-0.3-0.3-0.6-0.4-0.9c-3.3-6.1-1.9-11.3-0.7-13.8c0.5-1,0.9-2.1,1.3-3.1c0.8-1.9,1.4-3.9,2-5.7c0.2-0.9,0.4-1.8,0.5-2.9 c-0.5-0.4-1-0.8-1.5-1.3c-2.7-2.2-5-3.9-7.2-5.2c-1.4,0.8-3,1.8-4.8,3c-0.5,0.4-1,0.8-1.5,1.2c-0.1,0.1-0.3,0.2-0.4,0.4 c-2.7,2.6-6.3,4-10,4c-1.8,0-3.5-0.3-5.2-1c-0.4-0.1-0.8-0.3-1.2-0.4c-1.8-0.5-3.6-1-5.5-1.3c-3.7-0.6-7.6-0.8-11.4-0.5 c-3.6,0.3-7.2,1-10.6,2.1c-1.7,0.5-3.3,1.2-4.9,1.9c-0.8,0.3-1.5,0.7-2.3,1.1L59.5,40c-2.1,1.2-4.6,1.8-7,1.8 c-2.2,0-4.4-0.5-6.5-1.5c-0.5-0.2-0.9-0.4-1.4-0.6c-2.4-1-5.3-2.1-7.8-2.4c-0.4-0.1-0.8-0.1-1.1-0.2c-0.4,0.5-0.8,1-1.2,1.4 c-2.2,2.7-3.9,5-5.2,7.3c0.7,1.4,1.7,2.9,2.9,4.7c0.3,0.5,0.7,1,1.1,1.4c0.2,0.3,0.5,0.5,0.7,0.8l5.8,6.1l-2.5,8 c-0.2,0.5-0.3,1-0.5,1.5c-0.5,1.8-0.9,3.7-1.2,5.6c-0.6,3.8-0.7,7.6-0.3,11.5c0.3,3.6,1.1,7.2,2.3,10.6c0.6,1.7,1.3,3.3,2,4.9 c0.1,0.2,0.2,0.4,0.3,0.6c2.1,4.3,2.1,9.1-0.1,13.4c-0.2,0.4-0.4,0.8-0.5,1.2c-0.4,1-0.9,2-1.3,3c-0.8,2.2-1.8,4.8-2.1,7.1 C35.9,126.3,35.8,126.6,35.8,126.8L35.8,126.8z M129.9,38.8c0.8,0.8,1.7,1.6,2.8,2.4l4.9-12.9L127,24.6c-0.9,2.6-1,5.4-0.4,8 c0-0.1,0-0.2,0-0.3c0-0.3,0-0.8,0-1.3v-0.1c0,1.5,0.5,4,2.1,6.4c0.8,1.1,1.7,2.1,2.8,3l-0.5-0.4L129.9,38.8L129.9,38.8z  M29.3,26.3l0,11.1c1.1,0,2.2-0.1,3.2-0.4c-0.2,0-0.4,0-0.6,0c-0.3,0-0.7,0.1-1.1,0.1c1.8-0.1,4.2-0.7,6.4-2.1 c1.2-0.8,2.2-1.7,3.1-2.9l-0.4,0.5l-0.9,1c0.8-0.8,1.6-1.7,2.3-2.7L29.3,26.3L29.3,26.3z"] {
+		fill: rgb(255, 255, 255) !important;
+	}
+	.article-image ul.post-meta a, ul.post-meta a.post-category, ul.post-meta a.post-category:hover, a.post-category, div.container a.post-category, a.post-category:hover, .tabcontent a.btn, .add-file .info.error p a, .add-file .info.warning p a, div.container a:hover, ul.actions .btn, div.container a.btn, .tiles li .tile-content h3 a, a.theme-link:hover, a.theme-link:focus, div.container .expandtile a, #rj-sitemap ul li a.rj-standard-button, #rj-back-to-top.rj-hug-footer, .rj-user-nav a.rj-upload:hover, .bubble, i.fa.fa-chevron-up, .rj-vortex-button:hover, span.alert, .rj-standard-button, .page-layout .donation-wrapper form input[type=submit], .notification-indicator, .notification-preferences-body input:checked + .notification-preference-slider:before, .rj-btn.rj-btn-standard, .rj-btn:hover, .tiles .btnexpand ul li a, .tiles .view-label, a.btn, .btn, .btn:visited, .sideitem ul.tags + a.btn:hover, .modpage .sideitem a.btnsmall, .mfp-close, .title-with-pip .pip, .add-game-button, .page-layout .table table tfoot a.rj-btn[id="fastDownloadButton"] {
+		color: #000;
+	}
+	ul.add-process li.current a, ul.add-process li.complete a, .category-item a:hover .category-name, .btn, div.container .btn a {
+		color: #1a1a1a;
+	}
+	ul.btnexpand:hover svg, .drop-down>.btn .icon, .icon-track, .icon-manual, .btnexpand:hover .icon-plus, .accordion dt .acc-status .icon-arrow, .fake-accordion .acc-status .icon-arrow, .icon-archive, .tile-menu svg, .icon-discussion, .icon-comment, .icon-report, .icon-nmm, .icon-plus, .icon-share {
+		fill: #000;
+	}
+	[src="/assets/images/white_vortex.svg"] {
+		filter: invert(1);
+	}
+	.rj-user-nav a.rj-upload:hover {
+		text-shadow: 0 0 4px #f00;
+	}
 }
