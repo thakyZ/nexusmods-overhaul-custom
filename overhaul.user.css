@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           NexusMods Overhaul
 @namespace      github.com/blyad2137/nexusmods-overhaul
-@version        1.0.4
+@version        1.1.0
 @description    `Overhauls look of nexusmods to be more 'modern', from lack of better word.`
 @author         blyad (https://github.com/blyad2137)
 @license        CC BY-NC-SA 4.0
@@ -61,8 +61,14 @@
 	.rj-standard-button, .page-layout .donation-wrapper form input[type=submit], .notification-indicator, .notification-preferences-body input:checked + .notification-preference-slider:before, .rj-btn.rj-btn-standard, .rj-btn:hover, .add-game-button {
 		background-color: var(--theme-primary);
 	}
-	.rj-standard-button:hover, .title-with-pip .pip {
+	.rj-standard-button:hover, .title-with-pip .pip, .rj-panel .banner {
 		background-color: var(--theme-secondary);
+	}
+	.rj-panel .banner:before {
+    	border-color: transparent transparent var(--theme-secondary) transparent;	
+	}
+	.rj-panel .banner:after {
+		border-color: var(--theme-secondary) transparent transparent transparent;
 	}
 	[src="/assets/images/footer/Vortex.svg"] {
 		-webkit-mask: url(/assets/images/footer/Vortex.svg) no-repeat center;
@@ -71,7 +77,7 @@
 		content: url('https://i.imgur.com/WFQNmEA.png');
 		image-rendering: auto;
 	}
-	#rj-sitemap ul li a:hover, .page-layout .table table tfoot a.replaced-login-link, .page-layout .donation-wrapper > p > p > a, .page-layout .author > span, .notifications-header a, .notifications-list ul li .notification-bold, .page-layout .back-wrapper a span, .page-layout .back-wrapper a i, .page-layout tbody td:last-child, .table .orange {
+	#rj-sitemap ul li a:hover, .page-layout .table table tfoot a.replaced-login-link, .page-layout .donation-wrapper > p > p > a, .page-layout .author > span, .notifications-header a, .notifications-list ul li .notification-bold, .page-layout .back-wrapper a span, .page-layout .back-wrapper a i, .page-layout tbody td:last-child, .table .orange, .rj-header-tray .rj-mobile-menu-link-section a:active:hover, .rj-header-tray .rj-mobile-menu-link-section a:link:hover, .rj-header-tray .rj-mobile-menu-link-section a:visited:hover, .rj-panel-cta, i.orange, li.rj-mobile-menu-subsection>a>div>span.upload, .page-layout .donation-wrapper > p > span.timer {
 		color: var(--theme-primary);
 	}
 	.rj-orange, a:link.rj-orange, a:active.rj-orange {
@@ -521,7 +527,21 @@
 		background-color: rgba(60, 61, 63, .38);
 	}
 	.rj-panel.rj-panel-border {
-		background: linear-gradient(180deg,rgba(217, 143, 64, .38),rgba(255,255,255,0.16));
+		background: none;
+		position: relative;
+	}
+	.rj-panel.rj-panel-border::before {
+		content: '';
+		width: 100%;
+		height: 100%;
+		padding: 0;
+		margin: 0;
+		background: linear-gradient(180deg,var(--theme-primary),rgba(255,255,255,0.26));
+		position: absolute;
+		opacity: .38;
+	}
+	.rj-panel.rj-panel-border:hover {
+		background-color: rgba(255,255,255,0.18);
 	}
 	.rj-right-tray {
 		background-color: rgba(43, 45, 47, .38);
@@ -640,6 +660,9 @@
 	.info.warning {
 		background-color: transparent;
 		position: relative;
+	}
+	.info.warning.site-notice {
+		background-color: #d5632d;
 	}
 	.info .info-content::before:not(.form-user-upload) {
 		content: '';
@@ -932,13 +955,56 @@
 		background-color: #2c2d2d;
 		color: #919191;
 	}
+	.recent-files a {
+		background-color: rgba(56, 56, 56, .38);
+	}
+	.recent-files a:hover {
+		background-color: rgba(42, 42, 42, .38);
+	}
+	.nexus-ui-blocker-message-box {
+		background-color: transparent;
+	}
+	.tabcontent:before, .loading-wheel {
+		filter: drop-shadow(0 0 5px #000);
+	}
+	.lg-outer .lg-inner {
+		max-height: 90vh;
+		width: 90vw;
+		position: absolute;
+		margin: 0 auto;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+	.result {
+		height: auto !important;
+		top: 0 !important;
+	}
+	input#change_recovery_mobile_number_current_password, input#mobile_number, input#change_recovery_mobile_number_two_fa, input#change_email_current_password, input#new_email, input#change_email_two_fa, input#new_password, input#confirm_password, input#change_password_two_fa {
+		background-color: rgba(0,0,0,.38);
+		color: rgba(255, 255, 255, .6);
+	}
+	.security-edit-page .dial-code, .security-edit-page .fake-select i {
+		color: #d1d5d9;
+	}
+	.security-edit-page .fake-select {
+		background-color: rgb(51, 51, 51);
+	}
+	.security-edit-page .fake-select .flag {
+		color: #fff;
+	}
 }
-
+@-moz-document domain("users.nexusmods.com") {
+	::-webkit-scrollbar-thumb  {
+		background-color: var(--orange);
+	}
+}
 @-moz-document domain("help.nexusmods.com") {
 	::-webkit-scrollbar-thumb {
 		border-radius: 2px;
 		-webkit-box-shadow: inset 0 0 6px rgb(0 0 0 / 60%);
-		background: #34d6ff;
+		background-color: #34d6ff;
 	}
 
 	#docsSearch {
@@ -1019,34 +1085,21 @@
 		color: #b9b9b9;
 	}
 }
-
 @-moz-document domain("wiki.nexusmods.com") {
 	::-webkit-scrollbar-thumb {
 		border-radius: 2px;
 		-webkit-box-shadow: inset 0 0 6px rgb(0 0 0 / 60%);
-		background: #e6832b;
+		background-color: #e6832b;
 	}
 }
 
 @-moz-document domain("forums.nexusmods.com") {
-	::-webkit-scrollbar-track {
-				 -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.3);
-				 border-radius: 2px;
-				 background-color: #212121;
-			}
-			html[hide-scrollbar="true"] ::-webkit-scrollbar{display:none}
-			::-webkit-scrollbar {
-				 width: 10px;
-				 background-color: #212121;
-			}
 			::-webkit-scrollbar-thumb {
-				 border-radius: 2px;
-				 -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .6);
-				 background: linear-gradient(180deg, #0f0f0f, #151515);
-				 border: 1px solid #000;
+				 background-color: #43bbe2
 			}
+	
 	input[type=text], input[type=password], input[type=email], select {
-		background: #0000 !important;
+		background-color: #0000 !important;
 	}
 }
 
@@ -1379,6 +1432,18 @@
 		background-image: url('https://images2.alphacoders.com/449/thumb-1920-449053.jpg');
 	}
 }
+@-moz-document url-prefix("https://www.nexusmods.com/dyinglight2") {
+	:root {
+		--theme-primary: rgb(255, 2, 9);
+		--theme-primary-translucent: rgba(255, 2, 9, .85);
+		--theme-secondary: rgb(192, 10, 14);
+		--theme-dark: rgb(127, 7, 10);
+	}
+	
+	body::before {
+		background-image: url('https://i.imgur.com/BfMpm5o.jpg');
+	}
+}
 @-moz-document url-prefix("https://www.nexusmods.com/reddeadredemption2") {
 	body::before {
 		background-image: url('https://wallpaperaccess.com/full/677565.jpg');
@@ -1476,7 +1541,7 @@
 }
 
 @-moz-document url-prefix("https://www.nexusmods.com/readyornot") {
-		:root {
+	:root {
 		--theme-primary: rgb(255, 255, 255);
 		--theme-primary-translucent: rgba(255, 255, 255, .85);
 		--theme-secondary: rgb(200, 200, 200);
@@ -1496,13 +1561,16 @@
 	[d="M44.4,162.5c-0.6,0-1.3,0-1.9-0.1c-1.5-0.2-2.9-0.5-4.5-1c-2.8-0.9-5.2-2.2-6.9-3.2c-3.8-2.2-7.7-4.9-11.8-8.3 c-1.8-1.5-3.6-3.1-5.3-4.7l-1.4-1.4c-1-0.9-1.9-1.9-2.6-3c-1.3-2-2.4-4.6-2.5-8c-0.1-1.1-0.2-2.2-0.2-3.4c0-2.4,0.1-5,0.5-7.5 c0.7-5.2,2.4-9.8,3.7-13.3c0.1-0.3,0.2-0.6,0.3-0.9c-0.4-0.9-0.7-1.9-1.1-2.9C8.9,99.6,7.7,93.8,7.1,88 c-0.6-6.1-0.4-12.3,0.5-18.4c0.2-1.3,0.4-2.6,0.7-3.8C5.9,62.3,2.9,57.3,1,51.5l0-0.1c-0.4-1.2-1.4-4.2-0.8-8 c0.2-1.4,0.5-2.8,1-4.3c0.9-2.8,2.2-5.1,3.2-6.8c2.2-3.8,4.9-7.6,8.2-11.7c1.5-1.8,3-3.6,4.6-5.2l1.4-1.4 c0.7-0.8,1.5-1.5,2.4-2.1c2-1.5,4.8-2.8,8.6-2.9c1.2-0.1,2.5-0.2,3.8-0.2h0.1c2.5,0,5.2,0.2,7.8,0.6c4,0.6,7.6,1.7,10.8,2.9 c2.1-0.9,4.3-1.7,6.6-2.5C64.1,8,69.9,6.8,75.7,6.4C81.8,5.9,88,6.2,93.9,7.2c1.4,0.2,2.8,0.5,4.2,0.8c4.7-3.2,9-5.5,13.5-6.9 l0.1,0c1-0.4,3.2-1.1,6.1-1.1c0.6,0,1.3,0,1.9,0.1c1.5,0.2,2.9,0.5,4.5,1c2.8,0.9,5.2,2.2,6.9,3.2c3.8,2.2,7.7,4.9,11.8,8.3 c1.8,1.5,3.6,3.1,5.3,4.7l1.4,1.4c0.7,0.6,1.4,1.3,1.9,2.1c1.8,2.3,3.2,5.6,3.3,10.2c0.1,1.6,0.1,3.3,0,5 c-0.2,3.7-0.7,7.2-1.6,10.4c-0.7,2.4-1.5,4.8-2.4,7.2c1.8,4.5,3.1,9.1,4,13.8c1.8,9.9,1.6,20.1-0.6,29.9c1.3,1.9,2.5,3.7,3.5,5.5 c1.7,3,3.1,6.1,4.1,9.3c0.4,1.2,1.3,4.2,0.7,8.2c-0.2,1.4-0.6,2.7-1.1,4.2c-1.8,5.1-4.6,9.3-7.1,12.8c-2.7,3.8-5.8,7.5-9,10.9 l-1.2,1.2c-0.7,0.8-1.5,1.5-2.4,2.2c-2,1.5-4.8,2.7-8.6,2.9c-1.2,0.1-2.5,0.2-3.8,0.2h-0.1c-2.7,0-5.4-0.2-8.2-0.7 c-4.5-0.7-8.5-2.1-12.1-3.5c-1.9,0.8-3.9,1.5-5.8,2.1c-5.6,1.7-11.5,2.8-17.4,3.1c-6.1,0.4-12.3-0.1-18.3-1.2 c-0.7-0.1-1.5-0.3-2.2-0.4c-5.2,3.7-9.8,6.1-14.6,7.7l-0.1,0C49.5,161.7,47.3,162.5,44.4,162.5L44.4,162.5z M24.6,134.1l10.6,3.7 c0.9-2.6,1-5.4,0.4-8c0,0.2,0,0.5,0.1,0.7c0,0.3,0.1,0.7,0.1,1.1c-0.1-2-0.8-4.6-2.6-7c-0.7-0.9-1.5-1.7-2.4-2.4l0.5,0.4l0.9,0.9 c-0.8-0.8-1.7-1.6-2.7-2.3L24.6,134.1L24.6,134.1z M123.7,129.4c-0.8,0.8-1.6,1.6-2.3,2.7l11.9,4.6l0-11.1c0,0,0,0,0,0 c-1.1,0-2.2,0.1-3.2,0.4c0.2,0,0.4,0,0.6,0c0.3,0,0.7-0.1,1.1-0.1c-1.8,0.1-4.2,0.7-6.4,2.1c-1.2,0.8-2.2,1.7-3.1,2.9l0.4-0.5 L123.7,129.4L123.7,129.4z M35.8,126.8c0.5,0.4,1,0.8,1.5,1.3c2.6,2.2,5,3.9,7.2,5.2c1.4-0.7,3-1.7,4.7-3 c0.5-0.3,0.9-0.7,1.4-1.1c0.3-0.2,0.5-0.5,0.8-0.7c0.1-0.1,0.3-0.3,0.4-0.4l6.2-6.3l8.4,2.9c0.3,0.1,0.6,0.2,0.8,0.3 c1.8,0.6,3.6,1,5.4,1.4c3.7,0.7,7.6,1,11.4,0.7c3.6-0.2,7.3-0.9,10.7-1.9c1.7-0.5,3.4-1.1,5-1.9c0.8-0.3,1.6-0.7,2.3-1.1 c2-1,4.3-1.6,6.6-1.6c3.6,0,6.3,1.3,7.6,2c0.4,0.2,0.8,0.4,1.3,0.5c2.5,1,5.4,2.2,8,2.6c0.4,0.1,0.9,0.1,1.3,0.2 c1.5-1.7,2.9-3.5,4.2-5.3c0.8-1.1,1.6-2.2,2.3-3.3c-0.1-0.2-0.2-0.4-0.4-0.7c-0.7-1.2-1.5-2.4-2.5-3.9c-0.3-0.5-0.7-0.9-1.1-1.4 c-0.2-0.2-0.3-0.4-0.5-0.6c-4.1-4-5.5-9.7-3.6-15.1c0.1-0.3,0.2-0.6,0.3-0.8c2.3-7.2,2.7-14.9,1.4-22.3c-0.7-3.5-1.7-7-3.2-10.3 c-0.1-0.3-0.3-0.6-0.4-0.9c-3.3-6.1-1.9-11.3-0.7-13.8c0.5-1,0.9-2.1,1.3-3.1c0.8-1.9,1.4-3.9,2-5.7c0.2-0.9,0.4-1.8,0.5-2.9 c-0.5-0.4-1-0.8-1.5-1.3c-2.7-2.2-5-3.9-7.2-5.2c-1.4,0.8-3,1.8-4.8,3c-0.5,0.4-1,0.8-1.5,1.2c-0.1,0.1-0.3,0.2-0.4,0.4 c-2.7,2.6-6.3,4-10,4c-1.8,0-3.5-0.3-5.2-1c-0.4-0.1-0.8-0.3-1.2-0.4c-1.8-0.5-3.6-1-5.5-1.3c-3.7-0.6-7.6-0.8-11.4-0.5 c-3.6,0.3-7.2,1-10.6,2.1c-1.7,0.5-3.3,1.2-4.9,1.9c-0.8,0.3-1.5,0.7-2.3,1.1L59.5,40c-2.1,1.2-4.6,1.8-7,1.8 c-2.2,0-4.4-0.5-6.5-1.5c-0.5-0.2-0.9-0.4-1.4-0.6c-2.4-1-5.3-2.1-7.8-2.4c-0.4-0.1-0.8-0.1-1.1-0.2c-0.4,0.5-0.8,1-1.2,1.4 c-2.2,2.7-3.9,5-5.2,7.3c0.7,1.4,1.7,2.9,2.9,4.7c0.3,0.5,0.7,1,1.1,1.4c0.2,0.3,0.5,0.5,0.7,0.8l5.8,6.1l-2.5,8 c-0.2,0.5-0.3,1-0.5,1.5c-0.5,1.8-0.9,3.7-1.2,5.6c-0.6,3.8-0.7,7.6-0.3,11.5c0.3,3.6,1.1,7.2,2.3,10.6c0.6,1.7,1.3,3.3,2,4.9 c0.1,0.2,0.2,0.4,0.3,0.6c2.1,4.3,2.1,9.1-0.1,13.4c-0.2,0.4-0.4,0.8-0.5,1.2c-0.4,1-0.9,2-1.3,3c-0.8,2.2-1.8,4.8-2.1,7.1 C35.9,126.3,35.8,126.6,35.8,126.8L35.8,126.8z M129.9,38.8c0.8,0.8,1.7,1.6,2.8,2.4l4.9-12.9L127,24.6c-0.9,2.6-1,5.4-0.4,8 c0-0.1,0-0.2,0-0.3c0-0.3,0-0.8,0-1.3v-0.1c0,1.5,0.5,4,2.1,6.4c0.8,1.1,1.7,2.1,2.8,3l-0.5-0.4L129.9,38.8L129.9,38.8z  M29.3,26.3l0,11.1c1.1,0,2.2-0.1,3.2-0.4c-0.2,0-0.4,0-0.6,0c-0.3,0-0.7,0.1-1.1,0.1c1.8-0.1,4.2-0.7,6.4-2.1 c1.2-0.8,2.2-1.7,3.1-2.9l-0.4,0.5l-0.9,1c0.8-0.8,1.6-1.7,2.3-2.7L29.3,26.3L29.3,26.3z"] {
 		fill: rgb(255, 255, 255) !important;
 	}
-	.article-image ul.post-meta a, ul.post-meta a.post-category, ul.post-meta a.post-category:hover, a.post-category, div.container a.post-category, a.post-category:hover, .tabcontent a.btn, .add-file .info.error p a, .add-file .info.warning p a, div.container a:hover, ul.actions .btn, div.container a.btn, .tiles li .tile-content h3 a, a.theme-link:hover, a.theme-link:focus, div.container .expandtile a, #rj-sitemap ul li a.rj-standard-button, #rj-back-to-top.rj-hug-footer, .rj-user-nav a.rj-upload:hover, .bubble, i.fa.fa-chevron-up, .rj-vortex-button:hover, span.alert, .rj-standard-button, .page-layout .donation-wrapper form input[type=submit], .notification-indicator, .notification-preferences-body input:checked + .notification-preference-slider:before, .rj-btn.rj-btn-standard, .rj-btn:hover, .tiles .btnexpand ul li a, .tiles .view-label, a.btn, .btn, .btn:visited, .sideitem ul.tags + a.btn:hover, .modpage .sideitem a.btnsmall, .mfp-close, .title-with-pip .pip, .add-game-button, .page-layout .table table tfoot a.rj-btn[id="fastDownloadButton"] {
+	.article-image ul.post-meta a, ul.post-meta a.post-category, ul.post-meta a.post-category:hover, a.post-category, div.container a.post-category, a.post-category:hover, .tabcontent a.btn, .add-file .info.error p a, .add-file .info.warning p a, div.container a:hover, ul.actions .btn, div.container a.btn, .tiles li .tile-content h3 a, a.theme-link:hover, a.theme-link:focus, div.container .expandtile a, #rj-sitemap ul li a.rj-standard-button, #rj-back-to-top.rj-hug-footer, .rj-user-nav a.rj-upload:hover, .bubble, i.fa.fa-chevron-up, .rj-vortex-button:hover, span.alert, .rj-standard-button, .page-layout .donation-wrapper form input[type=submit], .notification-indicator, .notification-preferences-body input:checked + .notification-preference-slider:before, .rj-btn.rj-btn-standard, .rj-btn:hover, .tiles .btnexpand ul li a, .tiles .view-label, a.btn, .btn, .btn:visited, .sideitem ul.tags + a.btn:hover, .modpage .sideitem a.btnsmall, .mfp-close, .title-with-pip .pip, .add-game-button, .page-layout .table table tfoot a.rj-btn[id="fastDownloadButton"]{
 		color: #000;
+	}
+	ul.btnexpand svg {
+		fill: #fff;
 	}
 	ul.add-process li.current a, ul.add-process li.complete a, .category-item a:hover .category-name, .btn, div.container .btn a {
 		color: #1a1a1a;
 	}
-	ul.btnexpand:hover svg, .drop-down>.btn .icon, .icon-track, .icon-manual, .btnexpand:hover .icon-plus, .accordion dt .acc-status .icon-arrow, .fake-accordion .acc-status .icon-arrow, .icon-archive, .tile-menu svg, .icon-discussion, .icon-comment, .icon-report, .icon-nmm, .icon-plus, .icon-share {
+	ul.btnexpand:hover svg, .drop-down>.btn .icon, .icon-track, .icon-manual, .btnexpand:hover .icon-plus, .accordion dt .acc-status .icon-arrow, .fake-accordion .acc-status .icon-arrow, .icon-archive, .tile-menu svg, .icon-discussion, .icon-comment, .icon-report, .icon-nmm, .icon-plus, .icon-share, ul.btnexpand:hover svg {
 		fill: #000;
 	}
 	[src="/assets/images/white_vortex.svg"] {
@@ -1510,5 +1578,55 @@
 	}
 	.rj-user-nav a.rj-upload:hover {
 		text-shadow: 0 0 4px #f00;
+	}
+}
+@-moz-document url-prefix("https://www.nexusmods.com/godofwar") {
+	:root {
+		--theme-primary: rgb(146, 41, 41);
+		--theme-primary-translucent: rgba(146, 41, 41, .85);
+		--theme-secondary: rgb(146, 11, 11);
+		--theme-dark: rgb(102, 0, 0);
+	}
+	
+	body::before {
+		background-image: url('https://www.ungeek.ph/wp-content/uploads/2022/01/God-of-War_Ultrawide_UnGeek.png');
+	}
+	
+	.headlogo svg > g:nth-of-type(1) {
+		visibility: hidden;
+	}
+	#head.new-head .headlogo>div {
+		position: relative;
+	}
+	#head.new-head .headlogo>div::before {
+		content: '';
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		padding: 0;
+		margin: 0;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/14205259-3456-4d74-8583-1a0f2736b41c/dep78an-b527a6b3-d07d-4c4f-818f-e8bc5b300a75.png/v1/fill/w_1280,h_1114,strp/omega_symbol__god_of_war_2018__by_rootofalllight_dep78an-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTExNCIsInBhdGgiOiJcL2ZcLzE0MjA1MjU5LTM0NTYtNGQ3NC04NTgzLTFhMGYyNzM2YjQxY1wvZGVwNzhhbi1iNTI3YTZiMy1kMDdkLTRjNGYtODE4Zi1lOGJjNWIzMDBhNzUucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.P4cY0Aojx7CqO43MfTr6mNMRAldo4eFeClvd9Pm6A78');
+		background-size: 35px;
+		background-position: center;
+		background-position-x: 0;
+		background-position-y: .75em;
+		background-repeat: no-repeat;
+		filter: drop-shadow(2px 2px 0 black) drop-shadow(-1px -1px 0 black);
+	}
+}
+@-moz-document url-prefix("https://www.nexusmods.com/eldenring") {
+	:root {
+		--theme-primary: rgb(213, 173, 62);
+		--theme-primary-translucent: rgba(213, 173, 62, .85);
+		--theme-secondary: rgb(179, 159, 49);
+		--theme-dark: rgb(164, 141, 14);
+	}
+	
+	body::before {
+		background-image: url('https://preview.redd.it/u7kjl5fh92571.png?auto=webp&s=3d20aa293bd80d31880d81cdf7ad4b4a0a8df6fd');
 	}
 }
