@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           NexusMods Overhaul
 @namespace      github.com/blyad2137/nexusmods-overhaul
-@version        1.1.0
+@version        1.1.1
 @description    `Overhauls look of nexusmods to be more 'modern', from lack of better word.`
 @author         blyad (https://github.com/blyad2137)
 @license        CC BY-NC-SA 4.0
@@ -18,7 +18,7 @@
 			}
 			html[hide-scrollbar="true"] ::-webkit-scrollbar{display:none}
 			::-webkit-scrollbar {
-				 width: 1em;
+				 width: 1rem;
 				 background-color: #212121;
 			}
 			::-webkit-scrollbar-thumb {
@@ -306,6 +306,9 @@
 		height: 100%;
 		backdrop-filter: blur(1rem);
 		-webkit-backdrop-filter: blur(1rem);
+	}
+	#head .rj-header-wrap {
+		position: relative;
 	}
 	.rj-nav-item:hover, .rj-nav-item.active {
 		background-color: rgba(43, 45, 47, .38);
@@ -851,7 +854,7 @@
 	div#nofeature::before {
 		content: '';
 		position: absolute;
-		background-image: url('https://www.nexusmods.com/assets/images/default/bg_default.jpg');
+		background-image: url('/assets/images/default/bg_default.jpg');
 		background-size: cover;
 		width: 100%;
 		height: 100%;
@@ -926,18 +929,19 @@
 		backdrop-filter: blur(1rem);
 		-webkit-backdrop-filter: blur(1rem);
 	}
-	.bg-vortex-pattern {
+	.bg-vortex-pattern, .sso-container {
 		background: none;
 		position: relative;
 	}
-	.bg-vortex-pattern::before {
+	.bg-vortex-pattern::before, .sso-container::before {
 		content: '';
 		position: absolute;
 		width: 100%;
 		height: 100%;
-		background: url('https://www.nexusmods.com/bootstrap/images/vortex/bg/vortex-bg.jpg');
+		background: url('/bootstrap/images/vortex/bg/vortex-bg.jpg');
 		opacity: .38;
 		top: 0;
+		left: 0;
 	}
 	.bg-dark, .article-image {
 		background-color: rgba(45, 45, 45, .38);
@@ -961,7 +965,7 @@
 	.recent-files a:hover {
 		background-color: rgba(42, 42, 42, .38);
 	}
-	.nexus-ui-blocker-message-box {
+	.nexus-ui-blocker-message-box, dd.changelog ul.change-logs>li:nth-child(odd), div.changelog ul.change-logs>li:nth-child(odd) {
 		background-color: transparent;
 	}
 	.tabcontent:before, .loading-wheel {
@@ -993,6 +997,16 @@
 	}
 	.security-edit-page .fake-select .flag {
 		color: #fff;
+	}
+	ul#breadcrumb.mod-crumb, ul#breadcrumb.static-crumb {
+		text-shadow: 0 1px 1px rgba(0, 0, 0, .8);
+	}
+	form.rj-search .search-button i, .rj-header-wrap.rj-search-active .search-button i {
+		color: #e8e8e8;
+	}
+	[href*="/skyrimspecialedition/mods/52177"] figure.image_figure .fore_div_mods img {
+		content: url('https://i.kym-cdn.com/photos/images/facebook/001/857/748/54e.jpg');
+		transform: scale(1.5) translateY(-1.2rem) translateX(.5rem);
 	}
 }
 @-moz-document domain("users.nexusmods.com") {
@@ -1085,6 +1099,11 @@
 		color: #b9b9b9;
 	}
 }
+@-moz-document domain("next.nexusmods.com") {
+	:root {
+		--theme-primary: rgb(var(--primary));
+	}
+}
 @-moz-document domain("wiki.nexusmods.com") {
 	::-webkit-scrollbar-thumb {
 		border-radius: 2px;
@@ -1175,6 +1194,11 @@
 	body::before {
 		background-image: url('https://i.pinimg.com/originals/b8/1a/a4/b81aa44ba47c8ebb93c4525a96904101.jpg');
 	}
+	
+	#mainContent > section {
+		border-image: url('https://stardewvalleywiki.com/mediawiki/extensions/StardewValley/images/menu_border.png') 15 stretch !important;
+		border: 7px solid transparent;
+	}
 }
 
 @-moz-document url-prefix("https://www.nexusmods.com/dragonage") {
@@ -1244,8 +1268,15 @@
 }
 
 @-moz-document url-prefix("https://www.nexusmods.com/masseffectlegendaryedition") {
+	:root {
+		--theme-primary: #e61809;
+		--theme-primary-translucent: #e61809d8;
+		--theme-secondary: #ae180d;
+		--theme-dark: #781008;
+	}
+	
 	body::before {
-		background-image: url('https://images7.alphacoders.com/111/thumb-1920-1112414.jpg');
+		background-image: url('https://w.wallha.com/ws/12/1USM7sVR.png');
 	}
 }
 
