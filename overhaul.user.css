@@ -1,13 +1,12 @@
 /* ==UserStyle==
-@name           NexusMods Overhaul
-@namespace      github.com/blyad2137/nexusmods-overhaul
-@version        1.1.1
+@name           NexusMods Overhaul Custom
+@namespace      NekoBoiNick.Web.NexusMods.Overhaul.Custom
+@version        1.0.0
 @description    `Overhauls look of nexusmods to be more 'modern', from lack of better word.`
-@author         blyad (https://github.com/blyad2137)
+@author         Neko Boi Nick (https://github.com/thakyZ), blyad (https://github.com/blyad2137)
 @license        CC BY-NC-SA 4.0
-@homepageURL    https://github.com/blyad2137/nexusmods-overhaul
-@supportURL     https://github.com/blyad2137/nexusmods-overhaul/issues
-@updateURL      https://userstyles.world/api/style/925.user.css
+@homepageURL    https://github.com/thakyZ/nexusmods-overhaul-custom
+@supportURL     https://github.com/thakyZ/nexusmods-overhaul-custom/issues
 ==/UserStyle== */
 
 @-moz-document domain("nexusmods.com") {
